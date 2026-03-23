@@ -416,7 +416,7 @@ export default function Sector01Wellness() {
             COMPARATIVE SUMMARY
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div ref={summaryRef} className="reveal-stagger grid md:grid-cols-2 gap-8 mb-12">
             {/* What Changed */}
             <div className="rounded-xl p-6" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
               <h4 className="font-display text-xl font-bold mb-4" style={{ color: 'hsl(145, 80%, 60%)' }}>
