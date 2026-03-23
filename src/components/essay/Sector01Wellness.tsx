@@ -322,8 +322,11 @@ export default function Sector01Wellness() {
         }}
       >
         <div className="max-w-4xl mx-auto mb-8">
+          <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white' }}>
+            2020s Advertisements
+          </h3>
           <p className="font-pixel text-[10px] tracking-[0.3em] text-center mb-8" style={{ color: 'hsl(330, 90%, 65%)' }}>
-            2020s ADVERTISEMENTS
+            ALGORITHMIC ERA
           </p>
         </div>
 
