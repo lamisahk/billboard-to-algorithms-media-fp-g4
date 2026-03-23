@@ -379,7 +379,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #5: Hims & Hers */}
-        <div className="mb-16">
+        <div ref={ad5Ref} className="reveal-scale mb-16">
           <InstagramCard
             username="himshers"
             sponsored
