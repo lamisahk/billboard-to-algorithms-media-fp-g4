@@ -354,7 +354,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #4: Noom */}
-        <div className="mb-16">
+        <div ref={ad4Ref} className="reveal-scale mb-16">
           <InstagramCard
             username="noom"
             sponsored
