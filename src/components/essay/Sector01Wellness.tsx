@@ -126,11 +126,22 @@ const himsDimensions = [
 export default function Sector01Wellness() {
   const [dialogDismissed, setDialogDismissed] = useState(false);
 
+  const headerRef = useScrollReveal<HTMLDivElement>(0.2);
+  const introRef = useScrollReveal<HTMLDivElement>();
+  const ad1Ref = useScrollReveal<HTMLDivElement>();
+  const ad2Ref = useScrollReveal<HTMLDivElement>();
+  const transitionRef = useStaggerReveal<HTMLDivElement>();
+  const ad3Ref = useScrollReveal<HTMLDivElement>();
+  const ad4Ref = useScrollReveal<HTMLDivElement>();
+  const ad5Ref = useScrollReveal<HTMLDivElement>();
+  const summaryRef = useStaggerReveal<HTMLDivElement>();
+  const perspectiveRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <div>
       {/* ===== SECTOR HEADER (Mode 1) ===== */}
       <section className="mac-desktop py-24 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div ref={headerRef} className="reveal-blur max-w-4xl mx-auto text-center">
           <p className="font-pixel text-[10px] tracking-[0.3em] mb-4" style={{ color: 'hsl(180, 100%, 80%)' }}>
             SECTOR
           </p>
