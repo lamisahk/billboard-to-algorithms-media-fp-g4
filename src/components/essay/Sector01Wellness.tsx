@@ -235,21 +235,16 @@ export default function Sector01Wellness() {
               A double-page color spread featuring oversized fingers holding a single capsule against a black background, three named testimonials with specific weight loss figures, and copy referencing seven years of clinical tests and a United States Government medical advisory panel. The headline reads "Dexatrim: the clinically proven way to lose weight." The product is packaged and positioned as pharmaceutical-grade, sold over the counter in drugstores nationwide.
             </p>
 
-            {/* Print ad typographic card */}
-            <div className="print-ad-card rounded-lg p-8 mb-4 text-center" style={{ background: '#111', border: '1px solid #333' }}>
-              <p className="font-display text-3xl font-extrabold tracking-wider mb-2" style={{ color: '#e0e0e0' }}>
-                DEXATRIM
-              </p>
-              <p className="font-display text-lg font-semibold tracking-widest mb-4" style={{ color: '#aaa' }}>
-                EXTRA STRENGTH
-              </p>
-              <div className="w-16 h-px mx-auto mb-4" style={{ background: '#555' }} />
-              <p className="font-mono text-sm italic mb-2" style={{ color: '#999' }}>
-                "The clinically proven way to lose weight."
-              </p>
-              <p className="font-mono text-xs mt-4" style={{ color: '#666' }}>
-                Print Advertisement, 1980, Women's Magazines
-              </p>
+            {/* Dexatrim ad image */}
+            <div className="rounded-lg overflow-hidden mb-4 border" style={{ borderColor: '#333' }}>
+              <img
+                src={dexatrimAd}
+                alt="Dexatrim 1980 print advertisement - 'The clinically proven way to lose weight' with testimonials and product packaging"
+                className="w-full h-auto"
+                loading="lazy"
+                width={1024}
+                height={640}
+              />
             </div>
 
             <AnalysisAccordion dimensions={dexatrimDimensions} variant="mac" />
