@@ -2,94 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
+    /* Mode 1: Mac OS System 7 */
+    --mac-teal: 180 100% 25%;
+    --mac-blue-light: 210 60% 55%;
+    --mac-blue-dark: 215 70% 30%;
+    --mac-window-bg: 0 0% 100%;
+    --mac-window-border-light: 0 0% 85%;
+    --mac-window-border-dark: 0 0% 45%;
+    --mac-titlebar-from: 210 55% 50%;
+    --mac-titlebar-to: 215 65% 28%;
+    --mac-pill-bg: 210 50% 88%;
+
+    /* Mode 2: Instagram / 2020s */
+    --ig-purple-deep: 270 60% 12%;
+    --ig-purple: 270 50% 30%;
+    --ig-pink: 330 90% 55%;
+    --ig-green: 145 80% 50%;
+    --ig-amber: 38 95% 55%;
+    --ig-card-bg: 0 0% 100%;
+    --ig-card-border: 0 0% 85%;
+    --ig-gradient-ring: linear-gradient(45deg, hsl(38 95% 55%), hsl(330 90% 55%), hsl(270 70% 55%));
+
+    /* Mode 3: Editorial */
+    --ed-bg: 40 30% 96%;
+    --ed-fg: 220 20% 15%;
+    --ed-accent-border: 330 80% 55%;
+    --ed-muted: 220 10% 50%;
+
+    /* Shared */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
-
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-
     --radius: 0.5rem;
-
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
@@ -98,8 +67,260 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
   }
+}
+
+/* ======= TEAL CHECKERED DESKTOP ======= */
+.mac-desktop {
+  background-color: hsl(var(--mac-teal));
+  background-image: repeating-conic-gradient(
+    hsl(180 100% 22%) 0% 25%,
+    hsl(180 100% 28%) 0% 50%
+  );
+  background-size: 8px 8px;
+}
+
+/* ======= MAC WINDOW ======= */
+.mac-window {
+  background: hsl(var(--mac-window-bg));
+  border: 2px solid hsl(var(--mac-window-border-dark));
+  border-top-color: hsl(0 0% 95%);
+  border-left-color: hsl(0 0% 95%);
+  box-shadow: 2px 2px 0px hsl(0 0% 30%), inset 1px 1px 0px hsl(0 0% 100%);
+}
+
+.mac-titlebar {
+  background: linear-gradient(
+    180deg,
+    hsl(var(--mac-titlebar-from)),
+    hsl(var(--mac-titlebar-to))
+  );
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 24px;
+}
+
+.mac-titlebar-label {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}
+
+.mac-titlebar-buttons {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 4px;
+}
+
+.mac-titlebar-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 0;
+  border: 1px solid hsl(0 0% 40%);
+  border-top-color: hsl(0 0% 85%);
+  border-left-color: hsl(0 0% 85%);
+  background: hsl(0 0% 75%);
+}
+
+.mac-body {
+  padding: 16px 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  line-height: 1.75;
+  color: hsl(0 0% 10%);
+}
+
+/* ======= GLITCH ======= */
+@keyframes glitch {
+  0%   { clip-path: none; transform: none; filter: none }
+  8%   { clip-path: inset(15% 0 60% 0); transform: translate(-6px, 2px); filter: hue-rotate(90deg) }
+  16%  { clip-path: inset(70% 0 5% 0); transform: translate(6px, -3px); filter: brightness(2) }
+  24%  { clip-path: inset(40% 0 35% 0); transform: translate(-9px, 0); filter: saturate(8) }
+  32%  { clip-path: none; transform: none; filter: none }
+  45%  { transform: translate(5px, 0); filter: brightness(.15) }
+  55%  { transform: none; filter: none }
+  62%  { clip-path: inset(8% 0 78% 0); transform: translate(12px, -5px); filter: hue-rotate(200deg) }
+  72%  { clip-path: none; transform: none; filter: none }
+  84%  { opacity: .08 }
+  96%  { opacity: 1 }
+  100% { clip-path: none; transform: none; filter: none }
+}
+
+.animate-glitch {
+  animation: glitch 1.2s ease-in-out 1;
+}
+
+/* ======= STAR TWINKLE ======= */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+/* ======= BILLBOARD ======= */
+.billboard-face {
+  background: linear-gradient(145deg, hsl(40 30% 90%), hsl(38 25% 85%));
+  border: 3px solid hsl(0 0% 20%);
+  transform: perspective(1400px) rotateY(-2deg) rotateX(1deg);
+  position: relative;
+  box-shadow: 4px 4px 20px rgba(0,0,0,0.4);
+}
+
+.billboard-face::before,
+.billboard-face::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: hsl(0 70% 45%);
+}
+
+.billboard-face::before { top: 0; }
+.billboard-face::after { bottom: 0; }
+
+.billboard-lamp-bar {
+  background: hsl(0 0% 30%);
+  height: 8px;
+  border-radius: 2px;
+  box-shadow: 0 4px 15px rgba(255, 200, 100, 0.3);
+}
+
+.billboard-post {
+  width: 8px;
+  background: linear-gradient(180deg, hsl(0 0% 35%), hsl(0 0% 25%));
+  box-shadow: 2px 0 4px rgba(0,0,0,0.3);
+}
+
+/* ======= CAPTION OVERLAY ======= */
+.caption-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ======= INSTAGRAM CARD ======= */
+.ig-card {
+  background: hsl(var(--ig-card-bg));
+  border: 1px solid hsl(var(--ig-card-border));
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ig-avatar-ring {
+  background: linear-gradient(45deg, hsl(38 95% 55%), hsl(330 90% 55%), hsl(270 70% 55%));
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.ig-avatar-inner {
+  background: white;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+/* ======= ERA TRANSITION ======= */
+@keyframes glitchText {
+  0%   { opacity: 1; transform: none; }
+  10%  { opacity: 0.8; transform: translateX(-2px); }
+  20%  { opacity: 1; transform: translateX(2px); }
+  30%  { opacity: 0.6; transform: skewX(2deg); }
+  40%  { opacity: 1; transform: none; }
+  100% { opacity: 1; transform: none; }
+}
+
+.glitch-text {
+  animation: glitchText 3s ease-in-out infinite;
+  text-shadow: 0 0 10px hsl(145 80% 50%), 0 0 20px hsl(145 80% 50% / 0.5);
+}
+
+/* ======= ANALYSIS ACCORDION ======= */
+.analysis-panel {
+  background: hsl(0 0% 96%);
+  border-top: 1px solid hsl(0 0% 90%);
+}
+
+/* ======= SECTOR PERSPECTIVE ======= */
+.sector-perspective {
+  border-left: 4px solid hsl(var(--ig-pink));
+  padding-left: 24px;
+}
+
+/* ======= PHONE MOCKUP ======= */
+.phone-mockup {
+  width: 220px;
+  height: 420px;
+  background: #111;
+  border-radius: 28px;
+  border: 3px solid #333;
+  padding: 12px 8px;
+  box-shadow: 0 0 40px rgba(147, 51, 234, 0.3), 0 0 80px rgba(147, 51, 234, 0.1);
+}
+
+.phone-screen {
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ======= SCROLLAMA STEPS ======= */
+.scroll-step {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.15;
+  transition: opacity 0.4s ease;
+}
+
+.scroll-step.is-active {
+  opacity: 1;
+}
+
+/* ======= PRINT AD CARD ======= */
+.print-ad-card {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* ======= SMOOTH SCROLL ======= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======= RESPONSIVE EMBED ======= */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
