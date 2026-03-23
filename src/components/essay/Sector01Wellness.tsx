@@ -217,7 +217,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #2: Dexatrim (Print ad card) */}
-        <div className="max-w-4xl mx-auto mb-12">
+        <div ref={ad2Ref} className="reveal-right max-w-4xl mx-auto mb-12">
           <MacWindow title="Ad_02_Dexatrim_1980.txt">
             <div className="mb-4">
               <span className="font-pixel text-[9px] inline-block px-2 py-1 mb-3 rounded" style={{ background: 'hsl(210, 50%, 88%)', color: 'hsl(215, 70%, 30%)' }}>
