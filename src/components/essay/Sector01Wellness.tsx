@@ -329,7 +329,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #3: Ozempic */}
-        <div className="mb-16">
+        <div ref={ad3Ref} className="reveal-scale mb-16">
           <InstagramCard
             username="ozempic"
             sponsored
