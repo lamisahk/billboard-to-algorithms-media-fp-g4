@@ -456,7 +456,7 @@ export default function Sector01Wellness() {
           background: 'radial-gradient(ellipse at 70% 70%, hsl(330, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)',
         }}
       >
-        <div className="max-w-3xl mx-auto">
+        <div ref={perspectiveRef} className="reveal max-w-3xl mx-auto">
           <p className="font-pixel text-[10px] tracking-[0.3em] mb-6" style={{ color: 'hsl(330, 90%, 65%)' }}>
             SECTOR PERSPECTIVE
           </p>
