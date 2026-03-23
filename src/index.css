@@ -177,11 +177,12 @@
 
 /* ======= BILLBOARD ======= */
 .billboard-face {
-  background: linear-gradient(145deg, hsl(40 30% 90%), hsl(38 25% 85%));
-  border: 3px solid hsl(0 0% 20%);
-  transform: perspective(1400px) rotateY(-2deg) rotateX(1deg);
+  background: linear-gradient(145deg, hsl(40 35% 93%), hsl(38 28% 88%));
+  border: 2px solid hsl(0 0% 25%);
+  transform: perspective(1400px) rotateY(-1.5deg) rotateX(0.5deg);
   position: relative;
-  box-shadow: 4px 4px 20px rgba(0,0,0,0.4);
+  box-shadow: 3px 3px 16px rgba(0,0,0,0.35);
+  transition: box-shadow 0.6s ease;
 }
 
 .billboard-face::before,
@@ -190,24 +191,28 @@
   position: absolute;
   left: 0;
   right: 0;
-  height: 6px;
-  background: hsl(0 70% 45%);
+  height: 4px;
+  background: linear-gradient(90deg, hsl(350 60% 45%), hsl(20 70% 50%));
 }
 
 .billboard-face::before { top: 0; }
 .billboard-face::after { bottom: 0; }
 
-.billboard-lamp-bar {
-  background: hsl(0 0% 30%);
-  height: 8px;
-  border-radius: 2px;
-  box-shadow: 0 4px 15px rgba(255, 200, 100, 0.3);
+.billboard-post {
+  width: 6px;
+  background: linear-gradient(180deg, hsl(0 0% 32%), hsl(0 0% 22%));
+  box-shadow: 1px 0 3px rgba(0,0,0,0.25);
+  border-radius: 1px;
 }
 
-.billboard-post {
-  width: 8px;
-  background: linear-gradient(180deg, hsl(0 0% 35%), hsl(0 0% 25%));
-  box-shadow: 2px 0 4px rgba(0,0,0,0.3);
+@keyframes fadeInBillboard {
+  0%   { opacity: 0; transform: translateY(8px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fadeInCaption {
+  0%   { opacity: 0; transform: translate(-50%, 12px); }
+  100% { opacity: 1; transform: translate(-50%, 0); }
 }
 
 /* ======= CAPTION OVERLAY ======= */
