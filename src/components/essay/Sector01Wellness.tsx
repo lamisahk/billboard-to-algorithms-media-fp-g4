@@ -161,17 +161,19 @@ export default function Sector01Wellness() {
 
       {/* ===== INTRO WINDOW (Mode 1) ===== */}
       <section className="mac-desktop py-16 px-4">
-        <MacWindow title="sector_01_intro.txt">
-          <p className="mb-4">
-            Wellness advertising occupies a uniquely intimate territory in the broader advertising landscape. Unlike ads for software or financial products, wellness advertising targets the body itself, making it the most powerful sector for identity construction this project examines. The body is where personal insecurity lives most immediately, and wellness advertising has always known this. From the 1980s to the present, it has operated by taking ordinary biological experiences, reframing them as deficiencies, and attaching purchasable solutions to them.
-          </p>
-          <p className="mb-4">
-            What makes this sector particularly significant from a biomedical perspective is the question of what counts as a medical problem in the first place. The definition has not stayed still. In the 1980s, wellness advertising primarily medicalized body size: excess weight was framed as both an aesthetic failure and a health risk, and the solution was a product. By the 2020s, that medicalization had expanded dramatically. Gut bacteria, cortisol levels, inflammation, sleep cycles, hormones, and emotional relationships with food had all become targets of commercial health intervention. Normal biological variation became, in the language of modern wellness advertising, a set of systems requiring optimization.
-          </p>
-          <p>
-            This shift from fixing visible problems to optimizing invisible processes is the central transformation this sector documents. Between the 1980s and 2020s, the scope of what wellness advertising claimed authority over grew from the scale to the cell, and the commercial infrastructure for delivering those claims moved from the television screen to the algorithmic feed.
-          </p>
-        </MacWindow>
+        <div ref={introRef} className="reveal">
+          <MacWindow title="sector_01_intro.txt">
+            <p className="mb-4">
+              Wellness advertising occupies a uniquely intimate territory in the broader advertising landscape. Unlike ads for software or financial products, wellness advertising targets the body itself, making it the most powerful sector for identity construction this project examines. The body is where personal insecurity lives most immediately, and wellness advertising has always known this. From the 1980s to the present, it has operated by taking ordinary biological experiences, reframing them as deficiencies, and attaching purchasable solutions to them.
+            </p>
+            <p className="mb-4">
+              What makes this sector particularly significant from a biomedical perspective is the question of what counts as a medical problem in the first place. The definition has not stayed still. In the 1980s, wellness advertising primarily medicalized body size: excess weight was framed as both an aesthetic failure and a health risk, and the solution was a product. By the 2020s, that medicalization had expanded dramatically. Gut bacteria, cortisol levels, inflammation, sleep cycles, hormones, and emotional relationships with food had all become targets of commercial health intervention. Normal biological variation became, in the language of modern wellness advertising, a set of systems requiring optimization.
+            </p>
+            <p>
+              This shift from fixing visible problems to optimizing invisible processes is the central transformation this sector documents. Between the 1980s and 2020s, the scope of what wellness advertising claimed authority over grew from the scale to the cell, and the commercial infrastructure for delivering those claims moved from the television screen to the algorithmic feed.
+            </p>
+          </MacWindow>
+        </div>
       </section>
 
       {/* ===== 1980s ADS (Mode 1) ===== */}
