@@ -185,7 +185,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #1: Special K */}
-        <div className="max-w-4xl mx-auto mb-12">
+        <div ref={ad1Ref} className="reveal-left max-w-4xl mx-auto mb-12">
           <MacWindow title="Ad_01_SpecialK_1985.txt">
             <div className="mb-4">
               <span className="font-pixel text-[9px] inline-block px-2 py-1 mb-3 rounded" style={{ background: 'hsl(210, 50%, 88%)', color: 'hsl(215, 70%, 30%)' }}>
