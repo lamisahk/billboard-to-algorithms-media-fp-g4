@@ -2,6 +2,7 @@ import BillboardHero from "@/components/essay/BillboardHero";
 import IntroSections from "@/components/essay/IntroSections";
 import Sector01Wellness from "@/components/essay/Sector01Wellness";
 import Sector02Business from "@/components/essay/Sector02Business";
+import Sector03Investment from "@/components/essay/Sector03Investment";
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
       <IntroSections />
       <Sector01Wellness />
       <Sector02Business />
+      <Sector03Investment />
     </main>
   );
 };
