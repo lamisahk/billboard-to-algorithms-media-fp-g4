@@ -180,8 +180,11 @@ export default function Sector01Wellness() {
       {/* ===== 1980s ADS (Mode 1) ===== */}
       <section className="mac-desktop py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
+          <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white', textShadow: '1px 1px 0 rgba(0,0,0,0.2)' }}>
+            1980s Advertisements
+          </h3>
           <p className="font-pixel text-[10px] tracking-[0.3em] text-center mb-8" style={{ color: 'hsl(180, 100%, 80%)' }}>
-            1980s ADVERTISEMENTS
+            BROADCAST ERA
           </p>
         </div>
 
