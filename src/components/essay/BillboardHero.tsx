@@ -4,24 +4,27 @@ import scrollama from "scrollama";
 const STEPS = [
   {
     billboard: (
-      <div className="flex flex-col items-center justify-center h-full px-6 py-8 gap-3">
-        <h1 className="font-display text-3xl md:text-5xl font-extrabold text-center tracking-wide leading-tight text-stone-800">
-          FROM BILLBOARDS<br />TO ALGORITHMS
+      <div className="flex flex-col items-center justify-center h-full px-8 py-10 gap-4">
+        <p className="font-pixel text-[8px] tracking-[0.3em] text-stone-400 uppercase">MCOM 103 · Group 4 (L51)</p>
+        <h1 className="font-display text-4xl md:text-6xl font-black text-center tracking-tight leading-[1.1] text-stone-800">
+          From Billboards<br />to Algorithms
         </h1>
-        <p className="font-pixel text-[9px] md:text-[10px] tracking-widest mt-2 text-stone-500">
-          MCOM 103, Group 4 (L51)
-        </p>
+        <div className="flex gap-1.5 mt-1">
+          <div className="w-10 h-1 rounded-full bg-amber-400/70" />
+          <div className="w-10 h-1 rounded-full bg-rose-400/70" />
+          <div className="w-10 h-1 rounded-full bg-violet-400/70" />
+        </div>
       </div>
     ),
     caption: null,
   },
   {
     billboard: (
-      <div className="flex flex-col items-center justify-center h-full px-6 py-6 gap-2">
-        <p className="font-serif text-2xl md:text-4xl font-bold text-center italic text-stone-700">
+      <div className="flex flex-col items-center justify-center h-full px-10 py-10 gap-3">
+        <p className="font-serif text-3xl md:text-5xl font-bold text-center italic text-stone-700 leading-tight">
           "Pinch an inch?"
         </p>
-        <div className="w-12 h-px bg-stone-300 my-2" />
+        <div className="w-16 h-px bg-stone-300 my-1" />
         <p className="font-mono text-[10px] md:text-xs text-stone-400 tracking-wider">
           Kellogg's Special K, 1985
         </p>
@@ -31,15 +34,15 @@ const STEPS = [
   },
   {
     billboard: (
-      <div className="flex flex-col items-center justify-center h-full px-6 py-8">
-        <p className="font-display text-2xl md:text-3xl font-bold text-center tracking-wide text-stone-700">
+      <div className="flex flex-col items-center justify-center h-full px-10 py-10 gap-4">
+        <p className="font-display text-3xl md:text-4xl font-bold text-center tracking-wide leading-snug text-stone-700">
           THERE WAS A<br />
-          <span className="text-stone-900">STRUCTURE.</span>
+          <span className="text-stone-900 text-4xl md:text-5xl">STRUCTURE.</span>
         </p>
-        <div className="flex gap-2 mt-4">
-          <div className="w-8 h-1 rounded-full bg-amber-300" />
-          <div className="w-8 h-1 rounded-full bg-rose-300" />
-          <div className="w-8 h-1 rounded-full bg-violet-300" />
+        <div className="flex gap-2 mt-2">
+          <div className="w-10 h-1.5 rounded-full bg-amber-300" />
+          <div className="w-10 h-1.5 rounded-full bg-rose-300" />
+          <div className="w-10 h-1.5 rounded-full bg-violet-300" />
         </div>
       </div>
     ),
@@ -47,11 +50,11 @@ const STEPS = [
   },
   {
     billboard: (
-      <div className="flex flex-col items-center justify-center h-full px-6 py-8">
-        <p className="font-display text-2xl md:text-3xl font-bold text-center tracking-wide text-stone-600">
+      <div className="flex flex-col items-center justify-center h-full px-10 py-10 gap-2">
+        <p className="font-display text-2xl md:text-3xl font-bold text-center tracking-wide text-stone-500">
           SOMETHING
         </p>
-        <p className="font-display text-3xl md:text-4xl font-extrabold text-center tracking-wide text-stone-900 mt-1">
+        <p className="font-display text-4xl md:text-6xl font-black text-center tracking-tight text-stone-900">
           CHANGED.
         </p>
       </div>
@@ -68,16 +71,16 @@ const STEPS = [
   },
   {
     billboard: (
-      <div className="flex flex-col items-center justify-center h-full px-6 py-8 gap-3">
-        <p className="font-display text-xl md:text-2xl font-bold text-center tracking-wide text-stone-800">
+      <div className="flex flex-col items-center justify-center h-full px-10 py-10 gap-4">
+        <p className="font-display text-2xl md:text-3xl font-bold text-center tracking-wide text-stone-800">
           SAME MISSION.
         </p>
-        <p className="font-serif text-lg md:text-xl text-center italic text-stone-400">
+        <p className="font-serif text-xl md:text-2xl text-center italic text-stone-400">
           Invisible methods.
         </p>
-        <div className="flex gap-1.5 mt-2">
+        <div className="flex gap-2 mt-2">
           {[...Array(5)].map((_, i) => (
-            <div key={i} className="w-2 h-2 rounded-full bg-gradient-to-br from-rose-300 to-violet-400 opacity-60" />
+            <div key={i} className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-rose-300 to-violet-400 opacity-60" />
           ))}
         </div>
       </div>
@@ -86,24 +89,24 @@ const STEPS = [
   },
   {
     billboard: (
-      <div className="flex flex-col items-center justify-center h-full px-6 py-8">
-        <p className="font-mono text-xs tracking-widest text-stone-400 mb-3">↓</p>
-        <p className="font-display text-lg md:text-2xl font-bold text-center tracking-wide text-stone-700">
+      <div className="flex flex-col items-center justify-center h-full px-10 py-10 gap-3">
+        <p className="font-mono text-lg text-stone-300 animate-bounce">↓</p>
+        <p className="font-display text-xl md:text-3xl font-bold text-center tracking-wide text-stone-700">
           Scroll to begin
         </p>
-        <p className="font-serif text-sm md:text-base text-center italic text-stone-400 mt-1">
+        <p className="font-serif text-base md:text-lg text-center italic text-stone-400">
           the investigation.
         </p>
       </div>
     ),
-    caption: "Scroll to begin the investigation.",
+    caption: null,
   },
 ];
 
 function PhoneMockup() {
   return (
-    <div className="phone-mockup mx-auto" style={{ width: 180, height: 340, borderRadius: 24, padding: '10px 6px' }}>
-      <div className="phone-screen" style={{ borderRadius: 16 }}>
+    <div className="phone-mockup mx-auto" style={{ width: 200, height: 380, borderRadius: 26, padding: '10px 6px' }}>
+      <div className="phone-screen" style={{ borderRadius: 18 }}>
         <div className="flex items-center gap-2 px-3 pt-3 pb-2">
           <div className="ig-avatar-ring w-7 h-7 flex items-center justify-center">
             <div className="ig-avatar-inner w-full h-full">
@@ -167,7 +170,6 @@ export default function BillboardHero() {
 
   const isModern = currentStep >= 5;
 
-  // Warm sunset palette for 1980s, dreamy violet for 2020s
   const skyGradient = isModern
     ? 'linear-gradient(180deg, #1a0a2e 0%, #2d1654 30%, #4a1942 60%, #1a0a2e 100%)'
     : 'linear-gradient(180deg, #0f172a 0%, #1e293b 20%, #44403c 55%, #92785c 80%, #d4a574 95%, #e8c9a0 100%)';
@@ -176,7 +178,7 @@ export default function BillboardHero() {
     <div ref={containerRef} className="relative">
       {/* Sticky scene */}
       <div
-        className="sticky top-0 h-screen w-full overflow-hidden"
+        className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center"
         style={{
           background: skyGradient,
           transition: 'background 2s cubic-bezier(0.16, 1, 0.3, 1)',
@@ -204,24 +206,24 @@ export default function BillboardHero() {
         <div
           className="absolute left-1/2 -translate-x-1/2 rounded-full"
           style={{
-            bottom: '28%',
-            width: '60%',
+            bottom: '22%',
+            width: '70%',
             height: '20%',
             background: isModern
               ? 'radial-gradient(ellipse, rgba(147, 51, 234, 0.15), transparent 70%)'
-              : 'radial-gradient(ellipse, rgba(232, 201, 160, 0.25), transparent 70%)',
+              : 'radial-gradient(ellipse, rgba(232, 201, 160, 0.3), transparent 70%)',
             transition: 'background 2s ease',
             zIndex: 1,
           }}
         />
 
-        {/* Power lines - thinner, more subtle */}
+        {/* Power lines */}
         <svg className="absolute inset-0 w-full h-full" style={{ zIndex: 2 }}>
-          <line x1="0" y1="62%" x2="100%" y2="58%" stroke="rgba(0,0,0,0.3)" strokeWidth="1" />
-          <line x1="0" y1="65%" x2="100%" y2="61%" stroke="rgba(0,0,0,0.2)" strokeWidth="0.75" />
+          <line x1="0" y1="62%" x2="100%" y2="58%" stroke="rgba(0,0,0,0.25)" strokeWidth="1" />
+          <line x1="0" y1="65%" x2="100%" y2="61%" stroke="rgba(0,0,0,0.15)" strokeWidth="0.75" />
         </svg>
 
-        {/* Horizon silhouette - softer, rounder */}
+        {/* Horizon silhouette */}
         <div
           className="absolute bottom-0 left-0 right-0"
           style={{
@@ -263,23 +265,23 @@ export default function BillboardHero() {
           ))}
         </div>
 
-        {/* Billboard structure */}
+        {/* Billboard structure - centered */}
         <div
-          className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center"
-          style={{ bottom: '28%', zIndex: 10 }}
+          className="relative flex flex-col items-center"
+          style={{ zIndex: 10, marginBottom: '8%' }}
         >
           {/* Soft lamp glow */}
           <div
-            className="w-56 md:w-80 h-2 rounded-full mb-1"
+            className="w-72 md:w-[480px] h-3 rounded-full mb-1"
             style={{
-              background: 'linear-gradient(90deg, transparent, rgba(255,220,150,0.2), transparent)',
-              boxShadow: '0 2px 20px rgba(255,200,100,0.15)',
+              background: 'linear-gradient(90deg, transparent, rgba(255,220,150,0.25), transparent)',
+              boxShadow: '0 4px 30px rgba(255,200,100,0.12)',
             }}
           />
 
-          {/* Billboard face */}
+          {/* Billboard face - larger */}
           <div
-            className={`billboard-face w-56 md:w-[340px] h-32 md:h-48 flex items-center justify-center ${glitching ? 'animate-glitch' : ''}`}
+            className={`billboard-face w-72 md:w-[480px] h-44 md:h-64 flex items-center justify-center ${glitching ? 'animate-glitch' : ''}`}
             style={{
               transition: 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
             }}
@@ -295,8 +297,9 @@ export default function BillboardHero() {
             ) : (
               <div
                 className="w-full h-full flex items-center justify-center"
+                key={currentStep}
                 style={{
-                  animation: 'fadeInBillboard 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
+                  animation: 'fadeInBillboard 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
                 }}
               >
                 {STEPS[currentStep]?.billboard}
@@ -304,30 +307,31 @@ export default function BillboardHero() {
             )}
           </div>
 
-          {/* Posts - slightly angled inward */}
-          <div className="flex justify-between w-36 md:w-52">
-            <div className="billboard-post h-16 md:h-24" style={{ transform: 'rotate(-1.5deg)' }} />
-            <div className="billboard-post h-16 md:h-24" style={{ transform: 'rotate(1.5deg)' }} />
+          {/* Posts */}
+          <div className="flex justify-between w-44 md:w-64">
+            <div className="billboard-post h-20 md:h-28" style={{ transform: 'rotate(-1deg)' }} />
+            <div className="billboard-post h-20 md:h-28" style={{ transform: 'rotate(1deg)' }} />
           </div>
 
           {/* Ground shadow */}
           <div
-            className="w-44 md:w-64 h-2 rounded-full mt-1"
-            style={{ background: 'radial-gradient(ellipse, rgba(0,0,0,0.3), transparent)' }}
+            className="w-52 md:w-72 h-2 rounded-full mt-1"
+            style={{ background: 'radial-gradient(ellipse, rgba(0,0,0,0.35), transparent)' }}
           />
         </div>
 
         {/* Caption overlay */}
         {STEPS[currentStep]?.caption && (
           <div
-            className="caption-overlay absolute bottom-8 left-1/2 -translate-x-1/2 max-w-lg mx-auto px-6 py-4 rounded-xl"
+            className="caption-overlay absolute bottom-10 left-1/2 -translate-x-1/2 max-w-lg mx-auto px-7 py-5 rounded-2xl"
             style={{
               zIndex: 20,
               animation: 'fadeInCaption 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
             }}
+            key={`caption-${currentStep}`}
           >
             <span
-              className="inline-block font-pixel text-[8px] tracking-wider mb-2 px-2 py-1 rounded-full"
+              className="inline-block font-pixel text-[8px] tracking-wider mb-2 px-2.5 py-1 rounded-full"
               style={{
                 background: currentStep <= 3
                   ? 'rgba(212, 165, 116, 0.25)'
