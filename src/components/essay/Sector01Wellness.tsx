@@ -298,8 +298,8 @@ export default function Sector01Wellness() {
       )}
 
       {/* ===== ERA TRANSITION BAR ===== */}
-      <section className="py-20 px-4" style={{ background: '#000' }}>
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="py-20 px-4 relative section-wipe" style={{ background: '#000' }}>
+        <div ref={transitionRef} className="reveal-stagger max-w-3xl mx-auto text-center">
           <p className="font-mono text-sm glitch-text mb-8" style={{ color: 'hsl(145, 80%, 50%)' }}>
             FAST FORWARDING... 1985 TO 2022
           </p>
