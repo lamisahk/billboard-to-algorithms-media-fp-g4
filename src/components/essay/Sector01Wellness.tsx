@@ -180,8 +180,11 @@ export default function Sector01Wellness() {
       {/* ===== 1980s ADS (Mode 1) ===== */}
       <section className="mac-desktop py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
+          <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white', textShadow: '1px 1px 0 rgba(0,0,0,0.2)' }}>
+            1980s Advertisements
+          </h3>
           <p className="font-pixel text-[10px] tracking-[0.3em] text-center mb-8" style={{ color: 'hsl(180, 100%, 80%)' }}>
-            1980s ADVERTISEMENTS
+            BROADCAST ERA
           </p>
         </div>
 
@@ -319,8 +322,11 @@ export default function Sector01Wellness() {
         }}
       >
         <div className="max-w-4xl mx-auto mb-8">
+          <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white' }}>
+            2020s Advertisements
+          </h3>
           <p className="font-pixel text-[10px] tracking-[0.3em] text-center mb-8" style={{ color: 'hsl(330, 90%, 65%)' }}>
-            2020s ADVERTISEMENTS
+            ALGORITHMIC ERA
           </p>
         </div>
 
@@ -408,6 +414,9 @@ export default function Sector01Wellness() {
         }}
       >
         <div className="max-w-4xl mx-auto">
+          <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white' }}>
+            Comparative Summary
+          </h3>
           <p className="font-pixel text-[10px] tracking-[0.3em] text-center mb-10" style={{ color: 'hsl(330, 90%, 65%)' }}>
             COMPARATIVE SUMMARY
           </p>
@@ -453,11 +462,14 @@ export default function Sector01Wellness() {
         }}
       >
         <div ref={perspectiveRef} className="reveal max-w-3xl mx-auto">
-          <p className="font-pixel text-[10px] tracking-[0.3em] mb-6" style={{ color: 'hsl(330, 90%, 65%)' }}>
-            SECTOR PERSPECTIVE
+          <h3 className="font-display text-3xl md:text-5xl font-bold mb-3" style={{ color: 'white' }}>
+            Sector Perspective
+          </h3>
+          <p className="font-pixel text-[10px] tracking-[0.3em] mb-8" style={{ color: 'hsl(330, 90%, 65%)' }}>
+            BIOMEDICAL LENS
           </p>
           <div className="sector-perspective">
-            <h4 className="font-display text-lg font-bold mb-4" style={{ color: 'white' }}>
+            <h4 className="font-display text-xl md:text-2xl font-bold mb-4" style={{ color: 'white' }}>
               Medicalization, Commodification, and the Expanding Definition of Health
             </h4>
             <p className="font-mono text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
