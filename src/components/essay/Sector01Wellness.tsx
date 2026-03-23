@@ -2,6 +2,7 @@ import MacWindow from "./MacWindow";
 import AnalysisAccordion from "./AnalysisAccordion";
 import InstagramCard from "./InstagramCard";
 import { useState } from "react";
+import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 
 /* ====== AD DATA ====== */
 
@@ -125,11 +126,22 @@ const himsDimensions = [
 export default function Sector01Wellness() {
   const [dialogDismissed, setDialogDismissed] = useState(false);
 
+  const headerRef = useScrollReveal<HTMLDivElement>(0.2);
+  const introRef = useScrollReveal<HTMLDivElement>();
+  const ad1Ref = useScrollReveal<HTMLDivElement>();
+  const ad2Ref = useScrollReveal<HTMLDivElement>();
+  const transitionRef = useStaggerReveal<HTMLDivElement>();
+  const ad3Ref = useScrollReveal<HTMLDivElement>();
+  const ad4Ref = useScrollReveal<HTMLDivElement>();
+  const ad5Ref = useScrollReveal<HTMLDivElement>();
+  const summaryRef = useStaggerReveal<HTMLDivElement>();
+  const perspectiveRef = useScrollReveal<HTMLDivElement>();
+
   return (
     <div>
       {/* ===== SECTOR HEADER (Mode 1) ===== */}
       <section className="mac-desktop py-24 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div ref={headerRef} className="reveal-blur max-w-4xl mx-auto text-center">
           <p className="font-pixel text-[10px] tracking-[0.3em] mb-4" style={{ color: 'hsl(180, 100%, 80%)' }}>
             SECTOR
           </p>
@@ -149,17 +161,19 @@ export default function Sector01Wellness() {
 
       {/* ===== INTRO WINDOW (Mode 1) ===== */}
       <section className="mac-desktop py-16 px-4">
-        <MacWindow title="sector_01_intro.txt">
-          <p className="mb-4">
-            Wellness advertising occupies a uniquely intimate territory in the broader advertising landscape. Unlike ads for software or financial products, wellness advertising targets the body itself, making it the most powerful sector for identity construction this project examines. The body is where personal insecurity lives most immediately, and wellness advertising has always known this. From the 1980s to the present, it has operated by taking ordinary biological experiences, reframing them as deficiencies, and attaching purchasable solutions to them.
-          </p>
-          <p className="mb-4">
-            What makes this sector particularly significant from a biomedical perspective is the question of what counts as a medical problem in the first place. The definition has not stayed still. In the 1980s, wellness advertising primarily medicalized body size: excess weight was framed as both an aesthetic failure and a health risk, and the solution was a product. By the 2020s, that medicalization had expanded dramatically. Gut bacteria, cortisol levels, inflammation, sleep cycles, hormones, and emotional relationships with food had all become targets of commercial health intervention. Normal biological variation became, in the language of modern wellness advertising, a set of systems requiring optimization.
-          </p>
-          <p>
-            This shift from fixing visible problems to optimizing invisible processes is the central transformation this sector documents. Between the 1980s and 2020s, the scope of what wellness advertising claimed authority over grew from the scale to the cell, and the commercial infrastructure for delivering those claims moved from the television screen to the algorithmic feed.
-          </p>
-        </MacWindow>
+        <div ref={introRef} className="reveal">
+          <MacWindow title="sector_01_intro.txt">
+            <p className="mb-4">
+              Wellness advertising occupies a uniquely intimate territory in the broader advertising landscape. Unlike ads for software or financial products, wellness advertising targets the body itself, making it the most powerful sector for identity construction this project examines. The body is where personal insecurity lives most immediately, and wellness advertising has always known this. From the 1980s to the present, it has operated by taking ordinary biological experiences, reframing them as deficiencies, and attaching purchasable solutions to them.
+            </p>
+            <p className="mb-4">
+              What makes this sector particularly significant from a biomedical perspective is the question of what counts as a medical problem in the first place. The definition has not stayed still. In the 1980s, wellness advertising primarily medicalized body size: excess weight was framed as both an aesthetic failure and a health risk, and the solution was a product. By the 2020s, that medicalization had expanded dramatically. Gut bacteria, cortisol levels, inflammation, sleep cycles, hormones, and emotional relationships with food had all become targets of commercial health intervention. Normal biological variation became, in the language of modern wellness advertising, a set of systems requiring optimization.
+            </p>
+            <p>
+              This shift from fixing visible problems to optimizing invisible processes is the central transformation this sector documents. Between the 1980s and 2020s, the scope of what wellness advertising claimed authority over grew from the scale to the cell, and the commercial infrastructure for delivering those claims moved from the television screen to the algorithmic feed.
+            </p>
+          </MacWindow>
+        </div>
       </section>
 
       {/* ===== 1980s ADS (Mode 1) ===== */}
@@ -171,7 +185,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #1: Special K */}
-        <div className="max-w-4xl mx-auto mb-12">
+        <div ref={ad1Ref} className="reveal-left max-w-4xl mx-auto mb-12">
           <MacWindow title="Ad_01_SpecialK_1985.txt">
             <div className="mb-4">
               <span className="font-pixel text-[9px] inline-block px-2 py-1 mb-3 rounded" style={{ background: 'hsl(210, 50%, 88%)', color: 'hsl(215, 70%, 30%)' }}>
@@ -203,7 +217,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #2: Dexatrim (Print ad card) */}
-        <div className="max-w-4xl mx-auto mb-12">
+        <div ref={ad2Ref} className="reveal-right max-w-4xl mx-auto mb-12">
           <MacWindow title="Ad_02_Dexatrim_1980.txt">
             <div className="mb-4">
               <span className="font-pixel text-[9px] inline-block px-2 py-1 mb-3 rounded" style={{ background: 'hsl(210, 50%, 88%)', color: 'hsl(215, 70%, 30%)' }}>
@@ -284,8 +298,8 @@ export default function Sector01Wellness() {
       )}
 
       {/* ===== ERA TRANSITION BAR ===== */}
-      <section className="py-20 px-4" style={{ background: '#000' }}>
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="py-20 px-4 relative section-wipe" style={{ background: '#000' }}>
+        <div ref={transitionRef} className="reveal-stagger max-w-3xl mx-auto text-center">
           <p className="font-mono text-sm glitch-text mb-8" style={{ color: 'hsl(145, 80%, 50%)' }}>
             FAST FORWARDING... 1985 TO 2022
           </p>
@@ -315,7 +329,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #3: Ozempic */}
-        <div className="mb-16">
+        <div ref={ad3Ref} className="reveal-scale mb-16">
           <InstagramCard
             username="ozempic"
             sponsored
@@ -340,7 +354,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #4: Noom */}
-        <div className="mb-16">
+        <div ref={ad4Ref} className="reveal-scale mb-16">
           <InstagramCard
             username="noom"
             sponsored
@@ -365,7 +379,7 @@ export default function Sector01Wellness() {
         </div>
 
         {/* Ad #5: Hims & Hers */}
-        <div className="mb-16">
+        <div ref={ad5Ref} className="reveal-scale mb-16">
           <InstagramCard
             username="himshers"
             sponsored
@@ -402,7 +416,7 @@ export default function Sector01Wellness() {
             COMPARATIVE SUMMARY
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div ref={summaryRef} className="reveal-stagger grid md:grid-cols-2 gap-8 mb-12">
             {/* What Changed */}
             <div className="rounded-xl p-6" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
               <h4 className="font-display text-xl font-bold mb-4" style={{ color: 'hsl(145, 80%, 60%)' }}>
@@ -442,7 +456,7 @@ export default function Sector01Wellness() {
           background: 'radial-gradient(ellipse at 70% 70%, hsl(330, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)',
         }}
       >
-        <div className="max-w-3xl mx-auto">
+        <div ref={perspectiveRef} className="reveal max-w-3xl mx-auto">
           <p className="font-pixel text-[10px] tracking-[0.3em] mb-6" style={{ color: 'hsl(330, 90%, 65%)' }}>
             SECTOR PERSPECTIVE
           </p>
