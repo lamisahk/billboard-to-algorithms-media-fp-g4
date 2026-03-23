@@ -297,18 +297,27 @@ export default function Sector01Wellness() {
       )}
 
       {/* ===== ERA TRANSITION BAR ===== */}
-      <section className="py-20 px-4 relative section-wipe" style={{ background: '#000' }}>
+      <section className="py-24 px-4 relative section-wipe" style={{ background: '#000' }}>
         <div ref={transitionRef} className="reveal-stagger max-w-3xl mx-auto text-center">
-          <p className="font-mono text-sm glitch-text mb-8" style={{ color: 'hsl(145, 80%, 50%)' }}>
-            FAST FORWARDING... 1985 TO 2022
+          <p className="font-mono text-xs tracking-widest glitch-text mb-4" style={{ color: 'hsl(145, 80%, 50%)' }}>
+            FAST FORWARDING...
           </p>
-          <div className="flex items-center justify-center gap-8">
-            <div className="px-4 py-2 rounded-full" style={{ border: '1px solid hsl(180, 100%, 30%)', color: 'hsl(180, 100%, 70%)' }}>
-              <span className="font-pixel text-[9px] tracking-wider">Body = Problem</span>
+          <p className="font-display text-2xl md:text-4xl font-bold mb-10" style={{ color: 'white' }}>
+            1985 → 2022
+          </p>
+          <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap">
+            <div className="px-6 py-3 rounded-lg" style={{ background: 'rgba(0, 200, 200, 0.08)', border: '1px solid hsl(180, 100%, 30%)' }}>
+              <p className="font-display text-base md:text-lg font-semibold tracking-wide" style={{ color: 'hsl(180, 100%, 75%)' }}>
+                The body is the problem
+              </p>
+              <p className="font-mono text-[10px] mt-1" style={{ color: 'hsl(180, 80%, 45%)' }}>pinch it, weigh it, fix it</p>
             </div>
-            <div className="font-mono text-lg" style={{ color: '#555' }}>→</div>
-            <div className="px-4 py-2 rounded-full" style={{ border: '1px solid hsl(270, 50%, 50%)', color: 'hsl(270, 50%, 75%)' }}>
-              <span className="font-pixel text-[9px] tracking-wider">Everything = Problem</span>
+            <div className="font-display text-2xl font-light" style={{ color: 'hsl(145, 80%, 40%)' }}>→</div>
+            <div className="px-6 py-3 rounded-lg" style={{ background: 'rgba(168, 85, 247, 0.08)', border: '1px solid hsl(270, 50%, 50%)' }}>
+              <p className="font-display text-base md:text-lg font-semibold tracking-wide" style={{ color: 'hsl(270, 60%, 78%)' }}>
+                Everything is the problem
+              </p>
+              <p className="font-mono text-[10px] mt-1" style={{ color: 'hsl(270, 40%, 50%)' }}>optimize it, track it, subscribe</p>
             </div>
           </div>
         </div>
