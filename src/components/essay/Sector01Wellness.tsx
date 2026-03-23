@@ -3,6 +3,7 @@ import AnalysisAccordion from "./AnalysisAccordion";
 import InstagramCard from "./InstagramCard";
 import { useState } from "react";
 import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
+import dexatrimAd from "@/assets/dexatrim-ad.jpg";
 
 /* ====== AD DATA ====== */
 
