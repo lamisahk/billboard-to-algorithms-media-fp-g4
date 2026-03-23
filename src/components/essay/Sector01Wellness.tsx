@@ -2,6 +2,7 @@ import MacWindow from "./MacWindow";
 import AnalysisAccordion from "./AnalysisAccordion";
 import InstagramCard from "./InstagramCard";
 import { useState } from "react";
+import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 
 /* ====== AD DATA ====== */
 
