@@ -469,7 +469,7 @@ export default function Sector01Wellness() {
             BIOMEDICAL LENS
           </p>
           <div className="sector-perspective">
-            <h4 className="font-display text-lg font-bold mb-4" style={{ color: 'white' }}>
+            <h4 className="font-display text-xl md:text-2xl font-bold mb-4" style={{ color: 'white' }}>
               Medicalization, Commodification, and the Expanding Definition of Health
             </h4>
             <p className="font-mono text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.8)' }}>
