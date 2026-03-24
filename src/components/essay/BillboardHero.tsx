@@ -143,6 +143,18 @@ export default function BillboardHero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const stepsRef = useRef<HTMLDivElement>(null);
 
+  const goTo = (index: number) => {
+    const clamped = Math.max(0, Math.min(STEPS.length - 1, index));
+    setCurrentStep(clamped);
+    if (clamped === 4) {
+      setGlitching(true);
+      setTimeout(() => setGlitching(false), 1200);
+    }
+    // Scroll to the matching step element
+    const stepEl = stepsRef.current?.querySelectorAll(".hero-step")[clamped];
+    stepEl?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
   const stars = useMemo(() => {
     return Array.from({ length: 60 }, (_, i) => ({
       id: i,
