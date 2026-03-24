@@ -1,14 +1,18 @@
 import { useEffect, useRef, useState, useMemo } from "react";
 import scrollama from "scrollama";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const STEPS = [
   {
     billboard: (
-      <div className="flex flex-col items-center justify-center h-full px-8 py-10 gap-4">
+      <div className="flex flex-col items-center justify-center h-full px-6 py-8 gap-3">
         <p className="font-pixel text-[8px] tracking-[0.3em] text-stone-400 uppercase">MCOM 103 · Group 4 (L51)</p>
-        <h1 className="font-display text-4xl md:text-6xl font-black text-center tracking-tight leading-[1.1] text-stone-800">
+        <h1 className="font-display text-3xl md:text-5xl font-black text-center tracking-tight leading-[1.1] text-stone-800">
           From Billboards<br />to Algorithms
         </h1>
+        <p className="font-serif text-xs md:text-sm text-center italic text-stone-500 leading-relaxed max-w-xs">
+          The Evolution of Advertising<br />as Social Engineering (1980s–2020s)
+        </p>
         <div className="flex gap-1.5 mt-1">
           <div className="w-10 h-1 rounded-full bg-amber-400/70" />
           <div className="w-10 h-1 rounded-full bg-rose-400/70" />
@@ -138,6 +142,18 @@ export default function BillboardHero() {
   const [glitching, setGlitching] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const stepsRef = useRef<HTMLDivElement>(null);
+
+  const goTo = (index: number) => {
+    const clamped = Math.max(0, Math.min(STEPS.length - 1, index));
+    setCurrentStep(clamped);
+    if (clamped === 4) {
+      setGlitching(true);
+      setTimeout(() => setGlitching(false), 1200);
+    }
+    // Scroll to the matching step element
+    const stepEl = stepsRef.current?.querySelectorAll(".hero-step")[clamped];
+    stepEl?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
 
   const stars = useMemo(() => {
     return Array.from({ length: 60 }, (_, i) => ({
@@ -319,6 +335,49 @@ export default function BillboardHero() {
             style={{ background: 'radial-gradient(ellipse, rgba(0,0,0,0.35), transparent)' }}
           />
         </div>
+
+        {/* Prev/Next arrows */}
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4" style={{ zIndex: 25, bottom: STEPS[currentStep]?.caption ? '6rem' : '2.5rem' }}>
+          <button
+            onClick={() => goTo(currentStep - 1)}
+            disabled={currentStep === 0}
+            className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+            style={{
+              background: currentStep === 0 ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.1)',
+              color: currentStep === 0 ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.6)',
+              cursor: currentStep === 0 ? 'default' : 'pointer',
+              border: '1px solid rgba(255,255,255,0.1)',
+            }}
+          >
+            <ChevronLeft size={16} />
+          </button>
+          <span className="font-mono text-[9px] tracking-wider" style={{ color: 'rgba(255,255,255,0.3)' }}>
+            {currentStep + 1} / {STEPS.length}
+          </span>
+          <button
+            onClick={() => goTo(currentStep + 1)}
+            disabled={currentStep === STEPS.length - 1}
+            className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+            style={{
+              background: currentStep === STEPS.length - 1 ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.1)',
+              color: currentStep === STEPS.length - 1 ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.6)',
+              cursor: currentStep === STEPS.length - 1 ? 'default' : 'pointer',
+              border: '1px solid rgba(255,255,255,0.1)',
+            }}
+          >
+            <ChevronRight size={16} />
+          </button>
+        </div>
+
+        {/* Scroll cue */}
+        {currentStep === 0 && (
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center" style={{ zIndex: 25 }}>
+            <p className="font-mono text-lg text-white/40 animate-bounce">↓</p>
+            <p className="font-mono text-[9px] tracking-wider mt-1" style={{ color: 'rgba(255,255,255,0.25)' }}>
+              scroll slowly
+            </p>
+          </div>
+        )}
 
         {/* Caption overlay */}
         {STEPS[currentStep]?.caption && (
