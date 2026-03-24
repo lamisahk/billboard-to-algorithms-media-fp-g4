@@ -14,12 +14,13 @@ export default function ScrollProgressBar() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 h-[2px] z-50" style={{ background: 'rgba(255,255,255,0.1)' }}>
+    <div className="fixed top-0 left-0 right-0 h-[3px] z-50" style={{ background: 'rgba(255,255,255,0.05)' }}>
       <div
         className="h-full transition-[width] duration-75"
         style={{
           width: `${progress}%`,
-          background: 'linear-gradient(90deg, hsl(330, 90%, 55%), hsl(38, 95%, 55%), hsl(145, 80%, 50%))'
+          background: 'linear-gradient(90deg, hsl(var(--ig-pink)), hsl(var(--ig-amber)), hsl(var(--ig-green)))',
+          boxShadow: `0 0 8px hsl(330 90% 55% / 0.4), 0 0 20px hsl(330 90% 55% / 0.15)`,
         }}
       />
     </div>

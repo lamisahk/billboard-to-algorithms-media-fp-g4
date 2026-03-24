@@ -57,7 +57,7 @@ export default function ChapterNav() {
 
   return (
     <nav
-      className="fixed left-4 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-0"
+      className="fixed left-4 top-1/2 -translate-y-1/2 z-40 hidden md:flex flex-col items-center gap-0"
       style={{ transition: 'opacity 0.4s', opacity: visible ? 1 : 0 }}
     >
       {/* Spine line */}
