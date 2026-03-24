@@ -527,3 +527,36 @@ html {
   animation: cursorBlink 0.8s step-end infinite;
   padding-right: 2px;
 }
+
+/* ======= LOADING DOTS ======= */
+@keyframes loadingDot {
+  0%, 80%, 100% { opacity: 0.2; transform: scale(0.8); }
+  40% { opacity: 1; transform: scale(1.2); }
+}
+
+/* ======= SECTOR-SPECIFIC DESKTOPS ======= */
+.desktop-wellness {
+  background-color: #7A2848 !important;
+  background-image: repeating-conic-gradient(#6B2040 0% 25%, #8A3050 0% 50%) !important;
+  background-size: 8px 8px !important;
+}
+.desktop-business {
+  background-color: #6B2D3E !important;
+  background-image: repeating-conic-gradient(#5C2535 0% 25%, #7B3548 0% 50%) !important;
+  background-size: 8px 8px !important;
+}
+.desktop-investment {
+  background-color: #2E5233 !important;
+  background-image: repeating-conic-gradient(#264A2B 0% 25%, #365A3B 0% 50%) !important;
+  background-size: 8px 8px !important;
+}
+.desktop-software {
+  background-color: #3D4F6B !important;
+  background-image: repeating-conic-gradient(#354762 0% 25%, #455774 0% 50%) !important;
+  background-size: 8px 8px !important;
+}
+.desktop-wearables {
+  background-color: #5C4468 !important;
+  background-image: repeating-conic-gradient(#503C5E 0% 25%, #684C72 0% 50%) !important;
+  background-size: 8px 8px !important;
+}
