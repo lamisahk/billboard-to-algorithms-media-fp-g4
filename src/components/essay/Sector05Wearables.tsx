@@ -329,7 +329,7 @@ export default function Sector05Wearables() {
           <InstagramCard
             username="ouraring"
             verified
-            caption="Know why you feel how you feel. Your body has a story. Oura helps you read it."
+            caption="A sixty-second brand spot structured as a series of three vignettes, each built around a nursery rhyme call-and-response format. In the first, a woman wakes to her 5:30am alarm with a poor sleep score; the alarm itself tells her she is tired and she knows it, so she can skip the gym. In the second, a man under stress at a library is prompted by a fellow patron voicing his ring: he is anxious and due for a break. In the third, a woman cycles past a stalled car in peak condition; the impressed onlookers recite her biometric data in harmony: &quot;If your heart rate variability is 50 and your body temperature is normal, if your breathing rate is optimal and you know it: bring it on.&quot; The ad presents the ring's data not as surveillance but as a trusted companion that speaks on the wearer's behalf."
             dimensions={ouraDimensions}
           >
             <div className="embed-container">
