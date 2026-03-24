@@ -180,7 +180,7 @@ export default function IntroSections() {
   const mechanismsRef = useStaggerReveal<HTMLDivElement>();
 
   return (
-    <div>
+    <div id="literature">
       {/* ===== INTRODUCTION (Mode 1) ===== */}
       <section className="mac-desktop py-20 px-4">
         <div ref={introRef} className="reveal">
