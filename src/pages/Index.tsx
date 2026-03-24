@@ -5,6 +5,7 @@ import Sector02Business from "@/components/essay/Sector02Business";
 import Sector03Investment from "@/components/essay/Sector03Investment";
 import Sector04Software from "@/components/essay/Sector04Software";
 import Sector05Wearables from "@/components/essay/Sector05Wearables";
+import ComparativeAnalysis from "@/components/essay/ComparativeAnalysis";
 
 // Visual essay page
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <Sector03Investment />
       <Sector04Software />
       <Sector05Wearables />
+      <ComparativeAnalysis />
     </main>
   );
 };
