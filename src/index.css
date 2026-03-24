@@ -28,9 +28,9 @@
     /* Mode 3: Editorial */
     --ed-bg: 40 30% 96%;
     --ed-fg: 220 20% 15%;
-    --ed-accent-border: 330 80% 55%;
+    --ed-accent-border: 340 55% 72%;
     --ed-muted: 220 10% 50%;
-    --ed-rainbow: linear-gradient(90deg, hsl(330, 80%, 55%), hsl(20, 70%, 50%), hsl(38, 95%, 55%), hsl(145, 80%, 50%));
+    --ed-rainbow: linear-gradient(90deg, hsl(340, 55%, 72%), hsl(275, 35%, 55%), hsl(35, 65%, 65%), hsl(165, 35%, 55%));
 
     /* Shared */
     --background: 0 0% 100%;
