@@ -1,3 +1,4 @@
+import { useState, useCallback } from "react";
 import BillboardHero from "@/components/essay/BillboardHero";
 import IntroSections from "@/components/essay/IntroSections";
 import Sector01Wellness from "@/components/essay/Sector01Wellness";
@@ -13,11 +14,16 @@ import ScrollProgressBar from "@/components/essay/ScrollProgressBar";
 import ChapterNav from "@/components/essay/ChapterNav";
 import BackToTop from "@/components/essay/BackToTop";
 import TopNav from "@/components/essay/TopNav";
+import SplashScreen from "@/components/essay/SplashScreen";
 
 // Visual essay page
 const Index = () => {
+  const [splashDone, setSplashDone] = useState(false);
+  const handleSplashDone = useCallback(() => setSplashDone(true), []);
+
   return (
     <main className="min-h-screen" style={{ background: '#000' }}>
+      {!splashDone && <SplashScreen onDone={handleSplashDone} />}
       <ScrollProgressBar />
       <TopNav />
       <ChapterNav />
