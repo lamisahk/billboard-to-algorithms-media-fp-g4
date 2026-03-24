@@ -292,7 +292,7 @@ export default function Sector02Business() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 20% 50%, hsl(270, 60%, 18%), transparent 60%), radial-gradient(ellipse at 80% 50%, hsl(330, 50%, 20%), transparent 60%), hsl(270, 60%, 8%)'
+          background: 'radial-gradient(ellipse at 20% 50%, rgba(107,163,214,0.2), transparent 60%), radial-gradient(ellipse at 80% 50%, rgba(107,163,214,0.1), transparent 60%), #0D1F3C'
         }}>
         
         <div className="max-w-4xl mx-auto mb-8">
@@ -359,7 +359,7 @@ export default function Sector02Business() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 30% 30%, hsl(270, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+          background: 'radial-gradient(ellipse at 30% 30%, rgba(107,163,214,0.15), transparent 60%), #0D1F3C'
         }}>
         
         <div className="max-w-4xl mx-auto">
@@ -407,7 +407,7 @@ export default function Sector02Business() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 70% 70%, hsl(330, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+          background: 'radial-gradient(ellipse at 70% 70%, rgba(107,163,214,0.15), transparent 60%), #0D1F3C'
         }}>
         
         <div ref={perspectiveRef} className="reveal max-w-3xl mx-auto">
