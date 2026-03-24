@@ -130,7 +130,7 @@ export default function Sector03Investment() {
           </h3>
           <div className="inline-block px-4 py-2 rounded" style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>
             <p className="font-pixel text-[9px] tracking-wider" style={{ color: 'hsl(180, 100%, 85%)' }}>
-              ALMAHA · ECONOMICS
+              ALMAHA · ACCOUNTING
             </p>
           </div>
         </div>
@@ -214,13 +214,17 @@ export default function Sector03Investment() {
               A sixty-second spot in which Merrill Lynch's bull moves slowly and deliberately through a room filled floor to ceiling with fine crystal. The setting is immediately recognisable as a subversion of the idiom "bull in a china shop." Rather than causing destruction, the bull moves with precision and calm, navigating the fragile environment without a single breakage. The voiceover states: "Picking and choosing the right investments requires very careful handling. One wrong move can easily damage the best laid plans. At Merrill Lynch, we know that size and strength can be very valuable. But it is our sensitivity to your investment goals, and agility in helping you reach them, that makes us what we are. Merrill Lynch: a breed apart."
             </p>
 
-            <div className="embed-container mb-4 rounded overflow-hidden">
+            <div className="embed-container mb-4 rounded overflow-hidden" style={{ border: '1px solid #ccc' }}>
               <iframe
+                width="560"
+                height="315"
                 src="https://www.youtube.com/embed/CFGejir5ByQ"
                 title="Merrill Lynch A Breed Apart 1981"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 loading="lazy"
-              />
+                style={{ border: 0 }}
+              ></iframe>
             </div>
 
             <AnalysisAccordion dimensions={merrillDimensions} variant="mac" />
