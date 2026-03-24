@@ -307,7 +307,7 @@ export default function Sector05Wearables() {
           <InstagramCard
             username="apple"
             verified
-            caption="With the help of their watch, Jason, Jim and Amanda were rescued in minutes. Apple Watch Series 7."
+            caption="A sixty-second television and digital commercial released on 1 January 2022 in which Apple plays back audio from three real 911 emergency calls made through Apple Watch Series 7. The first caller is a woman whose car has flipped and is filling with water up to her neck. The second is a paddleboarder blown out to sea by strong wind. The third is an elderly farmer who has fallen from a ladder and broken his leg. None of the callers could reach their iPhone. All three reached emergency services through the Watch. The ad closes with the text: &quot;With the help of their watch, Jason, Jim and Amanda were rescued in minutes.&quot; The Watch itself is never shown. The campaign included four separate spots and won a D&AD award in 2022."
             dimensions={appleWatchDimensions}
           >
             <div className="embed-container">
