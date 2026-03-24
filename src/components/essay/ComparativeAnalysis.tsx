@@ -359,10 +359,10 @@ export default function ComparativeAnalysis() {
           MCOM 103 · GROUP 4 (L51)
         </p>
         <p className="font-pixel text-[8px] tracking-wider mb-4" style={{ color: 'rgba(255,255,255,0.4)' }}>
-          FROM BILLBOARDS TO ALGORITHMS · MARCH 2026
+          · MADE WITH 🤍
         </p>
         <p className="font-mono text-[10px]" style={{ color: 'rgba(255,255,255,0.3)' }}>
-          Lamisah · Hiba · Almaha · Lamis · Alreem
+          Lamisah Behram Khan · Hiba Halabi · Almaha Al-Khuzaei · Lamis Qusair · Alreem Al-Dosari
         </p>
       </section>
     </div>
