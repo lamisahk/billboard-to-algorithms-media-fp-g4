@@ -134,9 +134,11 @@ export default function StickyTimeline() {
                 className="rounded-xl p-6"
                 style={{
                   background: "rgba(255,255,255,0.03)",
-                  border: "1px solid rgba(255,255,255,0.08)",
+                  borderLeft: `1px solid ${current.color}33`,
+                  borderRight: `1px solid ${current.color}33`,
+                  borderTop: `1px solid ${current.color}33`,
+                  borderBottom: `1px solid ${current.color}33`,
                   transition: "border-color 0.5s ease",
-                  borderColor: `${current.color}33`,
                 }}
               >
                 <p className="font-pixel text-[9px] tracking-[0.3em] mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>
