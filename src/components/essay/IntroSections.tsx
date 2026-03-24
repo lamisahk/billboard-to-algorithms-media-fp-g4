@@ -182,7 +182,7 @@ export default function IntroSections() {
   return (
     <div>
       {/* ===== INTRODUCTION (Mode 1) ===== */}
-      <section className="mac-desktop py-20 px-4">
+      <section id="introduction" className="mac-desktop py-20 px-4">
         <div ref={introRef} className="reveal">
           <MacWindow title="Introduction.txt">
             <p className="mb-4">Every year, the average person encounters thousands of advertisements. In the 1980s, you could see them coming: a commercial break, a magazine spread, a billboard on the highway etc. You knew it was an ad. You could look away.  
@@ -191,15 +191,9 @@ export default function IntroSections() {
 
             </p>
 
-            <div className="my-6 py-4 px-6 text-center rounded font-serif" style={{
-              background: "hsl(210, 50%, 88%)",
-              border: "2px solid hsl(210, 50%, 78%)"
-            }}>
-              
-              <p className="text-2xl font-mono font-medium md:text-lg" style={{ color: "hsl(215, 70%, 30%)" }}>
-                Today you cannot.
-              </p>
-            </div>
+            <p className="my-6 text-2xl font-mono font-medium md:text-lg text-center" style={{ color: "hsl(215, 70%, 30%)" }}>
+              Today you cannot.
+            </p>
 
             <p className="mb-4">
               The ad arrives as a friend's recommendation, a podcast host's morning routine, a documentary on a streaming platform. It knows what you searched three days ago and what you're likely to want before you've consciously decided you want it. Advertising didn't just change its format. It dissolved into the infrastructure of daily life, and somewhere in that process, it stopped looking like advertising at all.
@@ -215,7 +209,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== LITERATURE REVIEW (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section id="literature" className="mac-desktop py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,0.2)" }}>
             Literature Review
@@ -285,7 +279,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== ANALYSIS FRAMEWORK (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section id="framework" className="mac-desktop py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,0.2)" }}>
             Analysis Framework
@@ -341,7 +335,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== MECHANICS OF INVISIBILITY (Split screen) ===== */}
-      <section className="py-20 px-4" style={{ background: "#000" }}>
+      <section id="mechanics" className="py-20 px-4" style={{ background: "#000" }}>
         <div ref={mechanicsHeaderRef} className="reveal-blur max-w-4xl mx-auto text-center mb-12">
           <h3 className="font-display text-3xl md:text-5xl font-bold mb-3" style={{ color: "white" }}>
             The Mechanics of Invisibility
