@@ -189,17 +189,6 @@ export default function IntroSections() {
               Every year, the average person encounters thousands of advertisements. In the 1980s, you could see them coming: a commercial break, a magazine spread, a billboard on the highway etc. You knew it was an ad. You could look away.
             </p>
 
-            <div
-              className="my-6 py-4 px-6 text-center rounded"
-              style={{
-                background: "hsl(210, 50%, 88%)",
-                border: "2px solid hsl(210, 50%, 78%)",
-              }}
-            >
-              <p className="font-display text-2xl md:text-3xl font-bold" style={{ color: "hsl(215, 70%, 30%)" }}>
-                Today you cannot.
-              </p>
-            </div>
 
             <p className="mb-4">
               The ad arrives as a friend's recommendation, a podcast host's morning routine, a documentary on a streaming platform. It knows what you searched three days ago and what you're likely to want before you've consciously decided you want it. Advertising didn't just change its format. It dissolved into the infrastructure of daily life, and somewhere in that process, it stopped looking like advertising at all.
