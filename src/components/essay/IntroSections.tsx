@@ -6,133 +6,133 @@ import { ChevronDown, FileText } from "lucide-react";
 /* ====== ACADEMIC SOURCES ====== */
 
 const academicSources = [
-{
-  id: "packard",
-  label: "Packard 1957",
-  title: "The Hidden Persuaders",
-  author: "Vance Packard",
-  type: "academic" as const,
-  summary:
-  "Advertisers have long used depth psychology and motivational research to influence consumer decisions below the level of conscious awareness, meaning advertising manufactures want rather than responding to them."
-},
-{
-  id: "hall",
-  label: "Hall 1980",
-  title: "Encoding/Decoding",
-  author: "Stuart Hall",
-  type: "academic" as const,
-  summary:
-  "Media texts are encoded with dominant ideological meanings by producers, but audiences can accept, negotiate, or resist those meanings. Recognition of persuasive intent is the first condition of resistance."
-},
-{
-  id: "baudrillard",
-  label: "Baudrillard 1998",
-  title: "The Consumer Society: Myths and Structures",
-  author: "Jean Baudrillard",
-  type: "academic" as const,
-  summary:
-  "Consumption in late capitalism is fundamentally about purchasing signs and identities rather than satisfying material needs. Advertising sells who you should become, not what you should own."
-},
-{
-  id: "turow",
-  label: "Turow 2011",
-  title: "The Daily You",
-  author: "Joseph Turow",
-  type: "academic" as const,
-  summary:
-  "Digital advertising infrastructure sorts individuals into algorithmically constructed audience segments, creating fragmented commercial realities where different people receive entirely different information, prices, and opportunities based on their data profiles."
-},
-{
-  id: "zuboff",
-  label: "Zuboff 2019",
-  title: "The Age of Surveillance Capitalism",
-  author: "Shoshana Zuboff",
-  type: "academic" as const,
-  summary:
-  "Behavioral data harvested through digital platforms is not simply used to target ads more accurately but to predict and modify future behavior before decisions are consciously made, shifting advertising from persuasion into behavioral engineering."
-},
-{
-  id: "vanreijmersdal",
-  label: "Van Reijmersdal et al. 2023",
-  title: "Disclosure-Driven Recognition of Native Advertising",
-  author: "Van Reijmersdal, Brussee, Evans, and Wojdynski",
-  type: "primary" as const,
-  summary:
-  "Even when legal disclosure labels were present, the structural embedding of sponsored content within editorial formats consistently prevented consumers from recognizing commercial intent, and when recognition did occur, it produced skepticism toward publishers rather than rejection of the ad."
-},
-{
-  id: "dekeyzer",
-  label: "De Keyzer et al. 2024",
-  title: "The Role of Well-Being in Consumers' Responses to Personalized Advertising",
-  author: "De Keyzer, Dens, De Pelsmacker, and van Noort",
-  type: "primary" as const,
-  summary:
-  "Highly personalized social media advertising produced not only higher brand engagement but measurable effects on consumers' self-perception and sense of identity, confirming that algorithmic advertising actively participates in constructing who consumers understand themselves to be."
-}];
-
+  {
+    id: "packard",
+    label: "Packard 1957",
+    title: "The Hidden Persuaders",
+    author: "Vance Packard",
+    type: "academic" as const,
+    summary:
+      "Advertisers have long used depth psychology and motivational research to influence consumer decisions below the level of conscious awareness, meaning advertising manufactures want rather than responding to them.",
+  },
+  {
+    id: "hall",
+    label: "Hall 1980",
+    title: "Encoding/Decoding",
+    author: "Stuart Hall",
+    type: "academic" as const,
+    summary:
+      "Media texts are encoded with dominant ideological meanings by producers, but audiences can accept, negotiate, or resist those meanings. Recognition of persuasive intent is the first condition of resistance.",
+  },
+  {
+    id: "baudrillard",
+    label: "Baudrillard 1998",
+    title: "The Consumer Society: Myths and Structures",
+    author: "Jean Baudrillard",
+    type: "academic" as const,
+    summary:
+      "Consumption in late capitalism is fundamentally about purchasing signs and identities rather than satisfying material needs. Advertising sells who you should become, not what you should own.",
+  },
+  {
+    id: "turow",
+    label: "Turow 2011",
+    title: "The Daily You",
+    author: "Joseph Turow",
+    type: "academic" as const,
+    summary:
+      "Digital advertising infrastructure sorts individuals into algorithmically constructed audience segments, creating fragmented commercial realities where different people receive entirely different information, prices, and opportunities based on their data profiles.",
+  },
+  {
+    id: "zuboff",
+    label: "Zuboff 2019",
+    title: "The Age of Surveillance Capitalism",
+    author: "Shoshana Zuboff",
+    type: "academic" as const,
+    summary:
+      "Behavioral data harvested through digital platforms is not simply used to target ads more accurately but to predict and modify future behavior before decisions are consciously made, shifting advertising from persuasion into behavioral engineering.",
+  },
+  {
+    id: "vanreijmersdal",
+    label: "Van Reijmersdal et al. 2023",
+    title: "Disclosure-Driven Recognition of Native Advertising",
+    author: "Van Reijmersdal, Brussee, Evans, and Wojdynski",
+    type: "primary" as const,
+    summary:
+      "Even when legal disclosure labels were present, the structural embedding of sponsored content within editorial formats consistently prevented consumers from recognizing commercial intent, and when recognition did occur, it produced skepticism toward publishers rather than rejection of the ad.",
+  },
+  {
+    id: "dekeyzer",
+    label: "De Keyzer et al. 2024",
+    title: "The Role of Well-Being in Consumers' Responses to Personalized Advertising",
+    author: "De Keyzer, Dens, De Pelsmacker, and van Noort",
+    type: "primary" as const,
+    summary:
+      "Highly personalized social media advertising produced not only higher brand engagement but measurable effects on consumers' self-perception and sense of identity, confirming that algorithmic advertising actively participates in constructing who consumers understand themselves to be.",
+  },
+];
 
 /* ====== FRAMEWORK DIMENSIONS ====== */
 
 const frameworkDimensions = [
-{
-  label: "Targeting methods",
-  content:
-  "Who is the intended audience, and how does the ad reach them? This includes demographic targeting through media placement in the 1980s and behavioral, algorithmic targeting in the 2020s."
-},
-{
-  label: "Visibility of commercial intent",
-  content:
-  "How obvious is it that this is an advertisement? Does it announce itself clearly, or is the commercial intent obscured by format, platform, or delivery?"
-},
-{
-  label: "Psychological techniques",
-  content:
-  "What specific mechanisms does the ad use to influence the audience? This includes fear, aspiration, social proof, manufactured scarcity, parasocial trust, and identity-based appeals."
-},
-{
-  label: "Ideological messaging",
-  content:
-  "What values, identities, or worldviews does the ad embed? What vision of the good life, the successful person, or the healthy body does it sell alongside the product?"
-},
-{
-  label: "Audience resistance",
-  content:
-  "How easy is it for the audience to recognize the persuasion and choose not to be influenced by it? This is shaped by the visibility of commercial intent, the emotional register of the ad, and the structural context in which it is encountered."
-}];
-
+  {
+    label: "Targeting methods",
+    content:
+      "Who is the intended audience, and how does the ad reach them? This includes demographic targeting through media placement in the 1980s and behavioral, algorithmic targeting in the 2020s.",
+  },
+  {
+    label: "Visibility of commercial intent",
+    content:
+      "How obvious is it that this is an advertisement? Does it announce itself clearly, or is the commercial intent obscured by format, platform, or delivery?",
+  },
+  {
+    label: "Psychological techniques",
+    content:
+      "What specific mechanisms does the ad use to influence the audience? This includes fear, aspiration, social proof, manufactured scarcity, parasocial trust, and identity-based appeals.",
+  },
+  {
+    label: "Ideological messaging",
+    content:
+      "What values, identities, or worldviews does the ad embed? What vision of the good life, the successful person, or the healthy body does it sell alongside the product?",
+  },
+  {
+    label: "Audience resistance",
+    content:
+      "How easy is it for the audience to recognize the persuasion and choose not to be influenced by it? This is shaped by the visibility of commercial intent, the emotional register of the ad, and the structural context in which it is encountered.",
+  },
+];
 
 /* ====== MECHANICS COMPARISON DATA ====== */
 
 const mechanics1980s = [
-{ label: "Delivery", text: "Broadcast media: television, radio, print. One-to-many. A single message delivered simultaneously to a mass audience." },
-{ label: "Targeting", text: "Broad demographic categories inferred from media context: time slots, geographic regions, publication readership." },
-{ label: "Boundary", text: "Clear structural separation between commercial and editorial content. Ads arrived in commercial breaks, on designated ad pages, in recognizable formats." },
-{ label: "Feedback", text: "No feedback loop. Advertisers could not track whether a specific individual saw an ad, what they did afterward, or how their behavior changed." }];
-
+  { label: "Delivery", text: "Broadcast media: television, radio, print. One-to-many. A single message delivered simultaneously to a mass audience." },
+  { label: "Targeting", text: "Broad demographic categories inferred from media context: time slots, geographic regions, publication readership." },
+  { label: "Boundary", text: "Clear structural separation between commercial and editorial content. Ads arrived in commercial breaks, on designated ad pages, in recognizable formats." },
+  { label: "Feedback", text: "No feedback loop. Advertisers could not track whether a specific individual saw an ad, what they did afterward, or how their behavior changed." },
+];
 
 const mechanics2020s = [
-{ label: "Delivery", text: "Platform media: social media, streaming, apps. Algorithmic feeds curating different content for each user based on behavioral data." },
-{ label: "Targeting", text: "Individual psychological profiles built from browsing history, purchase behavior, search queries, tracking pixels, and engagement patterns." },
-{ label: "Boundary", text: "Structural separation collapsed. Native advertising, influencer posts, and sponsored content are designed to be formally indistinguishable from organic material." },
-{ label: "Feedback", text: "Every click, scroll duration, purchase, and moment of attention is tracked, feeding back into the system to refine future targeting." }];
-
+  { label: "Delivery", text: "Platform media: social media, streaming, apps. Algorithmic feeds curating different content for each user based on behavioral data." },
+  { label: "Targeting", text: "Individual psychological profiles built from browsing history, purchase behavior, search queries, tracking pixels, and engagement patterns." },
+  { label: "Boundary", text: "Structural separation collapsed. Native advertising, influencer posts, and sponsored content are designed to be formally indistinguishable from organic material." },
+  { label: "Feedback", text: "Every click, scroll duration, purchase, and moment of attention is tracked, feeding back into the system to refine future targeting." },
+];
 
 const keyMechanisms = [
-{ label: "Algorithms", text: "Moved advertising from contextual to behavioral. The ad is no longer addressed to a type of person. It is addressed to you." },
-{ label: "Influencer Economy", text: "Converted peer relationships into advertising infrastructure. The parasocial relationship between creator and audience functions as a trust transfer mechanism." },
-{ label: "Native Advertising", text: "Dismantled the formal distinction between editorial and commercial content. Ads exploit conventions of trusted formats to deliver commercial messages without triggering skepticism." },
-{ label: "Data Harvesting", text: "Transformed the audience from a target into a resource. As Zuboff (2019) argues, it enables predictive models that can anticipate and shape future behavior. The audience's own activity becomes the raw material for its continued persuasion." }];
-
+  { label: "Algorithms", text: "Moved advertising from contextual to behavioral. The ad is no longer addressed to a type of person. It is addressed to you." },
+  { label: "Influencer Economy", text: "Converted peer relationships into advertising infrastructure. The parasocial relationship between creator and audience functions as a trust transfer mechanism." },
+  { label: "Native Advertising", text: "Dismantled the formal distinction between editorial and commercial content. Ads exploit conventions of trusted formats to deliver commercial messages without triggering skepticism." },
+  { label: "Data Harvesting", text: "Transformed the audience from a target into a resource. As Zuboff (2019) argues, it enables predictive models that can anticipate and shape future behavior. The audience's own activity becomes the raw material for its continued persuasion." },
+];
 
 /* ====== SOURCE POPUP ====== */
 
 function SourcePopup({
   source,
-  onClose
-
-
-
-}: {source: (typeof academicSources)[0];onClose: () => void;}) {
+  onClose,
+}: {
+  source: (typeof academicSources)[0];
+  onClose: () => void;
+}) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.5)" }} onClick={onClose}>
       <div className="mac-window max-w-lg w-full" onClick={(e) => e.stopPropagation()}>
@@ -144,11 +144,11 @@ function SourcePopup({
           <span className="mac-titlebar-label">{source.label}</span>
         </div>
         <div className="mac-body">
-          {source.type === "primary" &&
-          <span className="font-pixel text-[8px] tracking-wider inline-block px-2 py-1 rounded mb-2" style={{ background: "hsl(145, 60%, 88%)", color: "hsl(145, 60%, 30%)" }}>
+          {source.type === "primary" && (
+            <span className="font-pixel text-[8px] tracking-wider inline-block px-2 py-1 rounded mb-2" style={{ background: "hsl(145, 60%, 88%)", color: "hsl(145, 60%, 30%)" }}>
               PRIMARY STUDY
             </span>
-          }
+          )}
           <h4 className="font-display text-lg font-bold mb-1" style={{ color: "#1a1a1a" }}>
             {source.title}
           </h4>
@@ -160,8 +160,8 @@ function SourcePopup({
           </p>
         </div>
       </div>
-    </div>);
-
+    </div>
+  );
 }
 
 /* ====== MAIN COMPONENT ====== */
@@ -185,21 +185,10 @@ export default function IntroSections() {
       <section className="mac-desktop py-20 px-4">
         <div ref={introRef} className="reveal">
           <MacWindow title="Introduction.txt">
-            <p className="mb-4">Today you cannot.
-
-
-
+            <p className="mb-4">
+              Every year, the average person encounters thousands of advertisements. In the 1980s, you could see them coming: a commercial break, a magazine spread, a billboard on the highway etc. You knew it was an ad. You could look away.
             </p>
 
-            <div className="my-6 py-4 px-6 text-center rounded" style={{
-              background: "hsl(210, 50%, 88%)",
-              border: "2px solid hsl(210, 50%, 78%)"
-            }}>
-              
-              <p className="font-display text-2xl md:text-3xl font-bold" style={{ color: "hsl(215, 70%, 30%)" }}>
-                Today you cannot.
-              </p>
-            </div>
 
             <p className="mb-4">
               The ad arrives as a friend's recommendation, a podcast host's morning routine, a documentary on a streaming platform. It knows what you searched three days ago and what you're likely to want before you've consciously decided you want it. Advertising didn't just change its format. It dissolved into the infrastructure of daily life, and somewhere in that process, it stopped looking like advertising at all.
@@ -215,7 +204,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== LITERATURE REVIEW (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section id="literature" className="mac-desktop py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,0.2)" }}>
             Literature Review
@@ -232,23 +221,23 @@ export default function IntroSections() {
               7 items — click to open
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-              {academicSources.map((source) =>
-              <button
-                key={source.id}
-                onClick={() => setSelectedSource(source)}
-                className="flex flex-col items-center gap-2 p-3 rounded hover:bg-gray-100 transition-colors group relative">
-                
-                  {source.type === "primary" &&
-                <span className="absolute top-1 right-1 font-pixel text-[6px] tracking-wider px-1.5 py-0.5 rounded" style={{ background: "hsl(145, 60%, 88%)", color: "hsl(145, 60%, 30%)" }}>
+              {academicSources.map((source) => (
+                <button
+                  key={source.id}
+                  onClick={() => setSelectedSource(source)}
+                  className="flex flex-col items-center gap-2 p-3 rounded hover:bg-gray-100 transition-colors group relative"
+                >
+                  {source.type === "primary" && (
+                    <span className="absolute top-1 right-1 font-pixel text-[6px] tracking-wider px-1.5 py-0.5 rounded" style={{ background: "hsl(145, 60%, 88%)", color: "hsl(145, 60%, 30%)" }}>
                       PRIMARY
                     </span>
-                }
+                  )}
                   <FileText className="w-8 h-8 text-gray-400 group-hover:text-blue-500 transition-colors" />
                   <span className="font-pixel text-[8px] text-center leading-tight" style={{ color: "#555" }}>
                     {source.label}
                   </span>
                 </button>
-              )}
+              ))}
             </div>
           </MacWindow>
         </div>
@@ -285,7 +274,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== ANALYSIS FRAMEWORK (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section id="framework" className="mac-desktop py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,0.2)" }}>
             Analysis Framework
@@ -303,34 +292,34 @@ export default function IntroSections() {
 
             {/* 5-item accordion */}
             <div className="mt-2 border-t border-gray-200">
-              {frameworkDimensions.map((dim, i) =>
-              <div key={i} className="border-b border-gray-200 last:border-b-0">
+              {frameworkDimensions.map((dim, i) => (
+                <div key={i} className="border-b border-gray-200 last:border-b-0">
                   <button
-                  onClick={() => setOpenDimension(openDimension === i ? null : i)}
-                  className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors">
-                  
+                    onClick={() => setOpenDimension(openDimension === i ? null : i)}
+                    className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors"
+                  >
                     <span className="font-mono text-sm font-semibold" style={{ color: "#333" }}>
                       <span
-                      className="inline-block w-6 h-6 rounded text-center text-xs leading-6 mr-3 font-bold"
-                      style={{ background: "hsl(210, 50%, 88%)", color: "hsl(215, 70%, 30%)" }}>
-                      
+                        className="inline-block w-6 h-6 rounded text-center text-xs leading-6 mr-3 font-bold"
+                        style={{ background: "hsl(210, 50%, 88%)", color: "hsl(215, 70%, 30%)" }}
+                      >
                         {i + 1}
                       </span>
                       {dim.label}
                     </span>
                     <ChevronDown
-                    className={`w-4 h-4 transition-transform text-gray-400 ${openDimension === i ? "rotate-180" : ""}`} />
-                  
+                      className={`w-4 h-4 transition-transform text-gray-400 ${openDimension === i ? "rotate-180" : ""}`}
+                    />
                   </button>
-                  {openDimension === i &&
-                <div className="px-4 pb-4 pl-14">
+                  {openDimension === i && (
+                    <div className="px-4 pb-4 pl-14">
                       <p className="font-mono text-sm leading-relaxed" style={{ color: "#444" }}>
                         {dim.content}
                       </p>
                     </div>
-                }
+                  )}
                 </div>
-              )}
+              ))}
             </div>
 
             <p className="mt-4 font-mono text-sm leading-relaxed" style={{ color: "#555" }}>
@@ -341,7 +330,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== MECHANICS OF INVISIBILITY (Split screen) ===== */}
-      <section className="py-20 px-4" style={{ background: "#000" }}>
+      <section id="mechanics" className="py-20 px-4" style={{ background: "#000" }}>
         <div ref={mechanicsHeaderRef} className="reveal-blur max-w-4xl mx-auto text-center mb-12">
           <h3 className="font-display text-3xl md:text-5xl font-bold mb-3" style={{ color: "white" }}>
             The Mechanics of Invisibility
@@ -367,8 +356,8 @@ export default function IntroSections() {
                 <span className="mac-titlebar-label">1980s_infrastructure.txt</span>
               </div>
               <div className="mac-body space-y-4">
-                {mechanics1980s.map((item, i) =>
-                <div key={i}>
+                {mechanics1980s.map((item, i) => (
+                  <div key={i}>
                     <p className="font-mono text-xs font-bold mb-1" style={{ color: "hsl(180, 100%, 35%)" }}>
                       {item.label}
                     </p>
@@ -376,7 +365,7 @@ export default function IntroSections() {
                       {item.text}
                     </p>
                   </div>
-                )}
+                ))}
               </div>
             </div>
           </div>
@@ -385,8 +374,8 @@ export default function IntroSections() {
           <div ref={mechanics20sRef} className="reveal-right">
             <div
               className="rounded-xl overflow-hidden"
-              style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)" }}>
-              
+              style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)" }}
+            >
               <div className="px-4 py-2 flex items-center gap-2" style={{ background: "rgba(255,255,255,0.05)" }}>
                 <div className="w-2 h-2 rounded-full" style={{ background: "hsl(330, 90%, 55%)" }} />
                 <span className="font-mono text-[10px] tracking-wider" style={{ color: "hsl(330, 90%, 65%)" }}>
@@ -394,8 +383,8 @@ export default function IntroSections() {
                 </span>
               </div>
               <div className="p-5 space-y-4">
-                {mechanics2020s.map((item, i) =>
-                <div key={i}>
+                {mechanics2020s.map((item, i) => (
+                  <div key={i}>
                     <p className="font-mono text-xs font-bold mb-1" style={{ color: "hsl(330, 90%, 65%)" }}>
                       {item.label}
                     </p>
@@ -403,7 +392,7 @@ export default function IntroSections() {
                       {item.text}
                     </p>
                   </div>
-                )}
+                ))}
               </div>
             </div>
           </div>
@@ -415,12 +404,12 @@ export default function IntroSections() {
             KEY MECHANISMS THAT ENABLED THE SHIFT
           </p>
           <div ref={mechanismsRef} className="reveal-stagger grid sm:grid-cols-2 gap-4">
-            {keyMechanisms.map((m, i) =>
-            <div
-              key={i}
-              className="rounded-lg p-5"
-              style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
-              
+            {keyMechanisms.map((m, i) => (
+              <div
+                key={i}
+                className="rounded-lg p-5"
+                style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
+              >
                 <p className="font-display text-base font-bold mb-2" style={{ color: "white" }}>
                   {m.label}
                 </p>
@@ -428,7 +417,7 @@ export default function IntroSections() {
                   {m.text}
                 </p>
               </div>
-            )}
+            ))}
           </div>
 
           <p className="font-mono text-sm leading-relaxed text-center mt-10 max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.5)" }}>
@@ -438,9 +427,9 @@ export default function IntroSections() {
       </section>
 
       {/* Source popup */}
-      {selectedSource &&
-      <SourcePopup source={selectedSource} onClose={() => setSelectedSource(null)} />
-      }
-    </div>);
-
+      {selectedSource && (
+        <SourcePopup source={selectedSource} onClose={() => setSelectedSource(null)} />
+      )}
+    </div>
+  );
 }
