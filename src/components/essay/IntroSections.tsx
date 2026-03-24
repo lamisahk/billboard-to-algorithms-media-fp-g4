@@ -215,7 +215,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== LITERATURE REVIEW (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section id="literature" className="mac-desktop py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,0.2)" }}>
             Literature Review
@@ -285,7 +285,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== ANALYSIS FRAMEWORK (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section id="framework" className="mac-desktop py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,0.2)" }}>
             Analysis Framework
@@ -341,7 +341,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== MECHANICS OF INVISIBILITY (Split screen) ===== */}
-      <section className="py-20 px-4" style={{ background: "#000" }}>
+      <section id="mechanics" className="py-20 px-4" style={{ background: "#000" }}>
         <div ref={mechanicsHeaderRef} className="reveal-blur max-w-4xl mx-auto text-center mb-12">
           <h3 className="font-display text-3xl md:text-5xl font-bold mb-3" style={{ color: "white" }}>
             The Mechanics of Invisibility
