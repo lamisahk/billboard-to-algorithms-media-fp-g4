@@ -334,7 +334,7 @@ export default function Sector05Wearables() {
           >
             <div className="embed-container">
               <iframe
-                src="https://www.youtube.com/embed/4Qi3WAJG9PA"
+                src="https://www.ispot.tv/share/Onwe"
                 width="560"
                 height="315"
                 allowFullScreen
