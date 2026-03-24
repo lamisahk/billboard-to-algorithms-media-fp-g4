@@ -348,21 +348,24 @@ export default function Sector05Wearables() {
       </section>
 
       {/* ===== COMPARATIVE SUMMARY (Mode 2) ===== */}
-      <section className="py-20 px-4" style={{
-        background: 'linear-gradient(180deg, hsl(270, 50%, 18%) 0%, hsl(270, 60%, 12%) 100%)'
-      }}>
-        <div ref={summaryRef} className="reveal-stagger max-w-5xl mx-auto">
-          <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-12" style={{ color: 'white' }}>
+      <section
+        className="py-16 px-4"
+        style={{
+          background: 'radial-gradient(ellipse at 30% 30%, hsl(270, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+        }}>
+
+        <div className="max-w-4xl mx-auto">
+          <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-10" style={{ color: 'white' }}>
             Comparative Summary
           </h3>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div ref={summaryRef} className="reveal-stagger grid md:grid-cols-2 gap-8 mb-12">
             {/* What Changed */}
             <div className="rounded-xl p-6" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
-              <h4 className="font-display text-xl font-bold mb-4" style={{ color: 'hsl(330, 90%, 65%)' }}>
+              <h4 className="font-display text-xl font-bold mb-4" style={{ color: 'hsl(145, 80%, 60%)' }}>
                 What Changed
               </h4>
-              <div className="space-y-4 font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.85)' }}>
+              <div className="space-y-4 font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
                 <p>
                   The most fundamental shift is in what personal technology promises to do. The <strong>Sony Walkman</strong> and <strong>Casio calculator watch</strong> both promised to extend the individual outward: carry your music further, calculate faster, function more efficiently in the world. By the 2020s, <strong>Apple Watch</strong> and <strong>Oura Ring</strong> had inverted this direction entirely. The device no longer extends your capabilities into the world. It turns your attention inward, toward your own biological systems.
                 </p>
@@ -380,10 +383,10 @@ export default function Sector05Wearables() {
 
             {/* What Stayed the Same */}
             <div className="rounded-xl p-6" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
-              <h4 className="font-display text-xl font-bold mb-4" style={{ color: 'hsl(145, 80%, 60%)' }}>
+              <h4 className="font-display text-xl font-bold mb-4" style={{ color: 'hsl(38, 95%, 60%)' }}>
                 What Stayed the Same
               </h4>
-              <div className="space-y-4 font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.85)' }}>
+              <div className="space-y-4 font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
                 <p>
                   The foundational advertising logic has not changed. Every ad in both eras identifies a gap between the user's current experience and a better version of it, and positions a purchase as the bridge. The Sony Walkman gap was between music being stationary and music being portable. The Apple Watch gap is between being potentially unreachable in an emergency and being permanently connected and rescuable. The Oura Ring gap is between not fully understanding your own body and having complete biometric self-knowledge.
                 </p>
@@ -399,34 +402,49 @@ export default function Sector05Wearables() {
         </div>
       </section>
 
-      {/* ===== SECTOR PERSPECTIVE ===== */}
-      <section className="py-20 px-4" style={{
-        background: 'linear-gradient(180deg, hsl(270, 60%, 12%) 0%, #000 100%)'
-      }}>
+      {/* ===== SECTOR PERSPECTIVE (Mode 2) ===== */}
+      <section
+        className="py-16 px-4"
+        style={{
+          background: 'radial-gradient(ellipse at 70% 70%, hsl(330, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+        }}>
+
         <div ref={perspectiveRef} className="reveal max-w-3xl mx-auto">
-          <h3 className="font-display text-2xl md:text-4xl font-bold mb-8 text-center" style={{ color: 'white' }}>
+          <h3 className="font-display text-3xl md:text-5xl font-bold mb-3" style={{ color: 'white' }}>
             Sector Perspective
           </h3>
-          <div className="sector-perspective space-y-6">
-            <p className="font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
-              The shift from entertainment to optimisation and monitoring in personal technology advertising represents more than a change in product category. It represents a structural transformation in the relationship between the human body and commercial infrastructure.
-            </p>
-            <p className="font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
-              The Sony Walkman was a closed system. It played your tape. It did not record your behavior, transmit your location, or adjust its function based on usage patterns. The advertising it generated could only appeal to your aspirations because it had no access to your behaviors. The Apple Watch and Oura Ring are open systems in continuous data exchange with corporate servers. The advertising they generate is informed by everything those devices have already collected from you and from millions of users before you. This is not a technological upgrade. It is a categorical shift in what the product relationship means.
-            </p>
-            <p className="font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
-              The quantified self movement, which Oura's advertising explicitly articulates and Apple Watch's implicitly normalises, reveals something specific about this transformation. By framing continuous biometric monitoring as self-knowledge rather than data collection, wearable advertising successfully relocated surveillance from the category of things done to you into the category of things you do for yourself. The Oura Ring does not collect your sleep data for commercial purposes. It helps you understand why you feel how you feel. The commercial arrangement in which that self-knowledge is generated is rendered invisible by the intimacy of the framing.
-            </p>
-            <p className="font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
-              The normalisation of constant connectivity through wearable advertising carries real consequences that the advertising itself never addresses. The data generated by wearables is among the most sensitive personal information that exists: it documents health conditions, activity patterns, location history, sleep disruption, and physiological stress responses in granular detail. Insurance companies have shown documented interest in wearable data for risk assessment. The advertising that sells these devices presents them as tools for personal empowerment. The infrastructure that runs them is a commercial data operation of unprecedented physical intimacy.
-            </p>
-            <p className="font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.9)' }}>
-              The transformation from portability as freedom to connectivity as necessity is not simply a shift in product features. It is a shift in the ideology of what technology is for. The Sony Walkman freed you from your environment by giving you your own private world within it. The Apple Watch makes you permanently available to your environment: to emergency services, to health platforms, to the corporate infrastructure that processes your biometric data as a commercial asset. Both eras of advertising presented this as liberation. The Walkman gave you freedom from the world. The Apple Watch gives you freedom from worry about the world, in exchange for your continuous presence within a monitored ecosystem. The freedom is real in both cases. What changed is what you give up for it.
-            </p>
-            <div className="mt-6 pt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.15)' }}>
-              <p className="font-pixel text-[9px] tracking-wider" style={{ color: 'hsl(270, 70%, 70%)' }}>
-                ALREEM · ELECTRICAL ENGINEERING
-              </p>
+          <p className="font-pixel text-[10px] tracking-[0.3em] mb-8" style={{ color: 'hsl(330, 90%, 65%)' }}>
+            ELECTRICAL ENGINEERING LENS
+          </p>
+          <div className="sector-perspective">
+            <h4 className="font-display text-xl md:text-2xl font-bold mb-4" style={{ color: 'white' }}>
+              From Portability as Freedom to Connectivity as Necessity
+            </h4>
+            <ul className="list-disc pl-5 space-y-4 font-mono text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
+              <li>
+                The shift from entertainment to optimisation and monitoring in personal technology advertising represents more than a change in product category. It represents a structural transformation in the relationship between the human body and commercial infrastructure.
+              </li>
+              <li>
+                The Sony Walkman was a closed system. It played your tape. It did not record your behavior, transmit your location, or adjust its function based on usage patterns. The advertising it generated could only appeal to your aspirations because it had no access to your behaviors. The Apple Watch and Oura Ring are open systems in continuous data exchange with corporate servers. The advertising they generate is informed by everything those devices have already collected from you and from millions of users before you. This is not a technological upgrade. It is a categorical shift in what the product relationship means.
+              </li>
+              <li>
+                The quantified self movement, which Oura's advertising explicitly articulates and Apple Watch's implicitly normalises, reveals something specific about this transformation. By framing continuous biometric monitoring as self-knowledge rather than data collection, wearable advertising successfully relocated surveillance from the category of things done to you into the category of things you do for yourself. The Oura Ring does not collect your sleep data for commercial purposes. It helps you understand why you feel how you feel. The commercial arrangement in which that self-knowledge is generated is rendered invisible by the intimacy of the framing.
+              </li>
+              <li>
+                The normalisation of constant connectivity through wearable advertising carries real consequences that the advertising itself never addresses. The data generated by wearables is among the most sensitive personal information that exists: it documents health conditions, activity patterns, location history, sleep disruption, and physiological stress responses in granular detail. Insurance companies have shown documented interest in wearable data for risk assessment. The advertising that sells these devices presents them as tools for personal empowerment. The infrastructure that runs them is a commercial data operation of unprecedented physical intimacy.
+              </li>
+              <li>
+                The transformation from portability as freedom to connectivity as necessity is not simply a shift in product features. It is a shift in the ideology of what technology is for. The Sony Walkman freed you from your environment by giving you your own private world within it. The Apple Watch makes you permanently available to your environment: to emergency services, to health platforms, to the corporate infrastructure that processes your biometric data as a commercial asset. Both eras of advertising presented this as liberation. The Walkman gave you freedom from the world. The Apple Watch gives you freedom from worry about the world, in exchange for your continuous presence within a monitored ecosystem. The freedom is real in both cases. What changed is what you give up for it.
+              </li>
+            </ul>
+          </div>
+          <div className="mt-6 flex items-center gap-3">
+            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: 'rgba(236, 72, 153, 0.2)', border: '1px solid rgba(236, 72, 153, 0.3)' }}>
+              <span className="text-xs" style={{ color: 'hsl(330, 90%, 65%)' }}>A</span>
+            </div>
+            <div>
+              <p className="font-mono text-xs font-semibold" style={{ color: 'rgba(255,255,255,0.9)' }}>Alreem</p>
+              <p className="font-mono text-[10px]" style={{ color: 'rgba(255,255,255,0.5)' }}>Electrical Engineering</p>
             </div>
           </div>
         </div>
