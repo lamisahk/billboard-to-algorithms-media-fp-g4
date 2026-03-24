@@ -232,7 +232,7 @@
 }
 
 .ig-avatar-ring {
-  background: linear-gradient(45deg, hsl(38 95% 55%), hsl(330 90% 55%), hsl(270 70% 55%));
+  background: linear-gradient(45deg, hsl(35 65% 65%), hsl(340 55% 72%), hsl(275 35% 55%));
   padding: 2px;
   border-radius: 50%;
 }
