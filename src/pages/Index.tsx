@@ -8,6 +8,7 @@ import Sector05Wearables from "@/components/essay/Sector05Wearables";
 import ComparativeAnalysis from "@/components/essay/ComparativeAnalysis";
 import ScrollProgressBar from "@/components/essay/ScrollProgressBar";
 import ChapterNav from "@/components/essay/ChapterNav";
+import BackToTop from "@/components/essay/BackToTop";
 
 // Visual essay page
 const Index = () => {
