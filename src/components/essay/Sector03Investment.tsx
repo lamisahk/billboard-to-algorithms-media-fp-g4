@@ -130,7 +130,7 @@ export default function Sector03Investment() {
           </h3>
           <div className="inline-block px-4 py-2 rounded" style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>
             <p className="font-pixel text-[9px] tracking-wider" style={{ color: 'hsl(180, 100%, 85%)' }}>
-              ALMAHA · ECONOMICS
+              ALMAHA · ACCOUNTING
             </p>
           </div>
         </div>
