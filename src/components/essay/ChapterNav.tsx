@@ -78,7 +78,7 @@ export default function ChapterNav() {
           className="w-full rounded-full"
           style={{
             height: `${spineProgress}%`,
-            background: 'linear-gradient(180deg, hsl(var(--ig-pink)), hsl(var(--ig-amber)))',
+            background: 'linear-gradient(180deg, hsl(var(--mac-blue-light)), hsl(var(--mac-blue-dark)))',
             transition: 'height 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
           }}
         />
@@ -101,13 +101,13 @@ export default function ChapterNav() {
               className="w-[16px] h-[16px] rounded-full border-2 flex items-center justify-center"
               style={{
                 borderColor: isActive
-                  ? 'hsl(var(--ig-pink))'
+                  ? 'hsl(var(--mac-blue-light))'
                   : isPast
-                  ? 'hsl(var(--ig-pink) / 0.5)'
+                  ? 'hsl(var(--mac-blue-light) / 0.5)'
                   : 'rgba(255,255,255,0.2)',
-                background: isActive ? 'hsl(var(--ig-pink))' : 'transparent',
+                background: isActive ? 'hsl(var(--mac-blue-dark))' : 'transparent',
                 boxShadow: isActive
-                  ? '0 0 8px hsl(var(--ig-pink)), 0 0 20px hsl(var(--ig-pink) / 0.25)'
+                  ? '0 0 8px hsl(var(--mac-blue-light)), 0 0 20px hsl(var(--mac-blue-light) / 0.25)'
                   : 'none',
                 transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
                 transform: isActive && transitioning ? 'scale(1.3)' : 'scale(1)',
@@ -117,7 +117,7 @@ export default function ChapterNav() {
                 <div
                   className="w-[6px] h-[6px] rounded-full"
                   style={{
-                    background: 'hsl(var(--ig-pink) / 0.6)',
+                    background: 'hsl(var(--mac-blue-light) / 0.6)',
                     transition: 'opacity 0.3s ease',
                   }}
                 />
@@ -132,7 +132,7 @@ export default function ChapterNav() {
                 transform: hoveredIndex === i ? 'translateX(0)' : 'translateX(-8px)',
                 transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
                 background: 'rgba(0,0,0,0.85)',
-                color: isActive ? 'hsl(var(--ig-pink))' : 'rgba(255,255,255,0.7)',
+                color: isActive ? 'hsl(var(--mac-blue-light))' : 'rgba(255,255,255,0.7)',
                 backdropFilter: 'blur(8px)',
                 border: '1px solid rgba(255,255,255,0.1)',
               }}
