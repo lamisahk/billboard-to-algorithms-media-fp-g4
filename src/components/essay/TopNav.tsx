@@ -72,7 +72,9 @@ export default function TopNav() {
         style={{
           background: hovered ? "rgba(0, 0, 0, 0.85)" : "rgba(0, 0, 0, 0.12)",
           backdropFilter: hovered ? "blur(12px)" : "blur(2px)",
-          border: `1px solid ${hovered ? "rgba(255,255,255,0.08)" : "rgba(255,255,255,0.02)"}`,
+          borderLeft: `1px solid ${hovered ? "rgba(255,255,255,0.08)" : "rgba(255,255,255,0.02)"}`,
+          borderRight: `1px solid ${hovered ? "rgba(255,255,255,0.08)" : "rgba(255,255,255,0.02)"}`,
+          borderBottom: `1px solid ${hovered ? "rgba(255,255,255,0.08)" : "rgba(255,255,255,0.02)"}`,
           borderTop: "none",
           transition: "background 0.5s ease, backdrop-filter 0.5s ease, border-color 0.5s ease",
         }}
