@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 
 const sections = [
   { id: "hero", label: "Intro" },
@@ -17,6 +17,8 @@ const sections = [
 export default function TopNav() {
   const [visible, setVisible] = useState(false);
   const [activeId, setActiveId] = useState("hero");
+  const [hovered, setHovered] = useState(false);
+  const navRef = useRef<HTMLDivElement>(null);
 
   const update = useCallback(() => {
     setVisible(window.scrollY > window.innerHeight * 0.5);
@@ -51,31 +53,25 @@ export default function TopNav() {
 
   return (
     <nav
-      className="fixed top-[3px] left-0 right-0 z-40 flex justify-center group/nav"
+      ref={navRef}
+      className="fixed top-[3px] left-0 right-0 z-40 flex justify-center"
       style={{
         opacity: visible ? 1 : 0,
         pointerEvents: visible ? "auto" : "none",
         transform: visible ? "translateY(0)" : "translateY(-100%)",
         transition: "opacity 0.4s ease, transform 0.4s ease",
       }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <div
-        className="flex items-center gap-1 px-3 py-1.5 rounded-b-lg overflow-x-auto max-w-[95vw] scrollbar-none transition-all duration-500"
+        className="flex items-center gap-1 px-3 py-1.5 rounded-b-lg overflow-x-auto max-w-[95vw] scrollbar-none"
         style={{
-          background: "rgba(0, 0, 0, 0.15)",
-          backdropFilter: "blur(4px)",
-          border: "1px solid rgba(255,255,255,0.03)",
+          background: hovered ? "rgba(0, 0, 0, 0.85)" : "rgba(0, 0, 0, 0.12)",
+          backdropFilter: hovered ? "blur(12px)" : "blur(2px)",
+          border: `1px solid ${hovered ? "rgba(255,255,255,0.08)" : "rgba(255,255,255,0.02)"}`,
           borderTop: "none",
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.background = "rgba(0, 0, 0, 0.85)";
-          e.currentTarget.style.backdropFilter = "blur(12px)";
-          e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)";
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.background = "rgba(0, 0, 0, 0.15)";
-          e.currentTarget.style.backdropFilter = "blur(4px)";
-          e.currentTarget.style.borderColor = "rgba(255,255,255,0.03)";
+          transition: "background 0.5s ease, backdrop-filter 0.5s ease, border-color 0.5s ease",
         }}
       >
         {sections.map((s) => {
@@ -84,11 +80,14 @@ export default function TopNav() {
             <button
               key={s.id}
               onClick={() => scrollTo(s.id)}
-              className="whitespace-nowrap px-2 py-1 rounded text-[10px] font-mono tracking-wider transition-all duration-300 shrink-0"
+              className="whitespace-nowrap px-2 py-1 rounded text-[10px] font-mono tracking-wider shrink-0"
               style={{
-                color: isActive ? "hsl(210, 60%, 70%)" : "rgba(255,255,255,0.45)",
-                background: isActive ? "rgba(210, 60%, 55%, 0.12)" : "transparent",
+                color: hovered
+                  ? isActive ? "hsl(210, 60%, 70%)" : "rgba(255,255,255,0.45)"
+                  : isActive ? "rgba(150, 190, 255, 0.3)" : "rgba(255,255,255,0.08)",
+                background: hovered && isActive ? "rgba(100, 160, 255, 0.1)" : "transparent",
                 fontWeight: isActive ? 600 : 400,
+                transition: "color 0.5s ease, background 0.5s ease",
               }}
             >
               {s.label}
