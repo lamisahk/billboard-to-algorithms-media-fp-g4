@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, useMemo } from "react";
 import scrollama from "scrollama";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const STEPS = [
   {
@@ -142,18 +141,6 @@ export default function BillboardHero() {
   const [glitching, setGlitching] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const stepsRef = useRef<HTMLDivElement>(null);
-
-  const goTo = (index: number) => {
-    const clamped = Math.max(0, Math.min(STEPS.length - 1, index));
-    setCurrentStep(clamped);
-    if (clamped === 4) {
-      setGlitching(true);
-      setTimeout(() => setGlitching(false), 1200);
-    }
-    // Scroll to the matching step element
-    const stepEl = stepsRef.current?.querySelectorAll(".hero-step")[clamped];
-    stepEl?.scrollIntoView({ behavior: "smooth", block: "center" });
-  };
 
   const stars = useMemo(() => {
     return Array.from({ length: 60 }, (_, i) => ({
