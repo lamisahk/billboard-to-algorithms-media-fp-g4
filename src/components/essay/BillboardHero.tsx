@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, useMemo } from "react";
 import scrollama from "scrollama";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const STEPS = [
   {
