@@ -377,7 +377,7 @@ export default function BillboardHero() {
               scroll slowly
             </p>
           </div>
-        )
+        )}
 
         {/* Caption overlay */}
         {STEPS[currentStep]?.caption && (
