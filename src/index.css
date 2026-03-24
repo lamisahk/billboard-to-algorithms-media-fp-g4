@@ -260,8 +260,31 @@
 
 /* ======= ANALYSIS ACCORDION ======= */
 .analysis-panel {
-  background: hsl(0 0% 96%);
-  border-top: 1px solid hsl(0 0% 90%);
+  background: #1a1a2e;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ======= GLOBAL HOVER EFFECTS ======= */
+.embed-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.embed-container:hover {
+  transform: scale(1.005);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+.mac-titlebar-btn {
+  transition: background 0.2s ease;
+}
+.mac-titlebar-btn:hover {
+  background: hsl(0 70% 60%) !important;
+}
+
+.sector-perspective {
+  transition: border-color 0.3s ease;
+}
+.sector-perspective:hover {
+  border-color: hsl(var(--ig-amber));
 }
 
 /* ======= SECTOR PERSPECTIVE ======= */
