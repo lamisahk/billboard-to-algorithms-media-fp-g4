@@ -175,7 +175,7 @@ export default function StickyTimeline() {
                 </div>
 
                 {/* Sector breakdown */}
-                <div className="space-y-2">
+                <div className="space-y-2" key={`sectors-${activeStep}`}>
                   {current.sectors.map((s, i) => (
                     <div
                       key={i}
