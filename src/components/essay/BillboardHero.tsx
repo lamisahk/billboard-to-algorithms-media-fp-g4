@@ -336,6 +336,49 @@ export default function BillboardHero() {
           />
         </div>
 
+        {/* Prev/Next arrows */}
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4" style={{ zIndex: 25, bottom: STEPS[currentStep]?.caption ? '6rem' : '2.5rem' }}>
+          <button
+            onClick={() => goTo(currentStep - 1)}
+            disabled={currentStep === 0}
+            className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+            style={{
+              background: currentStep === 0 ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.1)',
+              color: currentStep === 0 ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.6)',
+              cursor: currentStep === 0 ? 'default' : 'pointer',
+              border: '1px solid rgba(255,255,255,0.1)',
+            }}
+          >
+            <ChevronLeft size={16} />
+          </button>
+          <span className="font-mono text-[9px] tracking-wider" style={{ color: 'rgba(255,255,255,0.3)' }}>
+            {currentStep + 1} / {STEPS.length}
+          </span>
+          <button
+            onClick={() => goTo(currentStep + 1)}
+            disabled={currentStep === STEPS.length - 1}
+            className="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+            style={{
+              background: currentStep === STEPS.length - 1 ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.1)',
+              color: currentStep === STEPS.length - 1 ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.6)',
+              cursor: currentStep === STEPS.length - 1 ? 'default' : 'pointer',
+              border: '1px solid rgba(255,255,255,0.1)',
+            }}
+          >
+            <ChevronRight size={16} />
+          </button>
+        </div>
+
+        {/* Scroll cue */}
+        {currentStep === 0 && (
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center" style={{ zIndex: 25 }}>
+            <p className="font-mono text-lg text-white/40 animate-bounce">↓</p>
+            <p className="font-mono text-[9px] tracking-wider mt-1" style={{ color: 'rgba(255,255,255,0.25)' }}>
+              scroll slowly
+            </p>
+          </div>
+        )
+
         {/* Caption overlay */}
         {STEPS[currentStep]?.caption && (
           <div
