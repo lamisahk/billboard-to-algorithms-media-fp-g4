@@ -8,7 +8,7 @@ interface MacWindowProps {
 
 export default function MacWindow({ title, children, className = "" }: MacWindowProps) {
   return (
-    <div className={`mac-window rounded-sm max-w-3xl mx-auto ${className}`}>
+    <div className={`mac-window rounded-sm max-w-3xl mx-auto hover-lift ${className}`}>
       <div className="mac-titlebar">
         <div className="mac-titlebar-buttons">
           <div className="mac-titlebar-btn" />
