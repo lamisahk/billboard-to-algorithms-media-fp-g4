@@ -6,6 +6,8 @@ import Sector03Investment from "@/components/essay/Sector03Investment";
 import Sector04Software from "@/components/essay/Sector04Software";
 import Sector05Wearables from "@/components/essay/Sector05Wearables";
 import ComparativeAnalysis from "@/components/essay/ComparativeAnalysis";
+import ScrollProgressBar from "@/components/essay/ScrollProgressBar";
+import ChapterNav from "@/components/essay/ChapterNav";
 
 // Visual essay page
 const Index = () => {
