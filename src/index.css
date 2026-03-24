@@ -16,14 +16,14 @@
     --mac-pill-bg: 210 50% 88%;
 
     /* Mode 2: Instagram / 2020s */
-    --ig-purple-deep: 270 60% 12%;
-    --ig-purple: 270 50% 30%;
-    --ig-pink: 330 90% 55%;
-    --ig-green: 145 80% 50%;
-    --ig-amber: 38 95% 55%;
+    --ig-purple-deep: 280 40% 14%;
+    --ig-purple: 275 35% 55%;
+    --ig-pink: 340 55% 72%;
+    --ig-green: 165 35% 55%;
+    --ig-amber: 35 65% 65%;
     --ig-card-bg: 0 0% 100%;
-    --ig-card-border: 0 0% 85%;
-    --ig-gradient-ring: linear-gradient(45deg, hsl(38 95% 55%), hsl(330 90% 55%), hsl(270 70% 55%));
+    --ig-card-border: 0 0% 88%;
+    --ig-gradient-ring: linear-gradient(45deg, hsl(35 65% 65%), hsl(340 55% 72%), hsl(275 35% 55%));
 
     /* Mode 3: Editorial */
     --ed-bg: 40 30% 96%;
