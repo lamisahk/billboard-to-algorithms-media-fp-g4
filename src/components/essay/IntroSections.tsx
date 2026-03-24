@@ -182,7 +182,7 @@ export default function IntroSections() {
   return (
     <div>
       {/* ===== INTRODUCTION (Mode 1) ===== */}
-      <section className="mac-desktop py-20 px-4">
+      <section id="introduction" className="mac-desktop py-20 px-4">
         <div ref={introRef} className="reveal">
           <MacWindow title="Introduction.txt">
             <p className="mb-4">Every year, the average person encounters thousands of advertisements. In the 1980s, you could see them coming: a commercial break, a magazine spread, a billboard on the highway etc. You knew it was an ad. You could look away.  
