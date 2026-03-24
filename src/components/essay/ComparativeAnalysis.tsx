@@ -340,12 +340,12 @@ export default function ComparativeAnalysis() {
             </div>
             <div className="mac-body text-xs" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
               <div className="space-y-4" style={{ paddingLeft: '2em', textIndent: '-2em' }}>
-                <p>Baudrillard, J. (1998). <em>The consumer society: Myths and structures</em>. SAGE Publications.</p>
-                <p>De Keyzer, F., Van Noort, G., &amp; Kruikemeier, S. (2024). Going too far? How consumers respond to personalized advertising from different sources. <em>Journal of Electronic Commerce Research</em>, 25(1), 33-52.</p>
-                <p>Hall, S. (1980). Encoding/decoding. In S. Hall, D. Hobson, A. Lowe, &amp; P. Willis (Eds.), <em>Culture, media, language</em> (pp. 128-138). Hutchinson.</p>
+                <p>Baudrillard, J. (1998). <em>The consumer society: Myths and structures</em> (C. Turner, Trans.). Sage Publications. (Original work published 1970)</p>
+                <p>De Keyzer, F., Dens, N., De Pelsmacker, P., &amp; van Noort, G. (2024). The role of well-being in consumers' responses to personalized advertising on social media. <em>Psychology and Marketing</em>. https://doi.org/10.1002/mar.21977</p>
+                <p>Hall, S. (1980). Encoding/decoding. In Centre for Contemporary Cultural Studies (Ed.), <em>Culture, media, language: Working papers in cultural studies, 1972-1979</em> (pp. 128-138). Routledge.</p>
                 <p>Packard, V. (1957). <em>The hidden persuaders</em>. David McKay Company.</p>
                 <p>Turow, J. (2011). <em>The daily you: How the new advertising industry is defining your identity and your worth</em>. Yale University Press.</p>
-                <p>Van Reijmersdal, E. A., Rozendaal, E., Hudders, L., Vanwesenbeeck, I., Cauberghe, V., &amp; van Berlo, Z. M. C. (2023). Effects of disclosing influencer marketing in videos: An eye-tracking study among children in early adolescence. <em>Journal of Interactive Marketing</em>, 55(1), 1-19.</p>
+                <p>Van Reijmersdal, E. A., Brussee, E., Evans, N., &amp; Wojdynski, B. W. (2023). Disclosure-driven recognition of native advertising: A test of two competing mechanisms. <em>Journal of Interactive Advertising</em>, 23(2), 85-97. https://doi.org/10.1080/15252019.2022.2146991</p>
                 <p>Zuboff, S. (2019). <em>The age of surveillance capitalism: The fight for a human future at the new frontier of power</em>. PublicAffairs.</p>
               </div>
             </div>
@@ -359,10 +359,10 @@ export default function ComparativeAnalysis() {
           MCOM 103 · GROUP 4 (L51)
         </p>
         <p className="font-pixel text-[8px] tracking-wider mb-4" style={{ color: 'rgba(255,255,255,0.4)' }}>
-          FROM BILLBOARDS TO ALGORITHMS · MARCH 2026
+          · MADE WITH 🤍
         </p>
         <p className="font-mono text-[10px]" style={{ color: 'rgba(255,255,255,0.3)' }}>
-          Lamisah · Hiba · Almaha · Lamis · Alreem
+          Lamisah Behram Khan · Hiba Halabi · Almaha Al-Khuzaei · Lamis Qusair · Alreem Al-Dosari
         </p>
       </section>
     </div>
