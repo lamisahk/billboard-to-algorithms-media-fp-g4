@@ -8,6 +8,7 @@ import Sector05Wearables from "@/components/essay/Sector05Wearables";
 import ComparativeAnalysis from "@/components/essay/ComparativeAnalysis";
 import ScrollProgressBar from "@/components/essay/ScrollProgressBar";
 import ChapterNav from "@/components/essay/ChapterNav";
+import BackToTop from "@/components/essay/BackToTop";
 
 // Visual essay page
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
       <div id="sector-04"><Sector04Software /></div>
       <div id="sector-05"><Sector05Wearables /></div>
       <ComparativeAnalysis />
+      <BackToTop />
     </main>
   );
 };

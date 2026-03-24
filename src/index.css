@@ -510,6 +510,12 @@ html {
   animation: drawLine 0.8s 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* ======= PROGRESS BAR SHIMMER ======= */
+@keyframes shimmerBar {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 /* Typewriter cursor blink */
 @keyframes cursorBlink {
   0%, 100% { border-color: transparent; }
