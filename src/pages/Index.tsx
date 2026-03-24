@@ -4,6 +4,7 @@ import Sector01Wellness from "@/components/essay/Sector01Wellness";
 import Sector02Business from "@/components/essay/Sector02Business";
 import Sector03Investment from "@/components/essay/Sector03Investment";
 
+// Visual essay page
 const Index = () => {
   return (
     <main className="min-h-screen" style={{ background: '#000' }}>
