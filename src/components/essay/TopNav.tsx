@@ -85,14 +85,20 @@ export default function TopNav() {
             <button
               key={s.id}
               onClick={() => scrollTo(s.id)}
-              className="whitespace-nowrap px-2 py-1 rounded text-[10px] font-mono tracking-wider shrink-0"
+              className="whitespace-nowrap px-2 py-1 rounded text-[10px] font-mono tracking-wider shrink-0 transition-all duration-200 hover:scale-105"
               style={{
                 color: hovered
                   ? isActive ? "hsl(210, 60%, 70%)" : "rgba(255,255,255,0.45)"
                   : isActive ? "rgba(150, 190, 255, 0.3)" : "rgba(255,255,255,0.08)",
                 background: hovered && isActive ? "rgba(100, 160, 255, 0.1)" : "transparent",
                 fontWeight: isActive ? 600 : 400,
-                transition: "color 0.5s ease, background 0.5s ease",
+                transition: "color 0.5s ease, background 0.5s ease, transform 0.2s ease",
+              }}
+              onMouseEnter={(e) => {
+                if (!isActive && hovered) e.currentTarget.style.color = "rgba(255,255,255,0.75)";
+              }}
+              onMouseLeave={(e) => {
+                if (!isActive && hovered) e.currentTarget.style.color = "rgba(255,255,255,0.45)";
               }}
             >
               {s.label}
