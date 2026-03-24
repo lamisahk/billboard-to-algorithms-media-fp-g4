@@ -24,6 +24,7 @@ const Index = () => {
       <div id="sector-04"><Sector04Software /></div>
       <div id="sector-05"><Sector05Wearables /></div>
       <ComparativeAnalysis />
+      <BackToTop />
     </main>
   );
 };
