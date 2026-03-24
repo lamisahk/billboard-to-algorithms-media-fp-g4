@@ -30,6 +30,7 @@
     --ed-fg: 220 20% 15%;
     --ed-accent-border: 330 80% 55%;
     --ed-muted: 220 10% 50%;
+    --ed-rainbow: linear-gradient(90deg, hsl(330, 80%, 55%), hsl(20, 70%, 50%), hsl(38, 95%, 55%), hsl(145, 80%, 50%));
 
     /* Shared */
     --background: 0 0% 100%;
