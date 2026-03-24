@@ -116,7 +116,7 @@ export default function Sector05Wearables() {
   return (
     <div>
       {/* ===== SECTOR HEADER (Mode 1) ===== */}
-      <section className="mac-desktop py-24 px-4">
+      <section className="mac-desktop desktop-wearables py-24 px-4">
         <div ref={headerRef} className="reveal-blur max-w-4xl mx-auto text-center">
           <p className="font-pixel tracking-[0.3em] mb-4 text-sm text-white" style={{ color: 'hsl(180, 100%, 80%)' }}>
             SECTOR
@@ -136,7 +136,7 @@ export default function Sector05Wearables() {
       </section>
 
       {/* ===== INTRO WINDOW (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section className="mac-desktop desktop-wearables py-16 px-4">
         <div ref={introRef} className="reveal">
           <MacWindow title="sector_05_intro.txt">
             <p className="mb-4">
@@ -153,7 +153,7 @@ export default function Sector05Wearables() {
       </section>
 
       {/* ===== 1980s ADS (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section className="mac-desktop desktop-wearables py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white', textShadow: '1px 1px 0 rgba(0,0,0,0.2)' }}>
             1980s Advertisements
@@ -236,7 +236,7 @@ export default function Sector05Wearables() {
 
       {/* ===== MAC DIALOG BOX ===== */}
       {!dialogDismissed &&
-      <section className="mac-desktop py-8 px-4">
+      <section className="mac-desktop desktop-wearables py-8 px-4">
           <div className="max-w-md mx-auto">
             <MacWindow title="System Alert">
               <div className="text-center py-4">
@@ -291,7 +291,7 @@ export default function Sector05Wearables() {
 
       {/* ===== 2020s ADS (Mode 2) ===== */}
       <section className="py-20 px-4" style={{
-        background: 'linear-gradient(135deg, hsl(270, 60%, 12%) 0%, hsl(270, 50%, 18%) 50%, hsl(300, 40%, 15%) 100%)'
+        background: 'radial-gradient(ellipse at 20% 50%, rgba(255,92,170,0.2), transparent 60%), radial-gradient(ellipse at 80% 50%, rgba(255,92,170,0.1), transparent 60%), #1A0830'
       }}>
         <div className="max-w-4xl mx-auto mb-10">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white' }}>
@@ -351,7 +351,7 @@ export default function Sector05Wearables() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 30% 30%, hsl(270, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+          background: 'radial-gradient(ellipse at 30% 30%, rgba(255,92,170,0.15), transparent 60%), #1A0830'
         }}>
 
         <div className="max-w-4xl mx-auto">
@@ -406,7 +406,7 @@ export default function Sector05Wearables() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 70% 70%, hsl(330, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+          background: 'radial-gradient(ellipse at 70% 70%, rgba(255,92,170,0.15), transparent 60%), #1A0830'
         }}>
 
         <div ref={perspectiveRef} className="reveal max-w-3xl mx-auto">
