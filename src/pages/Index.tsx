@@ -11,13 +11,15 @@ import ComparativeAnalysis from "@/components/essay/ComparativeAnalysis";
 const Index = () => {
   return (
     <main className="min-h-screen" style={{ background: '#000' }}>
-      <BillboardHero />
+      <ScrollProgressBar />
+      <ChapterNav />
+      <div id="hero"><BillboardHero /></div>
       <IntroSections />
-      <Sector01Wellness />
-      <Sector02Business />
-      <Sector03Investment />
-      <Sector04Software />
-      <Sector05Wearables />
+      <div id="sector-01"><Sector01Wellness /></div>
+      <div id="sector-02"><Sector02Business /></div>
+      <div id="sector-03"><Sector03Investment /></div>
+      <div id="sector-04"><Sector04Software /></div>
+      <div id="sector-05"><Sector05Wearables /></div>
       <ComparativeAnalysis />
     </main>
   );
