@@ -101,13 +101,13 @@ export default function ChapterNav() {
               className="w-[16px] h-[16px] rounded-full border-2 flex items-center justify-center"
               style={{
                 borderColor: isActive
-                  ? 'hsl(var(--ig-pink))'
+                  ? 'hsl(var(--mac-blue-light))'
                   : isPast
-                  ? 'hsl(var(--ig-pink) / 0.5)'
+                  ? 'hsl(var(--mac-blue-light) / 0.5)'
                   : 'rgba(255,255,255,0.2)',
-                background: isActive ? 'hsl(var(--ig-pink))' : 'transparent',
+                background: isActive ? 'hsl(var(--mac-blue-dark))' : 'transparent',
                 boxShadow: isActive
-                  ? '0 0 8px hsl(var(--ig-pink)), 0 0 20px hsl(var(--ig-pink) / 0.25)'
+                  ? '0 0 8px hsl(var(--mac-blue-light)), 0 0 20px hsl(var(--mac-blue-light) / 0.25)'
                   : 'none',
                 transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
                 transform: isActive && transitioning ? 'scale(1.3)' : 'scale(1)',
