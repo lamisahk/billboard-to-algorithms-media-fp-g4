@@ -185,18 +185,18 @@ export default function IntroSections() {
       <section className="mac-desktop py-20 px-4">
         <div ref={introRef} className="reveal">
           <MacWindow title="Introduction.txt">
-            <p className="mb-4">Every year, the average person encounters thousands of advertisements. In the 1980s, you could see them coming: a commercial break, a magazine spread, a billboard on the highway etc. You knew it was an ad. You could look away. 
+            <p className="mb-4">Every year, the average person encounters thousands of advertisements. In the 1980s, you could see them coming: a commercial break, a magazine spread, a billboard on the highway etc. You knew it was an ad. You could look away.  
 
 
-Today you cannot.
+
             </p>
 
-            <div className="my-6 py-4 px-6 text-center rounded" style={{
+            <div className="my-6 py-4 px-6 text-center rounded font-serif" style={{
               background: "hsl(210, 50%, 88%)",
               border: "2px solid hsl(210, 50%, 78%)"
             }}>
               
-              <p className="font-display text-2xl md:text-3xl font-bold" style={{ color: "hsl(215, 70%, 30%)" }}>
+              <p className="text-2xl font-mono font-medium md:text-lg" style={{ color: "hsl(215, 70%, 30%)" }}>
                 Today you cannot.
               </p>
             </div>
