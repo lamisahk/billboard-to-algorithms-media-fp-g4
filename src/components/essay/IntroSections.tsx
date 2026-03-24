@@ -335,7 +335,7 @@ export default function IntroSections() {
       </section>
 
       {/* ===== MECHANICS OF INVISIBILITY (Split screen) ===== */}
-      <section className="py-20 px-4" style={{ background: "#000" }}>
+      <section id="mechanics" className="py-20 px-4" style={{ background: "#000" }}>
         <div ref={mechanicsHeaderRef} className="reveal-blur max-w-4xl mx-auto text-center mb-12">
           <h3 className="font-display text-3xl md:text-5xl font-bold mb-3" style={{ color: "white" }}>
             The Mechanics of Invisibility
