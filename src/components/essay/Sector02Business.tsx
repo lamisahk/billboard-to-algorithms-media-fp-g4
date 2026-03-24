@@ -116,7 +116,7 @@ export default function Sector02Business() {
   return (
     <div>
       {/* ===== SECTOR HEADER (Mode 1) ===== */}
-      <section className="mac-desktop py-24 px-4">
+      <section className="mac-desktop desktop-business py-24 px-4">
         <div ref={headerRef} className="reveal-blur max-w-4xl mx-auto text-center">
           <p className="font-pixel tracking-[0.3em] mb-4 text-sm text-white" style={{ color: 'hsl(180, 100%, 80%)' }}>
             SECTOR
@@ -136,7 +136,7 @@ export default function Sector02Business() {
       </section>
 
       {/* ===== INTRO WINDOW (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section className="mac-desktop desktop-business py-16 px-4">
         <div ref={introRef} className="reveal">
           <MacWindow title="sector_02_intro.txt">
             <p className="mb-4">
@@ -153,7 +153,7 @@ export default function Sector02Business() {
       </section>
 
       {/* ===== 1980s ADS (Mode 1) ===== */}
-      <section className="mac-desktop py-16 px-4">
+      <section className="mac-desktop desktop-business py-16 px-4">
         <div className="max-w-4xl mx-auto mb-6">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white', textShadow: '1px 1px 0 rgba(0,0,0,0.2)' }}>
             1980s Advertisements
@@ -228,7 +228,7 @@ export default function Sector02Business() {
 
       {/* ===== MAC DIALOG BOX ===== */}
       {!dialogDismissed &&
-      <section className="mac-desktop py-16 px-4">
+      <section className="mac-desktop desktop-business py-16 px-4">
           <div className="max-w-md mx-auto">
             <div className="mac-window">
               <div className="mac-titlebar">
