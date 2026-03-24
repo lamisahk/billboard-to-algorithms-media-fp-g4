@@ -51,7 +51,7 @@ export default function TopNav() {
 
   return (
     <nav
-      className="fixed top-[3px] left-0 right-0 z-40 flex justify-center"
+      className="fixed top-[3px] left-0 right-0 z-40 flex justify-center group/nav"
       style={{
         opacity: visible ? 1 : 0,
         pointerEvents: visible ? "auto" : "none",
@@ -60,12 +60,22 @@ export default function TopNav() {
       }}
     >
       <div
-        className="flex items-center gap-1 px-3 py-1.5 rounded-b-lg overflow-x-auto max-w-[95vw] scrollbar-none"
+        className="flex items-center gap-1 px-3 py-1.5 rounded-b-lg overflow-x-auto max-w-[95vw] scrollbar-none transition-all duration-500"
         style={{
-          background: "rgba(0, 0, 0, 0.85)",
-          backdropFilter: "blur(12px)",
-          border: "1px solid rgba(255,255,255,0.08)",
+          background: "rgba(0, 0, 0, 0.15)",
+          backdropFilter: "blur(4px)",
+          border: "1px solid rgba(255,255,255,0.03)",
           borderTop: "none",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.background = "rgba(0, 0, 0, 0.85)";
+          e.currentTarget.style.backdropFilter = "blur(12px)";
+          e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.background = "rgba(0, 0, 0, 0.15)";
+          e.currentTarget.style.backdropFilter = "blur(4px)";
+          e.currentTarget.style.borderColor = "rgba(255,255,255,0.03)";
         }}
       >
         {sections.map((s) => {
