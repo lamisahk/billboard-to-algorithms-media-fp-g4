@@ -96,7 +96,7 @@ export default function ComparativeAnalysis() {
   const rqRef = useStaggerReveal<HTMLDivElement>();
 
   return (
-    <div>
+    <div id="comparative">
       {/* ===== COMPARATIVE ANALYSIS (Mode 3) ===== */}
       <section className="relative py-20 px-4" style={{ background: 'hsl(40, 30%, 96%)' }}>
         {/* Rainbow top border */}
