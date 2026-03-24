@@ -191,15 +191,9 @@ export default function IntroSections() {
 
             </p>
 
-            <div className="my-6 py-4 px-6 text-center rounded font-serif" style={{
-              background: "hsl(210, 50%, 88%)",
-              border: "2px solid hsl(210, 50%, 78%)"
-            }}>
-              
-              <p className="text-2xl font-mono font-medium md:text-lg" style={{ color: "hsl(215, 70%, 30%)" }}>
-                Today you cannot.
-              </p>
-            </div>
+            <p className="my-6 text-2xl font-mono font-medium md:text-lg text-center" style={{ color: "hsl(215, 70%, 30%)" }}>
+              Today you cannot.
+            </p>
 
             <p className="mb-4">
               The ad arrives as a friend's recommendation, a podcast host's morning routine, a documentary on a streaming platform. It knows what you searched three days ago and what you're likely to want before you've consciously decided you want it. Advertising didn't just change its format. It dissolved into the infrastructure of daily life, and somewhere in that process, it stopped looking like advertising at all.
