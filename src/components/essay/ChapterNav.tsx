@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 
 const chapters = [
   { id: "hero", label: "Intro" },
@@ -18,12 +18,12 @@ export default function ChapterNav() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [visible, setVisible] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const prevActiveRef = useRef(0);
+  const [transitioning, setTransitioning] = useState(false);
 
   const update = useCallback(() => {
-    // Show after hero (past first viewport)
     setVisible(window.scrollY > window.innerHeight * 0.8);
 
-    // Find which section is most in view
     let bestIndex = 0;
     let bestTop = Infinity;
     const viewMid = window.innerHeight / 2;
@@ -38,6 +38,12 @@ export default function ChapterNav() {
         bestIndex = i;
       }
     });
+
+    if (bestIndex !== prevActiveRef.current) {
+      setTransitioning(true);
+      prevActiveRef.current = bestIndex;
+      setTimeout(() => setTransitioning(false), 300);
+    }
     setActiveIndex(bestIndex);
   }, []);
 
@@ -65,56 +71,77 @@ export default function ChapterNav() {
         className="absolute left-[7px] top-[7px] w-[2px] rounded-full"
         style={{
           height: `calc(100% - 14px)`,
-          background: 'rgba(255,255,255,0.1)',
+          background: 'rgba(255,255,255,0.08)',
         }}
       >
         <div
-          className="w-full rounded-full transition-all duration-300"
+          className="w-full rounded-full"
           style={{
             height: `${spineProgress}%`,
-            background: 'hsl(330, 90%, 55%)',
+            background: 'linear-gradient(180deg, hsl(var(--ig-pink)), hsl(var(--ig-amber)))',
+            transition: 'height 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
           }}
         />
       </div>
 
-      {chapters.map((ch, i) => (
-        <div
-          key={ch.id}
-          className="relative flex items-center py-[6px] cursor-pointer group"
-          onClick={() => scrollTo(ch.id)}
-          onMouseEnter={() => setHoveredIndex(i)}
-          onMouseLeave={() => setHoveredIndex(null)}
-        >
-          {/* Dot */}
-          <div
-            className="w-[16px] h-[16px] rounded-full border-2 transition-all duration-300 flex items-center justify-center"
-            style={{
-              borderColor: i === activeIndex ? 'hsl(330, 90%, 55%)' : 'rgba(255,255,255,0.25)',
-              background: i === activeIndex ? 'hsl(330, 90%, 55%)' : 'transparent',
-              boxShadow: i === activeIndex ? '0 0 8px hsl(330, 90%, 55%), 0 0 16px hsl(330, 90%, 55% / 0.3)' : 'none',
-            }}
-          >
-            {i <= activeIndex && i !== activeIndex && (
-              <div className="w-[6px] h-[6px] rounded-full" style={{ background: 'rgba(255,255,255,0.5)' }} />
-            )}
-          </div>
+      {chapters.map((ch, i) => {
+        const isActive = i === activeIndex;
+        const isPast = i < activeIndex;
 
-          {/* Label (slides in on hover) */}
-          <span
-            className="absolute left-6 whitespace-nowrap font-mono text-[10px] tracking-wider px-2 py-1 rounded transition-all duration-200 pointer-events-none"
-            style={{
-              opacity: hoveredIndex === i ? 1 : 0,
-              transform: hoveredIndex === i ? 'translateX(0)' : 'translateX(-8px)',
-              background: 'rgba(0,0,0,0.8)',
-              color: i === activeIndex ? 'hsl(330, 90%, 65%)' : 'rgba(255,255,255,0.7)',
-              backdropFilter: 'blur(8px)',
-              border: '1px solid rgba(255,255,255,0.1)',
-            }}
+        return (
+          <div
+            key={ch.id}
+            className="relative flex items-center py-[6px] cursor-pointer group"
+            onClick={() => scrollTo(ch.id)}
+            onMouseEnter={() => setHoveredIndex(i)}
+            onMouseLeave={() => setHoveredIndex(null)}
           >
-            {ch.label}
-          </span>
-        </div>
-      ))}
+            {/* Dot */}
+            <div
+              className="w-[16px] h-[16px] rounded-full border-2 flex items-center justify-center"
+              style={{
+                borderColor: isActive
+                  ? 'hsl(var(--ig-pink))'
+                  : isPast
+                  ? 'hsl(var(--ig-pink) / 0.5)'
+                  : 'rgba(255,255,255,0.2)',
+                background: isActive ? 'hsl(var(--ig-pink))' : 'transparent',
+                boxShadow: isActive
+                  ? '0 0 8px hsl(var(--ig-pink)), 0 0 20px hsl(var(--ig-pink) / 0.25)'
+                  : 'none',
+                transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+                transform: isActive && transitioning ? 'scale(1.3)' : 'scale(1)',
+              }}
+            >
+              {isPast && (
+                <div
+                  className="w-[6px] h-[6px] rounded-full"
+                  style={{
+                    background: 'hsl(var(--ig-pink) / 0.6)',
+                    transition: 'opacity 0.3s ease',
+                  }}
+                />
+              )}
+            </div>
+
+            {/* Label */}
+            <span
+              className="absolute left-6 whitespace-nowrap font-mono text-[10px] tracking-wider px-2 py-1 rounded pointer-events-none"
+              style={{
+                opacity: hoveredIndex === i ? 1 : 0,
+                transform: hoveredIndex === i ? 'translateX(0)' : 'translateX(-8px)',
+                transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                background: 'rgba(0,0,0,0.85)',
+                color: isActive ? 'hsl(var(--ig-pink))' : 'rgba(255,255,255,0.7)',
+                backdropFilter: 'blur(8px)',
+                border: '1px solid rgba(255,255,255,0.1)',
+              }}
+            >
+              {ch.label}
+            </span>
+          </div>
+        );
+      })}
     </nav>
   );
 }
