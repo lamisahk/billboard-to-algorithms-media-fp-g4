@@ -117,7 +117,7 @@ export default function ChapterNav() {
                 <div
                   className="w-[6px] h-[6px] rounded-full"
                   style={{
-                    background: 'hsl(var(--ig-pink) / 0.6)',
+                    background: 'hsl(var(--mac-blue-light) / 0.6)',
                     transition: 'opacity 0.3s ease',
                   }}
                 />
