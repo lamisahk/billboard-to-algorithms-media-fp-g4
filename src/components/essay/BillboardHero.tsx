@@ -5,11 +5,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const STEPS = [
   {
     billboard: (
-      <div className="flex flex-col items-center justify-center h-full px-8 py-10 gap-4">
+      <div className="flex flex-col items-center justify-center h-full px-6 py-8 gap-3">
         <p className="font-pixel text-[8px] tracking-[0.3em] text-stone-400 uppercase">MCOM 103 · Group 4 (L51)</p>
-        <h1 className="font-display text-4xl md:text-6xl font-black text-center tracking-tight leading-[1.1] text-stone-800">
+        <h1 className="font-display text-3xl md:text-5xl font-black text-center tracking-tight leading-[1.1] text-stone-800">
           From Billboards<br />to Algorithms
         </h1>
+        <p className="font-serif text-xs md:text-sm text-center italic text-stone-500 leading-relaxed max-w-xs">
+          The Evolution of Advertising<br />as Social Engineering (1980s–2020s)
+        </p>
         <div className="flex gap-1.5 mt-1">
           <div className="w-10 h-1 rounded-full bg-amber-400/70" />
           <div className="w-10 h-1 rounded-full bg-rose-400/70" />
