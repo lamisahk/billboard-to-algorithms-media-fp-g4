@@ -19,7 +19,7 @@ export default function InstagramCard({
   dimensions,
 }: InstagramCardProps) {
   return (
-    <div className="ig-card max-w-2xl mx-auto hover-lift hover-shine">
+    <div className="ig-card max-w-2xl mx-auto">
       {/* Header */}
       <div className="flex items-center gap-3 px-4 py-3">
         <div className="ig-avatar-ring w-10 h-10 flex items-center justify-center">
