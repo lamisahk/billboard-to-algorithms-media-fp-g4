@@ -7,96 +7,96 @@ import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 /* ====== AD DATA ====== */
 
 const walkmanDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Young upwardly mobile adults aged 18 to 35, reached through prime-time television and aspirational lifestyle publications. The campaign used both sports and music celebrity endorsements to reach fitness-oriented and culturally engaged audiences simultaneously. The editorial placement in publications like Esquire targeted a financially secure male demographic while television placements ensured broader reach."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Very high. The Sony logo and product name are prominent throughout. There is no attempt to disguise the commercial nature of the messaging. The ads are clearly formatted as product advertisements with explicit branding."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The primary mechanism is escapism and the fantasy of personal autonomy. Every visual in the campaign depicts the Walkman user as someone who has successfully created their own private sonic world within a shared physical space. Jogging alone, commuting alone, moving through crowds while internally elsewhere: the device promises a personal freedom that exists independent of external circumstances. The aspiration being sold is not the device itself but the emotional state it enables."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The Walkman campaign encodes the ideology of the self-contained individual: the person who has control over their own sensory environment and does not need to share the soundtrack of their life with anyone else. This was genuinely novel in 1980. Before personal audio, music was communal: the radio in the kitchen, the record player in the living room. The Walkman sold the idea that your audio world was yours alone, and that this privacy was a form of liberation. The device implicitly encouraged a kind of anti-conformism: you do not have to listen to what everyone else is listening to."
-  },
-  {
-    label: "Audience resistance",
-    content: "Low. The novelty of the product was so complete, and the emotional appeal of personal freedom so direct, that critical resistance was structurally difficult. There was no established media literacy framework for evaluating personal technology advertising in 1980. The product was also genuinely new in a way that made the aspiration it sold feel entirely plausible."
-  }
-];
+{
+  label: "Targeting methods",
+  content: "Young upwardly mobile adults aged 18 to 35, reached through prime-time television and aspirational lifestyle publications. The campaign used both sports and music celebrity endorsements to reach fitness-oriented and culturally engaged audiences simultaneously. The editorial placement in publications like Esquire targeted a financially secure male demographic while television placements ensured broader reach."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Very high. The Sony logo and product name are prominent throughout. There is no attempt to disguise the commercial nature of the messaging. The ads are clearly formatted as product advertisements with explicit branding."
+},
+{
+  label: "Psychological techniques",
+  content: "The primary mechanism is escapism and the fantasy of personal autonomy. Every visual in the campaign depicts the Walkman user as someone who has successfully created their own private sonic world within a shared physical space. Jogging alone, commuting alone, moving through crowds while internally elsewhere: the device promises a personal freedom that exists independent of external circumstances. The aspiration being sold is not the device itself but the emotional state it enables."
+},
+{
+  label: "Ideological messaging",
+  content: "The Walkman campaign encodes the ideology of the self-contained individual: the person who has control over their own sensory environment and does not need to share the soundtrack of their life with anyone else. This was genuinely novel in 1980. Before personal audio, music was communal: the radio in the kitchen, the record player in the living room. The Walkman sold the idea that your audio world was yours alone, and that this privacy was a form of liberation. The device implicitly encouraged a kind of anti-conformism: you do not have to listen to what everyone else is listening to."
+},
+{
+  label: "Audience resistance",
+  content: "Low. The novelty of the product was so complete, and the emotional appeal of personal freedom so direct, that critical resistance was structurally difficult. There was no established media literacy framework for evaluating personal technology advertising in 1980. The product was also genuinely new in a way that made the aspiration it sold feel entirely plausible."
+}];
+
 
 const casioDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Professional adults and university students who needed multifunctional portable devices. The decision to air the ad during M*A*S*H, a programme with a well-documented middle-income, educated adult demographic, reflects deliberate targeting of pragmatic professionals aged 30 to 50 who would respond to efficiency and value arguments."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Very high. The ad is transparently a product demonstration with clear branding, feature showcasing, and price disclosure. Bert Parks speaks directly to the camera in the manner of a product presenter, making the commercial intent completely unambiguous."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The primary appeal is to rationality and efficiency, using a \"best of both worlds\" argument: why buy a calculator and a watch separately when this single device delivers both? This appeals to the educated, pragmatic audience's sense of intelligent decision-making. The use of Parks, a trusted and familiar television personality, adds a layer of social proof and warmth that softens the purely functional pitch."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The ad encodes the ideology of the intellectually capable, economically prudent professional who embraces new technology as a form of smart living. It positions the Casio calculator watch as the choice of someone who understands that the future of personal devices is convergence: one object replacing many. This framing places the buyer at the leading edge of a new era of personal computing, participating in a technological transformation that is beginning at the wrist."
-  },
-  {
-    label: "Audience resistance",
-    content: "Moderate. The rational, product-focused nature of the ad makes it straightforward to evaluate critically. However, the implied identity of the smart, forward-thinking professional who recognises value when he sees it is subtly flattering and harder to resist than it first appears."
-  }
-];
+{
+  label: "Targeting methods",
+  content: "Professional adults and university students who needed multifunctional portable devices. The decision to air the ad during M*A*S*H, a programme with a well-documented middle-income, educated adult demographic, reflects deliberate targeting of pragmatic professionals aged 30 to 50 who would respond to efficiency and value arguments."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Very high. The ad is transparently a product demonstration with clear branding, feature showcasing, and price disclosure. Bert Parks speaks directly to the camera in the manner of a product presenter, making the commercial intent completely unambiguous."
+},
+{
+  label: "Psychological techniques",
+  content: "The primary appeal is to rationality and efficiency, using a \"best of both worlds\" argument: why buy a calculator and a watch separately when this single device delivers both? This appeals to the educated, pragmatic audience's sense of intelligent decision-making. The use of Parks, a trusted and familiar television personality, adds a layer of social proof and warmth that softens the purely functional pitch."
+},
+{
+  label: "Ideological messaging",
+  content: "The ad encodes the ideology of the intellectually capable, economically prudent professional who embraces new technology as a form of smart living. It positions the Casio calculator watch as the choice of someone who understands that the future of personal devices is convergence: one object replacing many. This framing places the buyer at the leading edge of a new era of personal computing, participating in a technological transformation that is beginning at the wrist."
+},
+{
+  label: "Audience resistance",
+  content: "Moderate. The rational, product-focused nature of the ad makes it straightforward to evaluate critically. However, the implied identity of the smart, forward-thinking professional who recognises value when he sees it is subtly flattering and harder to resist than it first appears."
+}];
+
 
 const appleWatchDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Advanced algorithmic targeting across demographic segments including health-conscious adults, older parents buying for elderly relatives, athletes, and people managing chronic medical conditions. Apple deployed behavioral data and platform-specific positioning on YouTube and Instagram to serve differentiated versions of the campaign to different audience profiles. The 1 January release date was also strategic: a moment of existential reflection and resolution-making for a vast number of people simultaneously."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Moderately low. The ad is presented in documentary format, using real emergency calls rather than actors and scripted scenarios. The Apple logo appears only at the end. The campaign won awards precisely because it successfully blurred the line between branded content and authentic human storytelling. The Verge published a piece titled \"Apple's new ad invites you to imagine dying alone without a Watch on your wrist,\" which captures the critical recognition of what the format was doing."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The campaign is a textbook fear-appeal framework: it opens with genuine life-threatening emergencies and resolves them through Apple Watch. The use of real audio recordings rather than acted scenarios makes the fear genuine rather than simulated. The emotional identification is total: the audience is not watching characters, they are hearing real people in real distress. The resolution then positions the Watch as the difference between survival and death, creating a purchase impulse rooted in genuine survival anxiety rather than aspiration."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The ad encodes the ideology that responsible self-care in the 2020s requires continuous biometric connectivity. Not owning an Apple Watch is implicitly framed as a form of negligence rather than a consumer choice. The Watch is presented not as a lifestyle accessory but as a moral obligation, a guardian device that makes you reachable and rescuable regardless of circumstances. This normalises continuous body monitoring as a safety practice rather than a commercial transaction, and makes the data collection that underpins the Watch's functionality feel not just acceptable but necessary."
-  },
-  {
-    label: "Audience resistance",
-    content: "Extremely low. Fear-based appeals to physical survival are among the most counter-argument-resistant mechanisms in advertising. The documentary format bypasses traditional ad skepticism because the audience is not evaluating a sales pitch; they are responding to human beings in distress. The ethical criticism the campaign received, including from mainstream media outlets, suggests that some audiences did recognise the manipulation, but for the target demographic, the emotional pull was designed to be stronger than the analytical response."
-  }
-];
+{
+  label: "Targeting methods",
+  content: "Advanced algorithmic targeting across demographic segments including health-conscious adults, older parents buying for elderly relatives, athletes, and people managing chronic medical conditions. Apple deployed behavioral data and platform-specific positioning on YouTube and Instagram to serve differentiated versions of the campaign to different audience profiles. The 1 January release date was also strategic: a moment of existential reflection and resolution-making for a vast number of people simultaneously."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Moderately low. The ad is presented in documentary format, using real emergency calls rather than actors and scripted scenarios. The Apple logo appears only at the end. The campaign won awards precisely because it successfully blurred the line between branded content and authentic human storytelling. The Verge published a piece titled \"Apple's new ad invites you to imagine dying alone without a Watch on your wrist,\" which captures the critical recognition of what the format was doing."
+},
+{
+  label: "Psychological techniques",
+  content: "The campaign is a textbook fear-appeal framework: it opens with genuine life-threatening emergencies and resolves them through Apple Watch. The use of real audio recordings rather than acted scenarios makes the fear genuine rather than simulated. The emotional identification is total: the audience is not watching characters, they are hearing real people in real distress. The resolution then positions the Watch as the difference between survival and death, creating a purchase impulse rooted in genuine survival anxiety rather than aspiration."
+},
+{
+  label: "Ideological messaging",
+  content: "The ad encodes the ideology that responsible self-care in the 2020s requires continuous biometric connectivity. Not owning an Apple Watch is implicitly framed as a form of negligence rather than a consumer choice. The Watch is presented not as a lifestyle accessory but as a moral obligation, a guardian device that makes you reachable and rescuable regardless of circumstances. This normalises continuous body monitoring as a safety practice rather than a commercial transaction, and makes the data collection that underpins the Watch's functionality feel not just acceptable but necessary."
+},
+{
+  label: "Audience resistance",
+  content: "Extremely low. Fear-based appeals to physical survival are among the most counter-argument-resistant mechanisms in advertising. The documentary format bypasses traditional ad skepticism because the audience is not evaluating a sales pitch; they are responding to human beings in distress. The ethical criticism the campaign received, including from mainstream media outlets, suggests that some audiences did recognise the manipulation, but for the target demographic, the emotional pull was designed to be stronger than the analytical response."
+}];
+
 
 const ouraDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Health-conscious millennials and professionals interested in wellness optimisation, sleep quality, and biometric self-tracking. Oura reached this audience through digital behavioral targeting and influencer seeding within biohacking, sleep science, and holistic wellness content communities. Unlike Apple Watch, which pursued mass broadcast, Oura targeted a specific self-optimisation subculture whose members were already primed to receive biometric monitoring as a form of self-knowledge rather than surveillance."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Low to moderate. The ad's introspective, documentary-adjacent aesthetic is a deliberate departure from traditional wearable advertising. It does not show athletes or performance metrics. It does not make explicit product claims. It asks a question, \"why do you feel how you feel,\" and positions the ring as the answer. The commercial intent is present but embedded within a format that feels more like a wellness philosophy than a sales pitch."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The campaign operates through curiosity and epistemic anxiety. By suggesting that you do not fully understand your own body without the ring's data, it manufactures a knowledge gap and positions the product as the only way to close it. This is subtler and more sophisticated than fear-based advertising: rather than threatening the audience with emergencies, it suggests that their self-understanding is incomplete. The aspiration being sold is not safety or fitness but self-knowledge, which is a more durable and harder-to-resist appeal."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The campaign encodes the ideology that the body is a system that generates data, and that understanding yourself requires translating that data through technology. This is the quantified self premise made explicit: your feelings, your energy levels, your readiness, your sleep quality are not things you know intuitively. They are things a ring measures and interprets for you. The ideology positions biological self-knowledge as dependent on commercial hardware, making the subscription to Oura's platform a condition for understanding your own experience."
-  },
-  {
-    label: "Audience resistance",
-    content: "Very low for the target demographic. The biohacking and wellness communities that Oura seeded its advertising within were already ideologically aligned with the quantified self premise. For this audience, wearing a continuous biometric monitor is not surveillance but self-care. The campaign's introspective tone makes resistance feel like a rejection of self-understanding rather than skepticism of a commercial product. The monthly subscription model, which requires ongoing payment to access your own health data, is rendered invisible by the intimacy of the framing."
-  }
-];
+{
+  label: "Targeting methods",
+  content: "Health-conscious millennials and professionals interested in wellness optimisation, sleep quality, and biometric self-tracking. Oura reached this audience through digital behavioral targeting and influencer seeding within biohacking, sleep science, and holistic wellness content communities. Unlike Apple Watch, which pursued mass broadcast, Oura targeted a specific self-optimisation subculture whose members were already primed to receive biometric monitoring as a form of self-knowledge rather than surveillance."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Low to moderate. The ad's introspective, documentary-adjacent aesthetic is a deliberate departure from traditional wearable advertising. It does not show athletes or performance metrics. It does not make explicit product claims. It asks a question, \"why do you feel how you feel,\" and positions the ring as the answer. The commercial intent is present but embedded within a format that feels more like a wellness philosophy than a sales pitch."
+},
+{
+  label: "Psychological techniques",
+  content: "The campaign operates through curiosity and epistemic anxiety. By suggesting that you do not fully understand your own body without the ring's data, it manufactures a knowledge gap and positions the product as the only way to close it. This is subtler and more sophisticated than fear-based advertising: rather than threatening the audience with emergencies, it suggests that their self-understanding is incomplete. The aspiration being sold is not safety or fitness but self-knowledge, which is a more durable and harder-to-resist appeal."
+},
+{
+  label: "Ideological messaging",
+  content: "The campaign encodes the ideology that the body is a system that generates data, and that understanding yourself requires translating that data through technology. This is the quantified self premise made explicit: your feelings, your energy levels, your readiness, your sleep quality are not things you know intuitively. They are things a ring measures and interprets for you. The ideology positions biological self-knowledge as dependent on commercial hardware, making the subscription to Oura's platform a condition for understanding your own experience."
+},
+{
+  label: "Audience resistance",
+  content: "Very low for the target demographic. The biohacking and wellness communities that Oura seeded its advertising within were already ideologically aligned with the quantified self premise. For this audience, wearing a continuous biometric monitor is not surveillance but self-care. The campaign's introspective tone makes resistance feel like a rejection of self-understanding rather than skepticism of a commercial product. The monthly subscription model, which requires ongoing payment to access your own health data, is rendered invisible by the intimacy of the framing."
+}];
+
 
 /* ====== COMPONENT ====== */
 
@@ -118,7 +118,7 @@ export default function Sector05Wearables() {
       {/* ===== SECTOR HEADER (Mode 1) ===== */}
       <section className="mac-desktop py-24 px-4">
         <div ref={headerRef} className="reveal-blur max-w-4xl mx-auto text-center">
-          <p className="font-pixel text-[10px] tracking-[0.3em] mb-4" style={{ color: 'hsl(180, 100%, 80%)' }}>
+          <p className="font-pixel tracking-[0.3em] mb-4 text-sm text-white" style={{ color: 'hsl(180, 100%, 80%)' }}>
             SECTOR
           </p>
           <h2 className="font-display text-7xl md:text-9xl font-extrabold mb-4" style={{ color: 'white', textShadow: '2px 2px 0 rgba(0,0,0,0.3)' }}>
@@ -190,8 +190,8 @@ export default function Sector05Wearables() {
                 allowFullScreen
                 loading="lazy"
                 title="Sony Walkman 1981 Advertisement"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              />
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+              
             </div>
 
             <AnalysisAccordion dimensions={walkmanDimensions} variant="mac" />
@@ -225,8 +225,8 @@ export default function Sector05Wearables() {
                 allowFullScreen
                 loading="lazy"
                 title="Casio Calculator Watch 1980 Commercial featuring Bert Parks"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              />
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+              
             </div>
 
             <AnalysisAccordion dimensions={casioDimensions} variant="mac" />
@@ -235,8 +235,8 @@ export default function Sector05Wearables() {
       </section>
 
       {/* ===== MAC DIALOG BOX ===== */}
-      {!dialogDismissed && (
-        <section className="mac-desktop py-8 px-4">
+      {!dialogDismissed &&
+      <section className="mac-desktop py-8 px-4">
           <div className="max-w-md mx-auto">
             <MacWindow title="System Alert">
               <div className="text-center py-4">
@@ -248,17 +248,17 @@ export default function Sector05Wearables() {
                 </p>
                 <div className="flex gap-3 justify-center">
                   <button
-                    onClick={() => setDialogDismissed(true)}
-                    className="font-pixel text-[9px] px-4 py-2 border-2 rounded-sm hover:bg-gray-100 transition-colors"
-                    style={{ borderColor: '#999', color: '#666' }}
-                  >
+                  onClick={() => setDialogDismissed(true)}
+                  className="font-pixel text-[9px] px-4 py-2 border-2 rounded-sm hover:bg-gray-100 transition-colors"
+                  style={{ borderColor: '#999', color: '#666' }}>
+                  
                     Cancel
                   </button>
                   <button
-                    onClick={() => setDialogDismissed(true)}
-                    className="font-pixel text-[9px] px-4 py-2 border-2 rounded-sm transition-colors"
-                    style={{ background: 'hsl(210, 55%, 50%)', borderColor: 'hsl(215, 65%, 28%)', color: 'white' }}
-                  >
+                  onClick={() => setDialogDismissed(true)}
+                  className="font-pixel text-[9px] px-4 py-2 border-2 rounded-sm transition-colors"
+                  style={{ background: 'hsl(210, 55%, 50%)', borderColor: 'hsl(215, 65%, 28%)', color: 'white' }}>
+                  
                     Continue →
                   </button>
                 </div>
@@ -266,7 +266,7 @@ export default function Sector05Wearables() {
             </MacWindow>
           </div>
         </section>
-      )}
+      }
 
       {/* ===== ERA TRANSITION BAR ===== */}
       <section className="py-20 px-4" style={{ background: '#000' }}>
@@ -308,8 +308,8 @@ export default function Sector05Wearables() {
             username="apple"
             verified
             caption="A sixty-second television and digital commercial released on 1 January 2022 in which Apple plays back audio from three real 911 emergency calls made through Apple Watch Series 7. The first caller is a woman whose car has flipped and is filling with water up to her neck. The second is a paddleboarder blown out to sea by strong wind. The third is an elderly farmer who has fallen from a ladder and broken his leg. None of the callers could reach their iPhone. All three reached emergency services through the Watch. The ad closes with the text: &quot;With the help of their watch, Jason, Jim and Amanda were rescued in minutes.&quot; The Watch itself is never shown. The campaign included four separate spots and won a D&AD award in 2022."
-            dimensions={appleWatchDimensions}
-          >
+            dimensions={appleWatchDimensions}>
+            
             <div className="embed-container">
               <iframe
                 src="https://www.youtube.com/embed/-Fda_frQH_4"
@@ -318,8 +318,8 @@ export default function Sector05Wearables() {
                 allowFullScreen
                 loading="lazy"
                 title="Apple Watch Series 7 '911' Campaign"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              />
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+              
             </div>
           </InstagramCard>
         </div>
@@ -330,8 +330,8 @@ export default function Sector05Wearables() {
             username="ouraring"
             verified
             caption="A sixty-second brand spot structured as a series of three vignettes, each built around a nursery rhyme call-and-response format. In the first, a woman wakes to her 5:30am alarm with a poor sleep score; the alarm itself tells her she is tired and she knows it, so she can skip the gym. In the second, a man under stress at a library is prompted by a fellow patron voicing his ring: he is anxious and due for a break. In the third, a woman cycles past a stalled car in peak condition; the impressed onlookers recite her biometric data in harmony: &quot;If your heart rate variability is 50 and your body temperature is normal, if your breathing rate is optimal and you know it: bring it on.&quot; The ad presents the ring's data not as surveillance but as a trusted companion that speaks on the wearer's behalf."
-            dimensions={ouraDimensions}
-          >
+            dimensions={ouraDimensions}>
+            
             <div className="embed-container">
               <iframe
                 src="https://www.ispot.tv/share/Onwe"
@@ -340,8 +340,8 @@ export default function Sector05Wearables() {
                 allowFullScreen
                 loading="lazy"
                 title="Oura Ring 'Know Why You Feel How You Feel' Campaign"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              />
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+              
             </div>
           </InstagramCard>
         </div>
@@ -449,6 +449,6 @@ export default function Sector05Wearables() {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }

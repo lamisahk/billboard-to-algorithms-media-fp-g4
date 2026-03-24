@@ -7,96 +7,96 @@ import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 /* ====== AD DATA ====== */
 
 const ibmDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Small business owners and non-technical individuals intimidated by computing. IBM reached this audience through mainstream television and print, using the Little Tramp to personify the everyman struggling to keep pace with a changing professional environment, deliberately making the personal computer feel approachable rather than threatening."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Very high. The ad moved away from subtle corporate branding toward a bold narrative style, but the commercial intent was never in doubt. The IBM logo is prominent, the product's purpose is clearly stated, and an explicit voiceover at the end names the \"IBM Personal Computer\" directly."
-  },
-  {
-    label: "Psychological techniques",
-    content: "Celebrity branding through the Little Tramp creates instant audience identification. The psychological masterstroke is sympathy: if even this famously clumsy, struggling everyman can master the machine, anyone can. The ad sells an identity of empowered competence by lowering the barrier of self-doubt."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The ad encodes the ideology of democratised productivity: the PC shifts from a tool of bureaucracy into a liberating personal asset for the ordinary worker. By using a character who represents the common man, IBM sells the idea that individual agency over one's own labour is now achievable through technology. Work competence becomes something you purchase and install."
-  },
-  {
-    label: "Audience resistance",
-    content: "Recognising this as an advertisement was easy. Resisting the persuasion was harder. The nostalgia and warmth of the Little Tramp created a disarming effect that made purchasing the IBM PC feel like receiving a friendly tip rather than responding to a sales campaign for expensive technology."
-  },
-];
+{
+  label: "Targeting methods",
+  content: "Small business owners and non-technical individuals intimidated by computing. IBM reached this audience through mainstream television and print, using the Little Tramp to personify the everyman struggling to keep pace with a changing professional environment, deliberately making the personal computer feel approachable rather than threatening."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Very high. The ad moved away from subtle corporate branding toward a bold narrative style, but the commercial intent was never in doubt. The IBM logo is prominent, the product's purpose is clearly stated, and an explicit voiceover at the end names the \"IBM Personal Computer\" directly."
+},
+{
+  label: "Psychological techniques",
+  content: "Celebrity branding through the Little Tramp creates instant audience identification. The psychological masterstroke is sympathy: if even this famously clumsy, struggling everyman can master the machine, anyone can. The ad sells an identity of empowered competence by lowering the barrier of self-doubt."
+},
+{
+  label: "Ideological messaging",
+  content: "The ad encodes the ideology of democratised productivity: the PC shifts from a tool of bureaucracy into a liberating personal asset for the ordinary worker. By using a character who represents the common man, IBM sells the idea that individual agency over one's own labour is now achievable through technology. Work competence becomes something you purchase and install."
+},
+{
+  label: "Audience resistance",
+  content: "Recognising this as an advertisement was easy. Resisting the persuasion was harder. The nostalgia and warmth of the Little Tramp created a disarming effect that made purchasing the IBM PC feel like receiving a friendly tip rather than responding to a sales campaign for expensive technology."
+}];
+
 
 const amexDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Affluent business professionals and aspirational upwardly mobile workers, reached through prime-time television and premium print media. The campaign did not target broadly: it targeted people who wanted to be seen as belonging to an establishment that the card represented. The $55 annual membership fee itself functioned as a targeting mechanism, filtering for consumers willing to pay for status."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "High. The ads were clearly formatted as television commercials with consistent brand presentation and tagline. What was less obvious was the nature of what was being sold. The card's actual financial features were almost never mentioned. The product being sold was social position."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The campaign operates entirely through exclusivity and social proof. By framing cardholders as \"members\" rather than customers, American Express repositioned a financial transaction as entry into a club. The rite-of-passage framing, particularly the father-and-son lawyer spot, ties the card to professional legitimacy and generational inheritance of status. Owning the card becomes evidence that you have arrived."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The ad encodes the ideology that professional success is a social identity confirmed by the objects you carry and the establishments that recognise you. The card does not help you do your work better. It signals to others that you are the kind of person who belongs among those who matter. Success in this framing is not about competence but about membership, and membership is something you pay for annually."
-  },
-  {
-    label: "Audience resistance",
-    content: "Moderate. The commercial intent was obvious. The aspiration, however, was difficult to dismiss because the campaign tapped into something real: professional environments in the 1980s were deeply status-conscious, and the signals you sent through your wallet, your suit, and your restaurant choices carried genuine social weight. The ad did not fabricate that dynamic. It monetised it."
-  },
-];
+{
+  label: "Targeting methods",
+  content: "Affluent business professionals and aspirational upwardly mobile workers, reached through prime-time television and premium print media. The campaign did not target broadly: it targeted people who wanted to be seen as belonging to an establishment that the card represented. The $55 annual membership fee itself functioned as a targeting mechanism, filtering for consumers willing to pay for status."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "High. The ads were clearly formatted as television commercials with consistent brand presentation and tagline. What was less obvious was the nature of what was being sold. The card's actual financial features were almost never mentioned. The product being sold was social position."
+},
+{
+  label: "Psychological techniques",
+  content: "The campaign operates entirely through exclusivity and social proof. By framing cardholders as \"members\" rather than customers, American Express repositioned a financial transaction as entry into a club. The rite-of-passage framing, particularly the father-and-son lawyer spot, ties the card to professional legitimacy and generational inheritance of status. Owning the card becomes evidence that you have arrived."
+},
+{
+  label: "Ideological messaging",
+  content: "The ad encodes the ideology that professional success is a social identity confirmed by the objects you carry and the establishments that recognise you. The card does not help you do your work better. It signals to others that you are the kind of person who belongs among those who matter. Success in this framing is not about competence but about membership, and membership is something you pay for annually."
+},
+{
+  label: "Audience resistance",
+  content: "Moderate. The commercial intent was obvious. The aspiration, however, was difficult to dismiss because the campaign tapped into something real: professional environments in the 1980s were deeply status-conscious, and the signals you sent through your wallet, your suit, and your restaurant choices carried genuine social weight. The ad did not fabricate that dynamic. It monetised it."
+}];
+
 
 const masterclassDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Aspirational professionals in creative industries and ambitious strivers who believe consuming elite content is a shortcut to elite status. Unlike the 1980s, MasterClass deploys algorithmic behavioral targeting on Instagram and YouTube, exposing ads specifically to users whose browsing history signals interest in Vogue, leadership, and career advancement. Retargeting ensures the ad reappears across platforms after a single engagement, creating an omnipresent brand presence that mirrors the \"always-on\" professional identity the course itself promotes."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Low to moderate. The trailer adopts a cinematic documentary aesthetic that deliberately blurs the line between educational content and promotional material. It feels like a personal invitation to observe a private world rather than a sales pitch for a subscription service. The audience is positioned as a potential insider, not a customer."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The ad induces aspirational anxiety: it implies there is exclusive knowledge and access that separates elite professionals from everyone else, and purchasing the MasterClass is the only route to that access. Authority bias operates through Wintour's status, her decades of industry dominance lending the content an unquestionable credibility. The combination creates a purchase that feels like closing an information gap rather than spending money."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The ad promotes the ideology that there is no meaningful division between private personality and professional brand. Success is presented as a curated performance of confidence, style, and vision that can be learned and purchased. The identity being sold is \"the personal brand as professional capital\": to be successful, you must transform your entire self into a marketable product, and the first purchase on that journey is this one."
-  },
-  {
-    label: "Audience resistance",
-    content: "For a critical audience, resistance is possible. Wintour's specific leadership style, widely characterised as demanding and cold, can read as outdated in a professional culture increasingly oriented around collaboration and psychological safety. A viewer who recognises this may dismiss the MasterClass as a high-priced subscription built around a management model that no longer applies. However, for the aspirational target audience, that critical distance is unlikely to activate."
-  },
-];
+{
+  label: "Targeting methods",
+  content: "Aspirational professionals in creative industries and ambitious strivers who believe consuming elite content is a shortcut to elite status. Unlike the 1980s, MasterClass deploys algorithmic behavioral targeting on Instagram and YouTube, exposing ads specifically to users whose browsing history signals interest in Vogue, leadership, and career advancement. Retargeting ensures the ad reappears across platforms after a single engagement, creating an omnipresent brand presence that mirrors the \"always-on\" professional identity the course itself promotes."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Low to moderate. The trailer adopts a cinematic documentary aesthetic that deliberately blurs the line between educational content and promotional material. It feels like a personal invitation to observe a private world rather than a sales pitch for a subscription service. The audience is positioned as a potential insider, not a customer."
+},
+{
+  label: "Psychological techniques",
+  content: "The ad induces aspirational anxiety: it implies there is exclusive knowledge and access that separates elite professionals from everyone else, and purchasing the MasterClass is the only route to that access. Authority bias operates through Wintour's status, her decades of industry dominance lending the content an unquestionable credibility. The combination creates a purchase that feels like closing an information gap rather than spending money."
+},
+{
+  label: "Ideological messaging",
+  content: "The ad promotes the ideology that there is no meaningful division between private personality and professional brand. Success is presented as a curated performance of confidence, style, and vision that can be learned and purchased. The identity being sold is \"the personal brand as professional capital\": to be successful, you must transform your entire self into a marketable product, and the first purchase on that journey is this one."
+},
+{
+  label: "Audience resistance",
+  content: "For a critical audience, resistance is possible. Wintour's specific leadership style, widely characterised as demanding and cold, can read as outdated in a professional culture increasingly oriented around collaboration and psychological safety. A viewer who recognises this may dismiss the MasterClass as a high-priced subscription built around a management model that no longer applies. However, for the aspirational target audience, that critical distance is unlikely to activate."
+}];
+
 
 const mondayDimensions = [
-  {
-    label: "Targeting methods",
-    content: "A broad audience of computer-based professionals, whether in-office or remote, along with managers and team leaders frustrated by rigid workflows. The Super Bowl slot delivered mass brand awareness across organisational levels simultaneously. Digital retargeting on LinkedIn and YouTube then ensured the ad reappeared in the personal feeds of anyone who engaged with it, creating the \"always-on\" brand presence the ad itself glorifies."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "High in placement, deceptive in style. The Super Bowl context makes it unmistakably a commercial. However, by replacing the typical software features demonstration with high-energy cinematic visuals, Monday.com made the ad feel like entertainment content rather than a product pitch. The sales intent is structurally present but aesthetically hidden."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The ad creates a \"flow state\" fantasy, suggesting that work does not have to be a grind. It appeals to the desire for mastery and effortlessness, presenting the software as a superpower that removes friction from professional life. The employees levitating and breaking through the ceiling provide visual catharsis: emotional release from the weight of institutional constraint. The viewer is invited to identify not as a managed employee but as an uncontained high performer."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The ad promotes the belief that professional success in the 2020s is no longer tied to corporate hierarchy or physical location but to personal mastery of digital systems. It sells the identity of the \"boundless digital professional,\" suggesting that the right tools dissolve institutional limits entirely. This reinforces a neoliberal ideology of radical self-reliance in which the boundary between private and professional self is erased, and the modern worker is always capable of producing results from anywhere at any time."
-  },
-  {
-    label: "Audience resistance",
-    content: "For a critically aware audience, resistance is relatively accessible. The promise of \"limitless\" work reads as ironic to many burned-out professionals who recognise that \"all-in-one\" platforms often increase micromanagement and surveillance rather than reducing them. The gravity-defying office fantasy is easily identified as corporate spectacle. However, for workers who genuinely feel trapped by stagnant workflows, the emotional pull of the visual catharsis is real and not easily dismissed."
-  },
-];
+{
+  label: "Targeting methods",
+  content: "A broad audience of computer-based professionals, whether in-office or remote, along with managers and team leaders frustrated by rigid workflows. The Super Bowl slot delivered mass brand awareness across organisational levels simultaneously. Digital retargeting on LinkedIn and YouTube then ensured the ad reappeared in the personal feeds of anyone who engaged with it, creating the \"always-on\" brand presence the ad itself glorifies."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "High in placement, deceptive in style. The Super Bowl context makes it unmistakably a commercial. However, by replacing the typical software features demonstration with high-energy cinematic visuals, Monday.com made the ad feel like entertainment content rather than a product pitch. The sales intent is structurally present but aesthetically hidden."
+},
+{
+  label: "Psychological techniques",
+  content: "The ad creates a \"flow state\" fantasy, suggesting that work does not have to be a grind. It appeals to the desire for mastery and effortlessness, presenting the software as a superpower that removes friction from professional life. The employees levitating and breaking through the ceiling provide visual catharsis: emotional release from the weight of institutional constraint. The viewer is invited to identify not as a managed employee but as an uncontained high performer."
+},
+{
+  label: "Ideological messaging",
+  content: "The ad promotes the belief that professional success in the 2020s is no longer tied to corporate hierarchy or physical location but to personal mastery of digital systems. It sells the identity of the \"boundless digital professional,\" suggesting that the right tools dissolve institutional limits entirely. This reinforces a neoliberal ideology of radical self-reliance in which the boundary between private and professional self is erased, and the modern worker is always capable of producing results from anywhere at any time."
+},
+{
+  label: "Audience resistance",
+  content: "For a critically aware audience, resistance is relatively accessible. The promise of \"limitless\" work reads as ironic to many burned-out professionals who recognise that \"all-in-one\" platforms often increase micromanagement and surveillance rather than reducing them. The gravity-defying office fantasy is easily identified as corporate spectacle. However, for workers who genuinely feel trapped by stagnant workflows, the emotional pull of the visual catharsis is real and not easily dismissed."
+}];
+
 
 /* ====== COMPONENT ====== */
 
@@ -118,7 +118,7 @@ export default function Sector02Business() {
       {/* ===== SECTOR HEADER (Mode 1) ===== */}
       <section className="mac-desktop py-24 px-4">
         <div ref={headerRef} className="reveal-blur max-w-4xl mx-auto text-center">
-          <p className="font-pixel text-[10px] tracking-[0.3em] mb-4" style={{ color: 'hsl(180, 100%, 80%)' }}>
+          <p className="font-pixel tracking-[0.3em] mb-4 text-sm text-white" style={{ color: 'hsl(180, 100%, 80%)' }}>
             SECTOR
           </p>
           <h2 className="font-display text-7xl md:text-9xl font-extrabold mb-4" style={{ color: 'white', textShadow: '2px 2px 0 rgba(0,0,0,0.3)' }}>
@@ -186,8 +186,8 @@ export default function Sector02Business() {
                 src="https://www.youtube.com/embed/NFmHn6DJOZs"
                 title="IBM PC Little Tramp 1981"
                 allowFullScreen
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
 
             <AnalysisAccordion dimensions={ibmDimensions} variant="mac" />
@@ -217,8 +217,8 @@ export default function Sector02Business() {
                 src="https://www.youtube.com/embed/utKqd6Md_bs"
                 title="American Express Membership Has Its Privileges 1987"
                 allowFullScreen
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
 
             <AnalysisAccordion dimensions={amexDimensions} variant="mac" />
@@ -227,8 +227,8 @@ export default function Sector02Business() {
       </section>
 
       {/* ===== MAC DIALOG BOX ===== */}
-      {!dialogDismissed && (
-        <section className="mac-desktop py-16 px-4">
+      {!dialogDismissed &&
+      <section className="mac-desktop py-16 px-4">
           <div className="max-w-md mx-auto">
             <div className="mac-window">
               <div className="mac-titlebar">
@@ -241,17 +241,17 @@ export default function Sector02Business() {
                 </p>
                 <div className="flex justify-center gap-4">
                   <button
-                    className="font-pixel text-[9px] px-4 py-2 rounded-sm"
-                    style={{ background: 'hsl(0 0% 90%)', border: '2px outset hsl(0 0% 80%)' }}
-                    onClick={() => setDialogDismissed(true)}
-                  >
+                  className="font-pixel text-[9px] px-4 py-2 rounded-sm"
+                  style={{ background: 'hsl(0 0% 90%)', border: '2px outset hsl(0 0% 80%)' }}
+                  onClick={() => setDialogDismissed(true)}>
+                  
                     Cancel
                   </button>
                   <button
-                    className="font-pixel text-[9px] px-4 py-2 rounded-sm"
-                    style={{ background: 'hsl(210 50% 88%)', border: '2px outset hsl(210 50% 78%)' }}
-                    onClick={() => setDialogDismissed(true)}
-                  >
+                  className="font-pixel text-[9px] px-4 py-2 rounded-sm"
+                  style={{ background: 'hsl(210 50% 88%)', border: '2px outset hsl(210 50% 78%)' }}
+                  onClick={() => setDialogDismissed(true)}>
+                  
                     Continue
                   </button>
                 </div>
@@ -259,7 +259,7 @@ export default function Sector02Business() {
             </div>
           </div>
         </section>
-      )}
+      }
 
       {/* ===== ERA TRANSITION BAR ===== */}
       <section className="py-24 px-4 relative section-wipe" style={{ background: '#000' }}>
@@ -292,9 +292,9 @@ export default function Sector02Business() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 20% 50%, hsl(270, 60%, 18%), transparent 60%), radial-gradient(ellipse at 80% 50%, hsl(330, 50%, 20%), transparent 60%), hsl(270, 60%, 8%)',
-        }}
-      >
+          background: 'radial-gradient(ellipse at 20% 50%, hsl(270, 60%, 18%), transparent 60%), radial-gradient(ellipse at 80% 50%, hsl(330, 50%, 20%), transparent 60%), hsl(270, 60%, 8%)'
+        }}>
+        
         <div className="max-w-4xl mx-auto mb-8">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white' }}>
             2020s Advertisements
@@ -311,15 +311,15 @@ export default function Sector02Business() {
             sponsored
             verified
             caption="A trailer featuring Anna Wintour, Editor-in-Chief of Vogue, shot in documentary style alternating between fast-paced behind-the-scenes runway footage and direct-to-camera leadership advice. The visual language mimics a high-end biographical documentary rather than a course advertisement."
-            dimensions={masterclassDimensions}
-          >
+            dimensions={masterclassDimensions}>
+            
             <div className="embed-container">
               <iframe
                 src="https://www.youtube.com/embed/XVP6JKoElQs"
                 title="MasterClass Anna Wintour"
                 allowFullScreen
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
           </InstagramCard>
           <div className="max-w-2xl mx-auto mt-2">
@@ -336,15 +336,15 @@ export default function Sector02Business() {
             sponsored
             verified
             caption="A thirty-second Super Bowl spot in which office employees transform a printer into a high-speed vehicle, ride through the office, build stairs mid-air, levitate, and collectively burst through the building's glass ceiling into open sky. The visual metaphor replaces the rigid, hierarchical 1980s office with a 2020s vision of limitless, agile, technology-enabled collaboration."
-            dimensions={mondayDimensions}
-          >
+            dimensions={mondayDimensions}>
+            
             <div className="embed-container">
               <iframe
                 src="https://www.youtube.com/embed/JoJ4O8xyC3M"
                 title="Monday.com Work Without Limits"
                 allowFullScreen
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
           </InstagramCard>
           <div className="max-w-2xl mx-auto mt-2">
@@ -359,9 +359,9 @@ export default function Sector02Business() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 30% 30%, hsl(270, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)',
-        }}
-      >
+          background: 'radial-gradient(ellipse at 30% 30%, hsl(270, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+        }}>
+        
         <div className="max-w-4xl mx-auto">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-10" style={{ color: 'white' }}>
             Comparative Summary
@@ -407,9 +407,9 @@ export default function Sector02Business() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 70% 70%, hsl(330, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)',
-        }}
-      >
+          background: 'radial-gradient(ellipse at 70% 70%, hsl(330, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+        }}>
+        
         <div ref={perspectiveRef} className="reveal max-w-3xl mx-auto">
           <h3 className="font-display text-3xl md:text-5xl font-bold mb-3" style={{ color: 'white' }}>
             Sector Perspective
@@ -447,6 +447,6 @@ export default function Sector02Business() {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }

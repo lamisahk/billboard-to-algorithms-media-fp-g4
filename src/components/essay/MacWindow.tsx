@@ -14,11 +14,11 @@ export default function MacWindow({ title, children, className = "" }: MacWindow
           <div className="mac-titlebar-btn" />
           <div className="mac-titlebar-btn" />
         </div>
-        <span className="mac-titlebar-label">{title}</span>
+        <span className="mac-titlebar-label text-xs">{title}</span>
       </div>
       <div className="mac-body">
         {children}
       </div>
-    </div>
-  );
+    </div>);
+
 }

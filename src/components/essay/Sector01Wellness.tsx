@@ -8,119 +8,119 @@ import dexatrimAd from "@/assets/dexatrim-ad.png";
 /* ====== AD DATA ====== */
 
 const specialKDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Married couples and weight-conscious adults, reached through daytime and primetime broadcast television. The domestic setting and domestic couple frame a mainstream household audience. Both partners are implicated, which broadens the demographic appeal beyond the female-only diet advertising typical of the era."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Very high. Clearly a product commercial. Brand name present throughout, product shown with nutritional information, and an explicit diet claim made in the voiceover. No ambiguity about what is being sold."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The garden setting is doing significant work here. By placing the pinch test inside a loving, comfortable domestic relationship, the ad normalizes body surveillance as something couples do to each other affectionately. The shock reactions from both partners are played for humor rather than shame, which lowers the audience's defenses. The technique manufactures a problem, which is ordinary body fat, in a register that feels playful rather than threatening. The product then arrives as the natural resolution of the mild anxiety that was just created."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The ad encodes two ideological claims simultaneously. First, that normal body fat is a measurable problem requiring dietary correction. Second, that partners have a legitimate and even affectionate role in monitoring each other's bodies. The wife brings tea and receives a body assessment. The husband reads the paper and receives the same. The symmetry makes it seem fair, but the domestic scene in which this occurs, with its clear gender roles, frames body management as part of the couple's shared project of self-improvement. Health, attractiveness, and marital harmony are quietly bundled together."
-  },
-  {
-    label: "Audience resistance",
-    content: "Moderate. The commercial intent is obvious, and audiences of the era were practiced at recognizing and dismissing broadcast advertising. However, the humor and warmth of the garden setting lower the emotional defenses that more overtly shame-based advertising would trigger. An audience member who laughs at the shocked expressions has already emotionally accepted the premise that the pinch test is a reasonable thing to do."
-  },
-];
+{
+  label: "Targeting methods",
+  content: "Married couples and weight-conscious adults, reached through daytime and primetime broadcast television. The domestic setting and domestic couple frame a mainstream household audience. Both partners are implicated, which broadens the demographic appeal beyond the female-only diet advertising typical of the era."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Very high. Clearly a product commercial. Brand name present throughout, product shown with nutritional information, and an explicit diet claim made in the voiceover. No ambiguity about what is being sold."
+},
+{
+  label: "Psychological techniques",
+  content: "The garden setting is doing significant work here. By placing the pinch test inside a loving, comfortable domestic relationship, the ad normalizes body surveillance as something couples do to each other affectionately. The shock reactions from both partners are played for humor rather than shame, which lowers the audience's defenses. The technique manufactures a problem, which is ordinary body fat, in a register that feels playful rather than threatening. The product then arrives as the natural resolution of the mild anxiety that was just created."
+},
+{
+  label: "Ideological messaging",
+  content: "The ad encodes two ideological claims simultaneously. First, that normal body fat is a measurable problem requiring dietary correction. Second, that partners have a legitimate and even affectionate role in monitoring each other's bodies. The wife brings tea and receives a body assessment. The husband reads the paper and receives the same. The symmetry makes it seem fair, but the domestic scene in which this occurs, with its clear gender roles, frames body management as part of the couple's shared project of self-improvement. Health, attractiveness, and marital harmony are quietly bundled together."
+},
+{
+  label: "Audience resistance",
+  content: "Moderate. The commercial intent is obvious, and audiences of the era were practiced at recognizing and dismissing broadcast advertising. However, the humor and warmth of the garden setting lower the emotional defenses that more overtly shame-based advertising would trigger. An audience member who laughs at the shocked expressions has already emotionally accepted the premise that the pinch test is a reasonable thing to do."
+}];
+
 
 const dexatrimDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Magazine placement in publications read by women aged 25 to 50. The over-the-counter pharmacy positioning extended the reach beyond advertising into the physical retail environment, where drugstore placement alongside legitimate medications reinforced the clinical framing."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "High. Clearly formatted as a paid advertisement, distinct from editorial content. However, the pharmaceutical aesthetic, clinical copy, and pharmacy distribution created a layer of institutional authority that complicated straightforward dismissal."
-  },
-  {
-    label: "Psychological techniques",
-    content: "Dexatrim used medicalization as its primary mechanism. By presenting weight loss as a pharmacological problem with a pharmacological solution, it positioned ordinary body weight as a clinical condition. The pill format borrowed legitimacy from genuine medicine. The before-and-after testimonials provided social proof. Together, these created the impression that not using the product was a failure of self-care rather than simply a lifestyle choice."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The ad encoded the ideology that the normal female body is a medical management problem. By selling a pill through a pharmacy, Dexatrim positioned weight not as an aesthetic concern but as something requiring pharmaceutical intervention. This is an early and direct example of the medicalization argument this sector traces: a drug company redefining normal weight variation as a condition requiring treatment, decades before \"wellness\" became the dominant commercial vocabulary."
-  },
-  {
-    label: "Audience resistance",
-    content: "Moderate to low. The pharmaceutical framing raised the psychological stakes of resistance. Dismissing a billboard is easy. Dismissing something positioned as medicine requires the audience to override an authority structure consciously. The drugstore context removed the product from the advertising environment entirely, embedding it in a space associated with healthcare."
-  },
-];
+{
+  label: "Targeting methods",
+  content: "Magazine placement in publications read by women aged 25 to 50. The over-the-counter pharmacy positioning extended the reach beyond advertising into the physical retail environment, where drugstore placement alongside legitimate medications reinforced the clinical framing."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "High. Clearly formatted as a paid advertisement, distinct from editorial content. However, the pharmaceutical aesthetic, clinical copy, and pharmacy distribution created a layer of institutional authority that complicated straightforward dismissal."
+},
+{
+  label: "Psychological techniques",
+  content: "Dexatrim used medicalization as its primary mechanism. By presenting weight loss as a pharmacological problem with a pharmacological solution, it positioned ordinary body weight as a clinical condition. The pill format borrowed legitimacy from genuine medicine. The before-and-after testimonials provided social proof. Together, these created the impression that not using the product was a failure of self-care rather than simply a lifestyle choice."
+},
+{
+  label: "Ideological messaging",
+  content: "The ad encoded the ideology that the normal female body is a medical management problem. By selling a pill through a pharmacy, Dexatrim positioned weight not as an aesthetic concern but as something requiring pharmaceutical intervention. This is an early and direct example of the medicalization argument this sector traces: a drug company redefining normal weight variation as a condition requiring treatment, decades before \"wellness\" became the dominant commercial vocabulary."
+},
+{
+  label: "Audience resistance",
+  content: "Moderate to low. The pharmaceutical framing raised the psychological stakes of resistance. Dismissing a billboard is easy. Dismissing something positioned as medicine requires the audience to override an authority structure consciously. The drugstore context removed the product from the advertising environment entirely, embedding it in a space associated with healthcare."
+}];
+
 
 const ozempicDimensions = [
-  {
-    label: "Targeting methods",
-    content: "The original campaign targeted adults aged 45 to 65 with Type 2 diabetes diagnoses, using the 1970s song to reach a demographic that would have grown up with it. However, the advertising's actual reach extended dramatically beyond its clinical target as social media amplification, celebrity use disclosures, and cultural commentary made Ozempic a household name for weight loss among people with no diabetes diagnosis. The ad created demand it was not technically addressed to."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "High, low for the intent. The commercial format is clearly identifiable as a pharmaceutical advertisement. However, the specific mechanism by which it generated its most significant cultural effect was entirely invisible: the ad never explicitly promoted Ozempic for weight loss. It mentioned weight loss data almost in passing. The cultural conversation around the drug did the weight loss marketing for Novo Nordisk, organically and for free, through celebrity gossip, social media, and news coverage that the advertising spend had seeded."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The jingle is the primary mechanism and it is a masterclass in memory engineering. An earworm attached to a brand name means that the product enters involuntary recall. Consumers who had never seen the ad found themselves humming it. People who were not diabetic found themselves asking their doctors about it. The joyful lifestyle imagery positioned the drug not as a medical intervention for a difficult disease but as a product that restored the energy and joy of everyday life. The aspiration is not managing blood sugar. It is being the person playing pickleball with that kind of ease."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The Ozempic campaign encodes the ideology that pharmaceutical intervention is a natural and desirable route to a fuller life, not a last resort for a medical condition. By aestheticizing the experience of taking a prescription medication through joyful lifestyle imagery and a pop song, it repositioned pharmaceuticals as consumer wellness products. This is medicalization operating in reverse: not telling people their bodies are broken, but telling people that a better body is available, and that a prescription is a reasonable way to access it."
-  },
-  {
-    label: "Audience resistance",
-    content: "Very low, and for a reason unique to this campaign. The ad's most powerful effect operated entirely outside the advertising itself, through organic cultural conversation. A person who was never exposed to the Ozempic commercial still encountered the drug through news articles, celebrity interviews, social media, and conversations with friends. By the time someone asked their doctor about it, they were not responding to an ad. They were responding to a cultural moment that advertising had manufactured but that no longer looked like advertising at all."
-  },
-];
+{
+  label: "Targeting methods",
+  content: "The original campaign targeted adults aged 45 to 65 with Type 2 diabetes diagnoses, using the 1970s song to reach a demographic that would have grown up with it. However, the advertising's actual reach extended dramatically beyond its clinical target as social media amplification, celebrity use disclosures, and cultural commentary made Ozempic a household name for weight loss among people with no diabetes diagnosis. The ad created demand it was not technically addressed to."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "High, low for the intent. The commercial format is clearly identifiable as a pharmaceutical advertisement. However, the specific mechanism by which it generated its most significant cultural effect was entirely invisible: the ad never explicitly promoted Ozempic for weight loss. It mentioned weight loss data almost in passing. The cultural conversation around the drug did the weight loss marketing for Novo Nordisk, organically and for free, through celebrity gossip, social media, and news coverage that the advertising spend had seeded."
+},
+{
+  label: "Psychological techniques",
+  content: "The jingle is the primary mechanism and it is a masterclass in memory engineering. An earworm attached to a brand name means that the product enters involuntary recall. Consumers who had never seen the ad found themselves humming it. People who were not diabetic found themselves asking their doctors about it. The joyful lifestyle imagery positioned the drug not as a medical intervention for a difficult disease but as a product that restored the energy and joy of everyday life. The aspiration is not managing blood sugar. It is being the person playing pickleball with that kind of ease."
+},
+{
+  label: "Ideological messaging",
+  content: "The Ozempic campaign encodes the ideology that pharmaceutical intervention is a natural and desirable route to a fuller life, not a last resort for a medical condition. By aestheticizing the experience of taking a prescription medication through joyful lifestyle imagery and a pop song, it repositioned pharmaceuticals as consumer wellness products. This is medicalization operating in reverse: not telling people their bodies are broken, but telling people that a better body is available, and that a prescription is a reasonable way to access it."
+},
+{
+  label: "Audience resistance",
+  content: "Very low, and for a reason unique to this campaign. The ad's most powerful effect operated entirely outside the advertising itself, through organic cultural conversation. A person who was never exposed to the Ozempic commercial still encountered the drug through news articles, celebrity interviews, social media, and conversations with friends. By the time someone asked their doctor about it, they were not responding to an ad. They were responding to a cultural moment that advertising had manufactured but that no longer looked like advertising at all."
+}];
+
 
 const noomDimensions = [
-  {
-    label: "Targeting methods",
-    content: "A multi-platform campaign running across Facebook, Instagram, YouTube, and streaming platforms, supplemented by heavy affiliate influencer marketing and testimonial-based social media content. Critically, Noom's sign-up process itself collects detailed psychological and health data, which feeds back into advertising refinement."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Low to medium. The \"New Recruits\" ads are clearly labeled as paid promotions on social platforms, but the testimonial format and relatable, non-threatening visual language soften the commercial register significantly. Affiliate influencer content operating alongside the official campaign is considerably less visible, often disclosed only with small hashtags that research consistently shows audiences fail to register."
-  },
-  {
-    label: "Psychological techniques",
-    content: "Noom's central innovation is repositioning weight loss from discipline to psychology. By framing the product as addressing your relationship with food rather than your body size, it sidesteps the shame-based mechanics of 1980s diet advertising and replaces them with something that feels more progressive and empowering. The intake questionnaire collects personal data while simultaneously generating a sense of individualized care. The app's community features create social investment that makes discontinuation feel like abandoning a support network rather than canceling a subscription."
-  },
-  {
-    label: "Ideological messaging",
-    content: "Noom encodes the ideology that your relationship with food is a psychological system that can be corrected and optimized. In doing so, it extends medicalization from the body into the mind, treating emotional eating, food associations, and habitual behaviors as conditions requiring structured intervention. The person who eats intuitively, without a coaching app, is implicitly falling short of a managed, optimized standard. This is medicalization at the level of consciousness rather than the body."
-  },
-  {
-    label: "Audience resistance",
-    content: "Extremely difficult. The psychological reframing makes resistance feel like a rejection of self-understanding rather than skepticism of a commercial product. The freemium onboarding collects personal data before any payment is required, creating investment before commitment. The community model means that leaving the app feels socially costly. Once a user has disclosed personal eating history, emotional triggers, and health goals to the platform, that data remains with the company regardless of subscription status."
-  },
-];
+{
+  label: "Targeting methods",
+  content: "A multi-platform campaign running across Facebook, Instagram, YouTube, and streaming platforms, supplemented by heavy affiliate influencer marketing and testimonial-based social media content. Critically, Noom's sign-up process itself collects detailed psychological and health data, which feeds back into advertising refinement."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Low to medium. The \"New Recruits\" ads are clearly labeled as paid promotions on social platforms, but the testimonial format and relatable, non-threatening visual language soften the commercial register significantly. Affiliate influencer content operating alongside the official campaign is considerably less visible, often disclosed only with small hashtags that research consistently shows audiences fail to register."
+},
+{
+  label: "Psychological techniques",
+  content: "Noom's central innovation is repositioning weight loss from discipline to psychology. By framing the product as addressing your relationship with food rather than your body size, it sidesteps the shame-based mechanics of 1980s diet advertising and replaces them with something that feels more progressive and empowering. The intake questionnaire collects personal data while simultaneously generating a sense of individualized care. The app's community features create social investment that makes discontinuation feel like abandoning a support network rather than canceling a subscription."
+},
+{
+  label: "Ideological messaging",
+  content: "Noom encodes the ideology that your relationship with food is a psychological system that can be corrected and optimized. In doing so, it extends medicalization from the body into the mind, treating emotional eating, food associations, and habitual behaviors as conditions requiring structured intervention. The person who eats intuitively, without a coaching app, is implicitly falling short of a managed, optimized standard. This is medicalization at the level of consciousness rather than the body."
+},
+{
+  label: "Audience resistance",
+  content: "Extremely difficult. The psychological reframing makes resistance feel like a rejection of self-understanding rather than skepticism of a commercial product. The freemium onboarding collects personal data before any payment is required, creating investment before commitment. The community model means that leaving the app feels socially costly. Once a user has disclosed personal eating history, emotional triggers, and health goals to the platform, that data remains with the company regardless of subscription status."
+}];
+
 
 const himsDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Super Bowl placement delivered mass reach (127 million viewers) in a single broadcast, a 1980s-scale targeting mechanism applied to a 2020s brand. This was deliberate: Hims and Hers had built its subscriber base through hyper-targeted digital advertising and used the Super Bowl to extend brand awareness to demographics outside its algorithmic reach. The ad was then amplified through social media and digital channels, where behavioral targeting took over."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Medium. The Super Bowl context makes the commercial format obvious. However, the ad's rhetorical strategy, presenting a telehealth company as a political actor fighting systemic injustice, substantially complicates the commercial framing. Viewers are invited to identify with a critique of the healthcare industry rather than evaluate a product purchase. The distinction between advocacy and advertising is actively blurred."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The ad uses righteous anger as its primary emotional mechanism. It identifies a real and widely felt problem, unaffordable healthcare and medication pricing, and positions the brand as its solution. This is grievance marketing: the advertiser first validates the audience's frustration, then presents the product as the appropriate response to that frustration. It is a sophisticated evolution of the manufactured-problem, product-solution structure that Dexatrim used in 1984, applied now to systemic healthcare anxiety rather than personal body dissatisfaction."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The ad sells the ideology that access to medical treatment is a consumer right, and that the appropriate response to a failing healthcare system is a better product rather than structural change. In doing so it quietly reframes a political problem as a market problem. It also expands the definition of health as a site of commercial intervention: GLP-1 medications were originally developed for diabetes management and are now being marketed directly to consumers for weight loss through a telehealth platform that was simultaneously found to be transmitting users' health data to Meta and Google without adequate disclosure (The Markup, 2022)."
-  },
-  {
-    label: "Audience resistance",
-    content: "Difficult. The political framing of the ad preemptively neutralizes commercial skepticism by aligning the brand with the audience's own frustration. Criticizing the ad feels like defending the pharmaceutical industry. The data privacy dimension of Hims and Hers' broader operation is entirely invisible to the audience engaging with the Super Bowl spot."
-  },
-];
+{
+  label: "Targeting methods",
+  content: "Super Bowl placement delivered mass reach (127 million viewers) in a single broadcast, a 1980s-scale targeting mechanism applied to a 2020s brand. This was deliberate: Hims and Hers had built its subscriber base through hyper-targeted digital advertising and used the Super Bowl to extend brand awareness to demographics outside its algorithmic reach. The ad was then amplified through social media and digital channels, where behavioral targeting took over."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Medium. The Super Bowl context makes the commercial format obvious. However, the ad's rhetorical strategy, presenting a telehealth company as a political actor fighting systemic injustice, substantially complicates the commercial framing. Viewers are invited to identify with a critique of the healthcare industry rather than evaluate a product purchase. The distinction between advocacy and advertising is actively blurred."
+},
+{
+  label: "Psychological techniques",
+  content: "The ad uses righteous anger as its primary emotional mechanism. It identifies a real and widely felt problem, unaffordable healthcare and medication pricing, and positions the brand as its solution. This is grievance marketing: the advertiser first validates the audience's frustration, then presents the product as the appropriate response to that frustration. It is a sophisticated evolution of the manufactured-problem, product-solution structure that Dexatrim used in 1984, applied now to systemic healthcare anxiety rather than personal body dissatisfaction."
+},
+{
+  label: "Ideological messaging",
+  content: "The ad sells the ideology that access to medical treatment is a consumer right, and that the appropriate response to a failing healthcare system is a better product rather than structural change. In doing so it quietly reframes a political problem as a market problem. It also expands the definition of health as a site of commercial intervention: GLP-1 medications were originally developed for diabetes management and are now being marketed directly to consumers for weight loss through a telehealth platform that was simultaneously found to be transmitting users' health data to Meta and Google without adequate disclosure (The Markup, 2022)."
+},
+{
+  label: "Audience resistance",
+  content: "Difficult. The political framing of the ad preemptively neutralizes commercial skepticism by aligning the brand with the audience's own frustration. Criticizing the ad feels like defending the pharmaceutical industry. The data privacy dimension of Hims and Hers' broader operation is entirely invisible to the audience engaging with the Super Bowl spot."
+}];
+
 
 /* ====== COMPONENT ====== */
 
@@ -143,7 +143,7 @@ export default function Sector01Wellness() {
       {/* ===== SECTOR HEADER (Mode 1) ===== */}
       <section className="mac-desktop py-24 px-4">
         <div ref={headerRef} className="reveal-blur max-w-4xl mx-auto text-center">
-          <p className="font-pixel text-[10px] tracking-[0.3em] mb-4" style={{ color: 'hsl(180, 100%, 80%)' }}>
+          <p className="font-pixel tracking-[0.3em] mb-4 text-white text-sm" style={{ color: 'hsl(180, 100%, 80%)' }}>
             SECTOR
           </p>
           <h2 className="font-display text-7xl md:text-9xl font-extrabold mb-4" style={{ color: 'white', textShadow: '2px 2px 0 rgba(0,0,0,0.3)' }}>
@@ -212,8 +212,8 @@ export default function Sector01Wellness() {
                 src="https://www.youtube.com/embed/SWUBIbsSB2c"
                 title="Kellogg's Special K Pinch an Inch 1985"
                 allowFullScreen
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
 
             <AnalysisAccordion dimensions={specialKDimensions} variant="mac" />
@@ -246,8 +246,8 @@ export default function Sector01Wellness() {
                 className="w-full h-auto"
                 loading="lazy"
                 width={1024}
-                height={640}
-              />
+                height={640} />
+              
             </div>
 
             <AnalysisAccordion dimensions={dexatrimDimensions} variant="mac" />
@@ -256,8 +256,8 @@ export default function Sector01Wellness() {
       </section>
 
       {/* ===== MAC DIALOG BOX ===== */}
-      {!dialogDismissed && (
-        <section className="mac-desktop py-16 px-4">
+      {!dialogDismissed &&
+      <section className="mac-desktop py-16 px-4">
           <div className="max-w-md mx-auto">
             <div className="mac-window">
               <div className="mac-titlebar">
@@ -270,23 +270,23 @@ export default function Sector01Wellness() {
                 </p>
                 <div className="flex justify-center gap-4">
                   <button
-                    className="font-pixel text-[9px] px-4 py-2 rounded-sm"
-                    style={{
-                      background: 'hsl(0 0% 90%)',
-                      border: '2px outset hsl(0 0% 80%)',
-                    }}
-                    onClick={() => setDialogDismissed(true)}
-                  >
+                  className="font-pixel text-[9px] px-4 py-2 rounded-sm"
+                  style={{
+                    background: 'hsl(0 0% 90%)',
+                    border: '2px outset hsl(0 0% 80%)'
+                  }}
+                  onClick={() => setDialogDismissed(true)}>
+                  
                     Cancel
                   </button>
                   <button
-                    className="font-pixel text-[9px] px-4 py-2 rounded-sm"
-                    style={{
-                      background: 'hsl(210 50% 88%)',
-                      border: '2px outset hsl(210 50% 78%)',
-                    }}
-                    onClick={() => setDialogDismissed(true)}
-                  >
+                  className="font-pixel text-[9px] px-4 py-2 rounded-sm"
+                  style={{
+                    background: 'hsl(210 50% 88%)',
+                    border: '2px outset hsl(210 50% 78%)'
+                  }}
+                  onClick={() => setDialogDismissed(true)}>
+                  
                     Continue
                   </button>
                 </div>
@@ -294,7 +294,7 @@ export default function Sector01Wellness() {
             </div>
           </div>
         </section>
-      )}
+      }
 
       {/* ===== ERA TRANSITION BAR ===== */}
       <section className="py-24 px-4 relative section-wipe" style={{ background: '#000' }}>
@@ -327,9 +327,9 @@ export default function Sector01Wellness() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 20% 50%, hsl(270, 60%, 18%), transparent 60%), radial-gradient(ellipse at 80% 50%, hsl(330, 50%, 20%), transparent 60%), hsl(270, 60%, 8%)',
-        }}
-      >
+          background: 'radial-gradient(ellipse at 20% 50%, hsl(270, 60%, 18%), transparent 60%), radial-gradient(ellipse at 80% 50%, hsl(330, 50%, 20%), transparent 60%), hsl(270, 60%, 8%)'
+        }}>
+        
         <div className="max-w-4xl mx-auto mb-8">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: 'white' }}>
             2020s Advertisements
@@ -346,15 +346,15 @@ export default function Sector01Wellness() {
             sponsored
             verified
             caption="A ninety-second television commercial launched in 2018 and running continuously through 2023, set to a modified version of the 1974 pop song &quot;Magic&quot; by Pilot. The original chorus &quot;Oh oh oh it's magic&quot; is replaced with &quot;Oh oh oh Ozempic.&quot; The ad shows middle-aged people cooking, repairing bikes, and playing pickleball, performing ordinary activities with visible energy and joy. On-screen text highlights that patients in a clinical study lost up to 12 pounds. The ad is for a Type 2 diabetes medication. It does not mention weight loss as its primary purpose. It does not need to."
-            dimensions={ozempicDimensions}
-          >
+            dimensions={ozempicDimensions}>
+            
             <div className="embed-container">
               <iframe
                 src="https://www.youtube.com/embed/bzIBj90D3YA"
                 title="Ozempic Oh Oh Oh"
                 allowFullScreen
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
           </InstagramCard>
           <div className="max-w-2xl mx-auto mt-2">
@@ -371,15 +371,15 @@ export default function Sector01Wellness() {
             sponsored
             verified
             caption="A multi-platform campaign launched in late 2023 featuring comic-style video ads in which different &quot;types&quot; of people, exercise avoiders, vegans, people managing high cholesterol, and midlife weight gain, discover that Noom adapts to their specific psychology and lifestyle. The campaign ran across Facebook, Instagram, YouTube, and streaming platforms, supplemented by heavy affiliate influencer marketing and testimonial-based social media content."
-            dimensions={noomDimensions}
-          >
+            dimensions={noomDimensions}>
+            
             <div className="embed-container">
               <iframe
                 src="https://player.vimeo.com/video/1079913906"
                 title="Noom New Recruits"
                 allowFullScreen
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
           </InstagramCard>
           <div className="max-w-2xl mx-auto mt-2">
@@ -396,15 +396,15 @@ export default function Sector01Wellness() {
             sponsored
             verified
             caption="A sixty-second Super Bowl LIX commercial (February 2025) in which Hims and Hers positions itself as a direct challenger to the traditional healthcare and pharmaceutical industry. The ad criticizes the high cost of branded weight-loss medications. Hims and Hers' compounded GLP-1 alternatives are presented as accessible and affordable, framing the brand as a patient advocate operating against a broken system. It reached an estimated 127 million viewers."
-            dimensions={himsDimensions}
-          >
+            dimensions={himsDimensions}>
+            
             <div className="embed-container">
               <iframe
                 src="https://www.youtube.com/embed/iOXWmZbA2Io"
                 title="Hims and Hers Sick of the System"
                 allowFullScreen
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
           </InstagramCard>
           <div className="max-w-2xl mx-auto mt-2">
@@ -419,9 +419,9 @@ export default function Sector01Wellness() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 30% 30%, hsl(270, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)',
-        }}
-      >
+          background: 'radial-gradient(ellipse at 30% 30%, hsl(270, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+        }}>
+        
         <div className="max-w-4xl mx-auto">
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-10" style={{ color: 'white' }}>
             Comparative Summary
@@ -464,9 +464,9 @@ export default function Sector01Wellness() {
       <section
         className="py-16 px-4"
         style={{
-          background: 'radial-gradient(ellipse at 70% 70%, hsl(330, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)',
-        }}
-      >
+          background: 'radial-gradient(ellipse at 70% 70%, hsl(330, 50%, 15%), transparent 60%), hsl(270, 60%, 8%)'
+        }}>
+        
         <div ref={perspectiveRef} className="reveal max-w-3xl mx-auto">
           <h3 className="font-display text-3xl md:text-5xl font-bold mb-3" style={{ color: 'white' }}>
             Sector Perspective
@@ -504,6 +504,6 @@ export default function Sector01Wellness() {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }

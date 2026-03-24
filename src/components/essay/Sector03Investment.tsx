@@ -119,7 +119,7 @@ export default function Sector03Investment() {
       {/* ===== SECTOR HEADER (Mode 1) ===== */}
       <section className="mac-desktop py-24 px-4">
         <div ref={headerRef} className="reveal-blur max-w-4xl mx-auto text-center">
-          <p className="font-pixel text-[10px] tracking-[0.3em] mb-4" style={{ color: 'hsl(180, 100%, 80%)' }}>
+          <p className="font-pixel tracking-[0.3em] mb-4 text-sm text-white" style={{ color: 'hsl(180, 100%, 80%)' }}>
             SECTOR
           </p>
           <h2 className="font-display text-7xl md:text-9xl font-extrabold mb-4" style={{ color: 'white', textShadow: '2px 2px 0 rgba(0,0,0,0.3)' }}>

@@ -284,7 +284,7 @@ export default function IntroSections() {
           <h3 className="font-display text-3xl md:text-5xl font-bold text-center mb-3" style={{ color: "white", textShadow: "1px 1px 0 rgba(0,0,0,0.2)" }}>
             Analysis Framework
           </h3>
-          <p className="font-pixel text-[10px] tracking-[0.3em] text-center mb-8" style={{ color: "hsl(180, 100%, 80%)" }}>
+          <p className="font-pixel tracking-[0.3em] text-center mb-8 text-sm text-[#a8e6ff]" style={{ color: "hsl(180, 100%, 80%)" }}>
             FIVE DIMENSIONS
           </p>
         </div>

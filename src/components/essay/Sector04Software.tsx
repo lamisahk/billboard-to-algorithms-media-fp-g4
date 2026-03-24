@@ -10,96 +10,96 @@ import notionCampaign2 from "@/assets/notion_campaign_2.png";
 /* ====== AD DATA ====== */
 
 const appleDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Apple targeted a mass-market audience, and individuals who felt intimidated by the reputation of computing. The Super Bowl placement ensured the widest possible broadcast reach, positioning the ad as a cultural event rather than a conventional product announcement."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "High. While the ad was cinematic and lacked traditional product shots, it was a high-budget promotional film aired during the Super Bowl. It felt more like a short film than a standard advertisement of that time, but the Apple branding and product announcement at the close left no ambiguity about its commercial purpose."
-  },
-  {
-    label: "Psychological techniques",
-    content: "The ad utilizes fear. It positions the act of buying a computer as a radical act of self-expression. It invites the consumer to see themselves as a 'hero' or 'rebel' for choosing Apple. The dystopian imagery creates a binary: you are either part of the mindless crowd or the individual who shatters conformity. Buying a Macintosh becomes an act of liberation."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The idea being sold is an empowered individual. The ideology suggests that technology in the right hands is a tool for freedom and creativity rather than control. It rebranded the computer from a 'math machine' into a 'creative partner'. IBM, unnamed but unmistakable, represents corporate tyranny. Apple represents personal liberation through technology."
-  },
-  {
-    label: "Audience resistance",
-    content: "Compared to modern advertising, this was easier to recognize as a commercial effort. However, it is difficult to resist because it bypasses the logical brain and targets the emotional brain, perhaps making the consumer feel that rejecting the product is equivalent to accepting a boring, conformist life."
-  }
-];
+{
+  label: "Targeting methods",
+  content: "Apple targeted a mass-market audience, and individuals who felt intimidated by the reputation of computing. The Super Bowl placement ensured the widest possible broadcast reach, positioning the ad as a cultural event rather than a conventional product announcement."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "High. While the ad was cinematic and lacked traditional product shots, it was a high-budget promotional film aired during the Super Bowl. It felt more like a short film than a standard advertisement of that time, but the Apple branding and product announcement at the close left no ambiguity about its commercial purpose."
+},
+{
+  label: "Psychological techniques",
+  content: "The ad utilizes fear. It positions the act of buying a computer as a radical act of self-expression. It invites the consumer to see themselves as a 'hero' or 'rebel' for choosing Apple. The dystopian imagery creates a binary: you are either part of the mindless crowd or the individual who shatters conformity. Buying a Macintosh becomes an act of liberation."
+},
+{
+  label: "Ideological messaging",
+  content: "The idea being sold is an empowered individual. The ideology suggests that technology in the right hands is a tool for freedom and creativity rather than control. It rebranded the computer from a 'math machine' into a 'creative partner'. IBM, unnamed but unmistakable, represents corporate tyranny. Apple represents personal liberation through technology."
+},
+{
+  label: "Audience resistance",
+  content: "Compared to modern advertising, this was easier to recognize as a commercial effort. However, it is difficult to resist because it bypasses the logical brain and targets the emotional brain, perhaps making the consumer feel that rejecting the product is equivalent to accepting a boring, conformist life."
+}];
+
 
 const lotusDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Business managers and accountants, reached through print placements in business computing magazines like Personal Computing. The text-heavy, specification-driven format assumed a reader who was already considering software purchases and needed technical justification for a buying decision."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Obvious. It looks like a technical spec sheet. The full-page format, product name in bold, price disclosure, and dealer contact information make this unmistakably an advertisement. There is no attempt to disguise the commercial intent."
-  },
-  {
-    label: "Psychological techniques",
-    content: "Appeals to order and control. It promises to eliminate the 'chaos' of manual ledger sheets. The headline 'Introducing 1-2-3. It'll have your IBM/PC jumping through hoops' uses playful language to make a dense, technical product feel exciting rather than intimidating. The three-in-one value proposition appeals to rational cost-benefit analysis."
-  },
-  {
-    label: "Ideological messaging",
-    content: "Efficiency is the highest corporate virtue. The ad sells the identity of the 'modern, professional executive' who embraces technological tools to outperform competitors still relying on manual methods. Software mastery is framed as professional competence."
-  },
-  {
-    label: "Audience resistance",
-    content: "High. It is clearly an ad trying to sell a $495 box. Many readers might simply turn the page. The format makes no attempt to disguise what it is, and the density of technical information means only genuinely interested readers would engage with it."
-  }
-];
+{
+  label: "Targeting methods",
+  content: "Business managers and accountants, reached through print placements in business computing magazines like Personal Computing. The text-heavy, specification-driven format assumed a reader who was already considering software purchases and needed technical justification for a buying decision."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Obvious. It looks like a technical spec sheet. The full-page format, product name in bold, price disclosure, and dealer contact information make this unmistakably an advertisement. There is no attempt to disguise the commercial intent."
+},
+{
+  label: "Psychological techniques",
+  content: "Appeals to order and control. It promises to eliminate the 'chaos' of manual ledger sheets. The headline 'Introducing 1-2-3. It'll have your IBM/PC jumping through hoops' uses playful language to make a dense, technical product feel exciting rather than intimidating. The three-in-one value proposition appeals to rational cost-benefit analysis."
+},
+{
+  label: "Ideological messaging",
+  content: "Efficiency is the highest corporate virtue. The ad sells the identity of the 'modern, professional executive' who embraces technological tools to outperform competitors still relying on manual methods. Software mastery is framed as professional competence."
+},
+{
+  label: "Audience resistance",
+  content: "High. It is clearly an ad trying to sell a $495 box. Many readers might simply turn the page. The format makes no attempt to disguise what it is, and the density of technical information means only genuinely interested readers would engage with it."
+}];
+
 
 const notionDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Knowledge workers, students, and 'creatives' (Gen Z/Millennials). Notion reached this audience through a multi-platform strategy combining outdoor billboards and bus stops with algorithmic targeting on Instagram, TikTok, YouTube, and digital display networks. The outdoor campaign is an interesting reversal: a brand that built itself through invisible digital advertising chose at a certain scale to make itself visible in physical public space, which is itself evidence of how normalised its presence had become."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Low to medium. The advertising is 'hidden' within content that looks like a personal recommendation or tutorial. The outdoor campaign is an interesting reversal: a brand that built itself through invisible digital advertising chose at a certain scale to make itself visible in physical public space. The hand-drawn illustrations and clean interface screenshots make the ads feel like design inspiration rather than product promotion."
-  },
-  {
-    label: "Psychological techniques",
-    content: "It utilizes the 'Aesthetic of Order'. By showing a clean, emoji-filled dashboard, it promises mental clarity and control over one's chaotic schedule. The illustrated characters create warmth and approachability, positioning the software not as a corporate tool but as a personal companion for organising your life."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The message is that a lack of success is simply a 'system failure' that can be fixed with the right software. It frames productivity as a form of 'self care', suggesting that being busy is fine as long as it is organized. 'Peace of mind across work and life' collapses the boundary between professional output and personal wellbeing, making both dependent on a single platform."
-  },
-  {
-    label: "Audience resistance",
-    content: "Difficult. Because Notion uses a 'Freemium' model, the barrier to entry is non-existent. Users can start using the full app for free. Resistance is low as the 'ad' itself is a useful template. Once a user invests dozens of hours building in Notion, the switching costs become so high that they are almost locked into the ecosystem for years."
-  }
-];
+{
+  label: "Targeting methods",
+  content: "Knowledge workers, students, and 'creatives' (Gen Z/Millennials). Notion reached this audience through a multi-platform strategy combining outdoor billboards and bus stops with algorithmic targeting on Instagram, TikTok, YouTube, and digital display networks. The outdoor campaign is an interesting reversal: a brand that built itself through invisible digital advertising chose at a certain scale to make itself visible in physical public space, which is itself evidence of how normalised its presence had become."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Low to medium. The advertising is 'hidden' within content that looks like a personal recommendation or tutorial. The outdoor campaign is an interesting reversal: a brand that built itself through invisible digital advertising chose at a certain scale to make itself visible in physical public space. The hand-drawn illustrations and clean interface screenshots make the ads feel like design inspiration rather than product promotion."
+},
+{
+  label: "Psychological techniques",
+  content: "It utilizes the 'Aesthetic of Order'. By showing a clean, emoji-filled dashboard, it promises mental clarity and control over one's chaotic schedule. The illustrated characters create warmth and approachability, positioning the software not as a corporate tool but as a personal companion for organising your life."
+},
+{
+  label: "Ideological messaging",
+  content: "The message is that a lack of success is simply a 'system failure' that can be fixed with the right software. It frames productivity as a form of 'self care', suggesting that being busy is fine as long as it is organized. 'Peace of mind across work and life' collapses the boundary between professional output and personal wellbeing, making both dependent on a single platform."
+},
+{
+  label: "Audience resistance",
+  content: "Difficult. Because Notion uses a 'Freemium' model, the barrier to entry is non-existent. Users can start using the full app for free. Resistance is low as the 'ad' itself is a useful template. Once a user invests dozens of hours building in Notion, the switching costs become so high that they are almost locked into the ecosystem for years."
+}];
+
 
 const chatgptDimensions = [
-  {
-    label: "Targeting methods",
-    content: "Mass markets. They reach users as the tool itself is so 'magical' that users share it for free, acting as unpaid advertisers. The demonstration format ensures organic distribution through tech media, social media shares, and word-of-mouth, creating a viral loop that requires no paid advertising placement."
-  },
-  {
-    label: "Visibility of commercial intent",
-    content: "Very Low. These are presented as 'Demos' rather than ads. They don't ask you to buy; they invite you to try. The format mimics a technology showcase or educational content rather than a promotional campaign, making the commercial intent nearly invisible."
-  },
-  {
-    label: "Psychological techniques",
-    content: "It promises to remove the effort of thinking, writing, or coding. It appeals to the human desire for an easy path. The real-time demonstration creates a sense of wonder that bypasses critical evaluation. The conversational interface makes the AI feel like a companion rather than a product, establishing a parasocial relationship with software."
-  },
-  {
-    label: "Ideological messaging",
-    content: "The messaging suggests that human intelligence is limited and that to remain competitive, one must 'augment' themselves with AI. This positions cognitive outsourcing as progress rather than dependency, and frames resistance to AI adoption as professional self-sabotage."
-  },
-  {
-    label: "Audience resistance",
-    content: "Extremely Hard. As AI becomes integrated into search engines and word processors, 'resisting' the ad becomes equivalent to resisting the internet itself. The tool's genuine utility makes the distinction between product and infrastructure collapse entirely."
-  }
-];
+{
+  label: "Targeting methods",
+  content: "Mass markets. They reach users as the tool itself is so 'magical' that users share it for free, acting as unpaid advertisers. The demonstration format ensures organic distribution through tech media, social media shares, and word-of-mouth, creating a viral loop that requires no paid advertising placement."
+},
+{
+  label: "Visibility of commercial intent",
+  content: "Very Low. These are presented as 'Demos' rather than ads. They don't ask you to buy; they invite you to try. The format mimics a technology showcase or educational content rather than a promotional campaign, making the commercial intent nearly invisible."
+},
+{
+  label: "Psychological techniques",
+  content: "It promises to remove the effort of thinking, writing, or coding. It appeals to the human desire for an easy path. The real-time demonstration creates a sense of wonder that bypasses critical evaluation. The conversational interface makes the AI feel like a companion rather than a product, establishing a parasocial relationship with software."
+},
+{
+  label: "Ideological messaging",
+  content: "The messaging suggests that human intelligence is limited and that to remain competitive, one must 'augment' themselves with AI. This positions cognitive outsourcing as progress rather than dependency, and frames resistance to AI adoption as professional self-sabotage."
+},
+{
+  label: "Audience resistance",
+  content: "Extremely Hard. As AI becomes integrated into search engines and word processors, 'resisting' the ad becomes equivalent to resisting the internet itself. The tool's genuine utility makes the distinction between product and infrastructure collapse entirely."
+}];
+
 
 /* ====== COMPONENT ====== */
 
@@ -121,7 +121,7 @@ export default function Sector04Software() {
       {/* ===== SECTOR HEADER (Mode 1) ===== */}
       <section className="mac-desktop py-24 px-4">
         <div ref={headerRef} className="reveal-blur max-w-4xl mx-auto text-center">
-          <p className="font-pixel text-[10px] tracking-[0.3em] mb-4" style={{ color: 'hsl(180, 100%, 80%)' }}>
+          <p className="font-pixel tracking-[0.3em] mb-4 text-sm text-white" style={{ color: 'hsl(180, 100%, 80%)' }}>
             SECTOR
           </p>
           <h2 className="font-display text-7xl md:text-9xl font-extrabold mb-4" style={{ color: 'white', textShadow: '2px 2px 0 rgba(0,0,0,0.3)' }}>
@@ -196,8 +196,8 @@ export default function Sector04Software() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 loading="lazy"
-                style={{ border: 0 }}
-              />
+                style={{ border: 0 }} />
+              
             </div>
 
             <AnalysisAccordion dimensions={appleDimensions} variant="mac" />
@@ -227,8 +227,8 @@ export default function Sector04Software() {
                 src={lotusAd}
                 alt="Lotus 1-2-3 1983 print advertisement - Introducing 1-2-3. It'll have your IBM/PC jumping through hoops."
                 className="w-full h-auto"
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
 
             <AnalysisAccordion dimensions={lotusDimensions} variant="mac" />
@@ -237,8 +237,8 @@ export default function Sector04Software() {
       </section>
 
       {/* ===== MAC DIALOG BOX ===== */}
-      {!dialogDismissed && (
-        <section className="mac-desktop py-16 px-4">
+      {!dialogDismissed &&
+      <section className="mac-desktop py-16 px-4">
           <div className="max-w-md mx-auto">
             <div className="mac-window">
               <div className="mac-titlebar">
@@ -251,15 +251,15 @@ export default function Sector04Software() {
                 </p>
                 <div className="flex justify-center gap-4">
                   <button
-                    className="font-pixel text-[9px] px-4 py-2 rounded-sm"
-                    style={{ background: 'hsl(0 0% 90%)', border: '2px outset hsl(0 0% 80%)' }}
-                    onClick={() => setDialogDismissed(true)}>
+                  className="font-pixel text-[9px] px-4 py-2 rounded-sm"
+                  style={{ background: 'hsl(0 0% 90%)', border: '2px outset hsl(0 0% 80%)' }}
+                  onClick={() => setDialogDismissed(true)}>
                     Cancel
                   </button>
                   <button
-                    className="font-pixel text-[9px] px-4 py-2 rounded-sm"
-                    style={{ background: 'hsl(210 50% 88%)', border: '2px outset hsl(210 50% 78%)' }}
-                    onClick={() => setDialogDismissed(true)}>
+                  className="font-pixel text-[9px] px-4 py-2 rounded-sm"
+                  style={{ background: 'hsl(210 50% 88%)', border: '2px outset hsl(210 50% 78%)' }}
+                  onClick={() => setDialogDismissed(true)}>
                     Continue
                   </button>
                 </div>
@@ -267,7 +267,7 @@ export default function Sector04Software() {
             </div>
           </div>
         </section>
-      )}
+      }
 
       {/* ===== ERA TRANSITION BAR ===== */}
       <section className="py-24 px-4 relative section-wipe" style={{ background: '#000' }}>
@@ -326,14 +326,14 @@ export default function Sector04Software() {
                 src={notionCampaign1}
                 alt="Notion All-in-one workspace campaign - social media tiles with hand-drawn illustrations and product UI"
                 className="w-full h-auto"
-                loading="lazy"
-              />
+                loading="lazy" />
+              
               <img
                 src={notionCampaign2}
                 alt="Notion outdoor billboard campaign at a city bus stop showing the product interface at street level"
                 className="w-full h-auto"
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
           </InstagramCard>
           <div className="max-w-2xl mx-auto mt-2">
@@ -357,8 +357,8 @@ export default function Sector04Software() {
                 src="https://openai.com/index/hello-gpt-4o/?video=945586717"
                 title="OpenAI Introducing GPT-4o Demo"
                 allowFullScreen
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
           </InstagramCard>
           <div className="max-w-2xl mx-auto mt-2">
@@ -464,6 +464,6 @@ export default function Sector04Software() {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }
