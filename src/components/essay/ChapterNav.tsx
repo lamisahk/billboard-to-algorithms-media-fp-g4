@@ -78,7 +78,7 @@ export default function ChapterNav() {
           className="w-full rounded-full"
           style={{
             height: `${spineProgress}%`,
-            background: 'linear-gradient(180deg, hsl(var(--ig-pink)), hsl(var(--ig-amber)))',
+            background: 'linear-gradient(180deg, hsl(var(--mac-blue-light)), hsl(var(--mac-blue-dark)))',
             transition: 'height 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
           }}
         />
