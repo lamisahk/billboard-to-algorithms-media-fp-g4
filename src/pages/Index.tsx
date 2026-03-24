@@ -9,12 +9,14 @@ import ComparativeAnalysis from "@/components/essay/ComparativeAnalysis";
 import ScrollProgressBar from "@/components/essay/ScrollProgressBar";
 import ChapterNav from "@/components/essay/ChapterNav";
 import BackToTop from "@/components/essay/BackToTop";
+import TopNav from "@/components/essay/TopNav";
 
 // Visual essay page
 const Index = () => {
   return (
     <main className="min-h-screen" style={{ background: '#000' }}>
       <ScrollProgressBar />
+      <TopNav />
       <ChapterNav />
       <div id="hero"><BillboardHero /></div>
       <IntroSections />
