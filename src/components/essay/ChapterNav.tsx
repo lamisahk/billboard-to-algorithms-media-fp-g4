@@ -132,7 +132,7 @@ export default function ChapterNav() {
                 transform: hoveredIndex === i ? 'translateX(0)' : 'translateX(-8px)',
                 transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
                 background: 'rgba(0,0,0,0.85)',
-                color: isActive ? 'hsl(var(--ig-pink))' : 'rgba(255,255,255,0.7)',
+                color: isActive ? 'hsl(var(--mac-blue-light))' : 'rgba(255,255,255,0.7)',
                 backdropFilter: 'blur(8px)',
                 border: '1px solid rgba(255,255,255,0.1)',
               }}
